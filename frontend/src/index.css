@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --background: 210 40% 96%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 217 91% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 214 32% 91%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 210 40% 94%;
+    --muted-foreground: 215 16% 42%;
+    --accent: 214 32% 91%;
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 32% 83%;
+    --input: 214 32% 83%;
+    --ring: 217 91% 50%;
+    --radius: 0.75rem;
+    --chart-physics: 217 91% 60%;
+    --chart-chemistry: 160 84% 39%;
+    --chart-medicine: 350 80% 55%;
+    --chart-literature: 38 92% 50%;
+    --chart-peace: 270 70% 60%;
+    --chart-economics: 190 80% 45%;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 217 91% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 214 32% 91%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 32% 83%;
+    --sidebar-ring: 217 91% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+  }
+}
