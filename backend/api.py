@@ -27,7 +27,9 @@ app = Flask(__name__)
 CORS(app)
 
 # ─── Shared state ────────────────────────────────────────────────
-store = DataStore(data_dir="data/evolution_tracker_api")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(BASE_DIR, "data", "evolution_tracker_api")
+store = DataStore(data_dir=DATA_DIR)
 interval_tree = IntervalTree()
 segment_tree = SegmentTree(min_year=1800, max_year=2200)
 lineage_graph = LineageGraph()
@@ -73,19 +75,37 @@ def _seed_data():
     edges = store.get_all_edges()
 
     if not ideas:
-        print("⚠️ DataStore is empty. Please run 'python -m backend.scripts.fetch_openalex' to fetch the scholarly dataset.")
+        print("[WARN] DataStore is empty. Please run 'python -m backend.scripts.fetch_openalex' to fetch the scholarly dataset.")
         return
 
+    print(f"[INFO] Loading {len(ideas)} ideas and {len(edges)} edges from DataStore...")
+
+    dup_ideas = 0
     for idea in ideas:
-        lineage_graph.add_idea(idea)
+        try:
+            lineage_graph.add_idea(idea)
+        except ValueError:
+            dup_ideas += 1  # already in graph (e.g. duplicate in file)
 
         s = idea.start_year
         e = idea.end_year or s
         interval_tree.insert(s, e, idea.id)
         segment_tree.update(s, e)
 
+    edge_ok = 0
+    edge_fail = 0
     for edge in edges:
-        lineage_graph.add_influence(edge)
+        try:
+            lineage_graph.add_influence(edge)
+            edge_ok += 1
+        except ValueError:
+            edge_fail += 1  # source or target missing from graph
+
+    print(f"[OK] Loaded {lineage_graph.node_count} nodes, {edge_ok} edges into lineage graph.")
+    if edge_fail > 0:
+        print(f"[WARN] Skipped {edge_fail} edges (missing source/target nodes).")
+    if dup_ideas > 0:
+        print(f"[WARN] Skipped {dup_ideas} duplicate idea entries.")
 
 
 _seed_data()
@@ -552,6 +572,317 @@ def llm_status():
         "model": llm_service._model,
         "message": "Ready" if configured else "GEMINI_API_KEY not set",
     })
+
+
+@app.route("/api/predictions/future-ideas", methods=["POST"])
+def predict_future_ideas():
+    """Generate predictions for future breakthrough ideas using LLM or fallback."""
+    import json as json_lib
+    import random
+    
+    data = request.get_json()
+    category = data.get("category", "Computer Science") if data else "Computer Science"
+    count = data.get("count", 5) if data else 5
+    count = min(count, 10)  # Max 10 predictions
+    
+    # Get recent ideas in the category for context
+    all_ideas = store.get_all_ideas()
+    category_ideas = [i for i in all_ideas if category.lower() in i.category.lower()]
+    recent_ideas = sorted(category_ideas, key=lambda x: x.start_year, reverse=True)[:10]
+    
+    # Try LLM first if configured
+    if llm_service.is_configured():
+        try:
+            client = llm_service._get_client()
+            
+            # Build context from recent ideas
+            context_text = "\n".join([
+                f"- {idea.title} ({idea.start_year}): {idea.description[:100]}..."
+                for idea in recent_ideas[:5]
+            ])
+            
+            prompt = f"""You are a futurist and technology researcher. Based on the current trends in {category}, 
+predict {count} breakthrough ideas that could emerge in the next 10-20 years.
+
+Recent developments in {category}:
+{context_text}
+
+Generate {count} future breakthrough ideas. For each idea, provide:
+1. A compelling title (5-10 words)
+2. A brief description (2-3 sentences explaining the concept and its potential impact)
+3. Estimated timeframe (e.g., "2025-2030", "2030-2035")
+4. Key enabling technologies or prerequisites
+
+Format your response as a JSON array with this structure:
+[
+  {{
+    "title": "Idea title",
+    "description": "Detailed description of the breakthrough idea and its impact",
+    "timeframe": "2025-2030",
+    "prerequisites": ["Technology 1", "Technology 2"],
+    "category": "{category}",
+    "confidence": 0.75
+  }}
+]
+
+Be creative but grounded in current technological trajectories. Focus on ideas that could realistically emerge from current research directions.
+
+Return ONLY the JSON array, no additional text."""
+
+            response = client.models.generate_content(
+                model=llm_service._model,
+                contents=prompt,
+            )
+            
+            generated_text = response.text.strip()
+            
+            # Try to extract JSON from the response
+            import re
+            json_match = re.search(r'\[.*\]', generated_text, re.DOTALL)
+            if json_match:
+                generated_text = json_match.group(0)
+            
+            # Parse the JSON response
+            predictions = json_lib.loads(generated_text)
+            
+            return ok_response({
+                "category": category,
+                "predictions": predictions,
+                "count": len(predictions),
+                "model": llm_service._model,
+                "context_ideas": len(recent_ideas),
+                "source": "llm"
+            })
+            
+        except Exception as exc:
+            error_msg = str(exc)
+            # Check for rate limit or quota errors
+            if any(keyword in error_msg for keyword in ["503", "UNAVAILABLE", "429", "RESOURCE_EXHAUSTED", "quota", "rate limit"]):
+                # Fall through to fallback
+                print(f"LLM unavailable (rate limit/quota): {error_msg[:100]}")
+            else:
+                # If it's not a rate limit error, return the error
+                return error_response(f"Failed to generate predictions: {error_msg}", 500)
+    
+    # Fallback: Generate rule-based predictions
+    predictions = _generate_fallback_predictions(category, count, recent_ideas)
+    
+    return ok_response({
+        "category": category,
+        "predictions": predictions,
+        "count": len(predictions),
+        "model": "rule-based-fallback",
+        "context_ideas": len(recent_ideas),
+        "source": "fallback"
+    })
+
+
+def _generate_fallback_predictions(category: str, count: int, recent_ideas: list) -> list:
+    """Generate rule-based future predictions when LLM is unavailable."""
+    import random
+    
+    # Category-specific prediction templates
+    templates = {
+        "Computer Science": [
+            {
+                "title": "Quantum Neural Networks",
+                "description": "Integration of quantum computing principles with deep learning architectures, enabling exponentially faster training and inference for complex AI models. This breakthrough could revolutionize machine learning by solving problems currently intractable for classical computers.",
+                "timeframe": "2027-2032",
+                "prerequisites": ["Quantum Computing", "Deep Learning", "Quantum Algorithms"],
+                "confidence": 0.78
+            },
+            {
+                "title": "Neuromorphic Computing Chips",
+                "description": "Brain-inspired processors that mimic biological neural structures, offering ultra-low power consumption and real-time learning capabilities. These chips could enable truly intelligent edge devices and autonomous systems.",
+                "timeframe": "2026-2030",
+                "prerequisites": ["Neuroscience", "Semiconductor Technology", "Machine Learning"],
+                "confidence": 0.82
+            },
+            {
+                "title": "Autonomous Code Generation Systems",
+                "description": "AI systems capable of writing, testing, and deploying production-ready code from natural language specifications. This could democratize software development and accelerate innovation across all industries.",
+                "timeframe": "2028-2033",
+                "prerequisites": ["Large Language Models", "Software Engineering", "Formal Verification"],
+                "confidence": 0.75
+            },
+            {
+                "title": "Holographic Computing Interfaces",
+                "description": "Three-dimensional interactive displays that allow manipulation of digital objects in physical space without special glasses. This technology could transform how we interact with computers and collaborate remotely.",
+                "timeframe": "2030-2035",
+                "prerequisites": ["Photonics", "Computer Vision", "Haptic Technology"],
+                "confidence": 0.68
+            },
+            {
+                "title": "Distributed Consciousness Networks",
+                "description": "Brain-computer interfaces enabling direct neural communication between multiple individuals, creating shared cognitive experiences and collaborative problem-solving at the speed of thought.",
+                "timeframe": "2035-2040",
+                "prerequisites": ["Brain-Computer Interfaces", "Neuroscience", "Wireless Technology"],
+                "confidence": 0.55
+            }
+        ],
+        "Physics": [
+            {
+                "title": "Room Temperature Superconductors",
+                "description": "Materials that conduct electricity without resistance at ambient temperatures, revolutionizing power transmission, magnetic levitation, and quantum computing. This breakthrough could eliminate energy losses in electrical grids worldwide.",
+                "timeframe": "2028-2033",
+                "prerequisites": ["Materials Science", "Condensed Matter Physics", "Quantum Mechanics"],
+                "confidence": 0.72
+            },
+            {
+                "title": "Controlled Nuclear Fusion Reactors",
+                "description": "Commercially viable fusion power plants that generate clean, abundant energy by replicating the sun's power source. This could solve the global energy crisis and eliminate dependence on fossil fuels.",
+                "timeframe": "2030-2035",
+                "prerequisites": ["Plasma Physics", "Materials Engineering", "Magnetic Confinement"],
+                "confidence": 0.80
+            },
+            {
+                "title": "Gravitational Wave Communication",
+                "description": "Communication systems using gravitational waves instead of electromagnetic radiation, enabling instantaneous data transmission through any medium and potentially across vast cosmic distances.",
+                "timeframe": "2040-2050",
+                "prerequisites": ["General Relativity", "Quantum Gravity", "Advanced Detectors"],
+                "confidence": 0.45
+            },
+            {
+                "title": "Metamaterial Cloaking Devices",
+                "description": "Engineered materials that bend light and other electromagnetic waves around objects, making them effectively invisible. Applications range from stealth technology to advanced optical devices.",
+                "timeframe": "2027-2032",
+                "prerequisites": ["Metamaterials", "Optics", "Nanotechnology"],
+                "confidence": 0.70
+            },
+            {
+                "title": "Quantum Entanglement Networks",
+                "description": "Large-scale quantum networks leveraging entanglement for ultra-secure communication and distributed quantum computing. This could create an unhackable quantum internet.",
+                "timeframe": "2029-2034",
+                "prerequisites": ["Quantum Mechanics", "Photonics", "Quantum Information Theory"],
+                "confidence": 0.76
+            }
+        ],
+        "Medicine": [
+            {
+                "title": "Personalized Cancer Vaccines",
+                "description": "Custom-designed vaccines that train the immune system to recognize and destroy cancer cells specific to each patient's tumor. This approach could transform cancer from a deadly disease to a manageable condition.",
+                "timeframe": "2026-2030",
+                "prerequisites": ["Immunotherapy", "Genomics", "mRNA Technology"],
+                "confidence": 0.85
+            },
+            {
+                "title": "Nanobots for Targeted Drug Delivery",
+                "description": "Microscopic robots that navigate the bloodstream to deliver drugs precisely to diseased cells, minimizing side effects and maximizing treatment efficacy. This could revolutionize how we treat diseases at the cellular level.",
+                "timeframe": "2030-2035",
+                "prerequisites": ["Nanotechnology", "Bioengineering", "Medical Imaging"],
+                "confidence": 0.73
+            },
+            {
+                "title": "Organ Regeneration Therapy",
+                "description": "Techniques to stimulate the body's natural ability to regrow damaged organs using stem cells and growth factors, eliminating the need for transplants and donor organs.",
+                "timeframe": "2032-2037",
+                "prerequisites": ["Stem Cell Research", "Tissue Engineering", "Developmental Biology"],
+                "confidence": 0.68
+            },
+            {
+                "title": "AI-Powered Diagnostic Systems",
+                "description": "Artificial intelligence that can diagnose diseases with superhuman accuracy by analyzing medical images, genetic data, and patient history. This could democratize access to expert-level medical care globally.",
+                "timeframe": "2025-2029",
+                "prerequisites": ["Machine Learning", "Medical Imaging", "Big Data Analytics"],
+                "confidence": 0.88
+            },
+            {
+                "title": "Longevity Extension Treatments",
+                "description": "Therapies that target the biological mechanisms of aging, potentially extending healthy human lifespan by decades. This could fundamentally change society's relationship with aging and mortality.",
+                "timeframe": "2035-2045",
+                "prerequisites": ["Gerontology", "Genetics", "Cellular Biology"],
+                "confidence": 0.60
+            }
+        ],
+        "Biology": [
+            {
+                "title": "Synthetic Life Forms",
+                "description": "Artificially created organisms with custom-designed genomes for specific purposes like environmental cleanup, biofuel production, or pharmaceutical manufacturing. This could open entirely new frontiers in biotechnology.",
+                "timeframe": "2028-2033",
+                "prerequisites": ["Synthetic Biology", "Genetic Engineering", "Systems Biology"],
+                "confidence": 0.70
+            },
+            {
+                "title": "Brain-to-Brain Communication",
+                "description": "Direct neural interfaces enabling thought transmission between individuals without language, creating new forms of human connection and collaboration.",
+                "timeframe": "2032-2037",
+                "prerequisites": ["Neuroscience", "Brain-Computer Interfaces", "Signal Processing"],
+                "confidence": 0.65
+            },
+            {
+                "title": "Ecosystem Restoration Technology",
+                "description": "Biotechnology tools to rapidly restore damaged ecosystems by reintroducing extinct species, repairing soil microbiomes, and accelerating natural recovery processes.",
+                "timeframe": "2027-2032",
+                "prerequisites": ["Ecology", "Genetic Engineering", "Conservation Biology"],
+                "confidence": 0.75
+            },
+            {
+                "title": "Photosynthesis Enhancement",
+                "description": "Genetic modifications to crops that dramatically increase photosynthetic efficiency, potentially doubling food production while reducing water and fertilizer needs.",
+                "timeframe": "2026-2031",
+                "prerequisites": ["Plant Biology", "Genetic Engineering", "Biochemistry"],
+                "confidence": 0.80
+            },
+            {
+                "title": "Consciousness Transfer Technology",
+                "description": "Methods to map and potentially transfer human consciousness to artificial substrates, raising profound questions about identity, mortality, and the nature of existence.",
+                "timeframe": "2040-2050",
+                "prerequisites": ["Neuroscience", "Computer Science", "Philosophy of Mind"],
+                "confidence": 0.40
+            }
+        ]
+    }
+    
+    # Default template for categories not in the dictionary
+    default_template = [
+        {
+            "title": f"Advanced {category} Integration Systems",
+            "description": f"Next-generation systems that integrate cutting-edge {category} principles with artificial intelligence and quantum computing, enabling breakthrough applications previously thought impossible.",
+            "timeframe": "2028-2033",
+            "prerequisites": [category, "Artificial Intelligence", "Quantum Computing"],
+            "confidence": 0.70
+        },
+        {
+            "title": f"Sustainable {category} Solutions",
+            "description": f"Environmentally friendly approaches to {category} that minimize resource consumption while maximizing efficiency and impact, addressing global sustainability challenges.",
+            "timeframe": "2026-2031",
+            "prerequisites": [category, "Environmental Science", "Green Technology"],
+            "confidence": 0.75
+        },
+        {
+            "title": f"Decentralized {category} Networks",
+            "description": f"Distributed systems leveraging blockchain and peer-to-peer technologies to democratize access to {category} resources and eliminate centralized control.",
+            "timeframe": "2027-2032",
+            "prerequisites": [category, "Blockchain", "Network Theory"],
+            "confidence": 0.68
+        },
+        {
+            "title": f"Biomimetic {category} Applications",
+            "description": f"Technologies inspired by biological systems that apply nature's solutions to {category} challenges, creating more efficient and adaptive systems.",
+            "timeframe": "2029-2034",
+            "prerequisites": [category, "Biology", "Biomimetics"],
+            "confidence": 0.72
+        },
+        {
+            "title": f"Cognitive {category} Assistants",
+            "description": f"AI-powered systems that augment human capabilities in {category}, providing real-time insights, predictions, and decision support.",
+            "timeframe": "2025-2030",
+            "prerequisites": [category, "Machine Learning", "Human-Computer Interaction"],
+            "confidence": 0.78
+        }
+    ]
+    
+    # Get templates for the category
+    category_templates = templates.get(category, default_template)
+    
+    # Select random predictions up to count
+    selected = random.sample(category_templates, min(count, len(category_templates)))
+    
+    # Add category to each prediction
+    for pred in selected:
+        pred["category"] = category
+    
+    return selected
 
 
 # ─── Main ────────────────────────────────────────────────────────

@@ -1,0 +1,4624 @@
+{
+  "C41008148": {
+    "id": "C41008148",
+    "title": "Computer science",
+    "description": "theoretical study of the formal foundation enabling the automated processing or computation of information, for example on a computer or over a data transmission network",
+    "stage": "philosophy",
+    "start_year": 1800,
+    "end_year": 1850,
+    "category": "Computer science",
+    "laureates": [
+      "Alan Turing",
+      "John von Neumann",
+      "Claude Shannon"
+    ],
+    "motivation": "Scholarly significance with 172,164,242 works.",
+    "keywords": [
+      "computer science"
+    ],
+    "influence_score": 1.0,
+    "created_at": "2026-04-23T18:37:44.087797",
+    "updated_at": "2026-04-23T18:37:44.087797"
+  },
+  "C121332964": {
+    "id": "C121332964",
+    "title": "Physics",
+    "description": "study of matter and its motion, along with related concepts such as energy and force",
+    "stage": "philosophy",
+    "start_year": 1800,
+    "end_year": 1850,
+    "category": "Physics",
+    "laureates": [
+      "Isaac Newton",
+      "Albert Einstein",
+      "Richard Feynman"
+    ],
+    "motivation": "Scholarly significance with 86,696,758 works.",
+    "keywords": [
+      "physics"
+    ],
+    "influence_score": 0.5036,
+    "created_at": "2026-04-23T18:37:44.091795",
+    "updated_at": "2026-04-23T18:37:44.091795"
+  },
+  "C71924100": {
+    "id": "C71924100",
+    "title": "Medicine",
+    "description": "Around 1800, \"Medicine\" represented an evolving art and nascent science dedicated to understanding and treating human ailments. It was a complex blend of philosophical theories (like humorism or miasma), empirical observations, and therapeutic practices, increasingly informed by advancements in anatomy and early physiology. This period was crucial, marking a significant shift towards more systematic clinical observation and pathological investigation, particularly evident in institutions like the Paris School. The collective impact was profound, establishing foundational conceptual frameworks and professional practices that, despite their limitations, paved the way for future scientific medicine and disease understanding.",
+    "stage": "philosophy",
+    "start_year": 1800,
+    "end_year": 1850,
+    "category": "Medicine",
+    "laureates": [
+      "Hippocrates",
+      "Louis Pasteur",
+      "Alexander Fleming"
+    ],
+    "motivation": "Scholarly significance with 86,295,553 works.",
+    "keywords": [
+      "medicine"
+    ],
+    "influence_score": 0.5012,
+    "created_at": "2026-04-23T18:37:44.091795",
+    "updated_at": "2026-04-23T20:09:40.374188"
+  },
+  "C86803240": {
+    "id": "C86803240",
+    "title": "Biology",
+    "description": "branch of science that primarily deals with structure, function, growth, evolution, and distribution of organisms",
+    "stage": "philosophy",
+    "start_year": 1800,
+    "end_year": 1850,
+    "category": "Biology",
+    "laureates": [
+      "Charles Darwin",
+      "Gregor Mendel",
+      "Francis Crick"
+    ],
+    "motivation": "Scholarly significance with 67,625,916 works.",
+    "keywords": [
+      "biology"
+    ],
+    "influence_score": 0.3928,
+    "created_at": "2026-04-23T18:37:44.099827",
+    "updated_at": "2026-04-23T18:37:44.099827"
+  },
+  "C17744445": {
+    "id": "C17744445",
+    "title": "Political science",
+    "description": "social science concerned with the study of politics and political systems",
+    "stage": "philosophy",
+    "start_year": 1800,
+    "end_year": 1850,
+    "category": "Political science",
+    "laureates": [
+      "Matthew J. Page",
+      "Joanne E. McKenzie",
+      "David Moher",
+      "A. Liberati"
+    ],
+    "motivation": "Scholarly significance with 63,719,620 works.",
+    "keywords": [
+      "political science"
+    ],
+    "influence_score": 0.3701,
+    "created_at": "2026-04-23T18:37:45.701919",
+    "updated_at": "2026-04-23T18:37:45.701919"
+  },
+  "C127413603": {
+    "id": "C127413603",
+    "title": "Engineering",
+    "description": "Around 1800, the concept of engineering transitioned from skilled craft and military applications towards a distinct, formalized discipline. It emerged as the systematic application of scientific and mathematical principles to design, construct, and maintain infrastructure and machines for the benefit of society. This philosophical shift, driven by the Enlightenment and the nascent Industrial Revolution, was crucial for monumental projects like canals and bridges. It established the theoretical foundation for professions like civil engineering, emphasizing rational problem-solving over mere empiricism. This era laid the groundwork for engineering's eventual impact on global development and technological advancement.",
+    "stage": "philosophy",
+    "start_year": 1800,
+    "end_year": 1850,
+    "category": "Engineering",
+    "laureates": [
+      "M. Shoji",
+      "LHD Experiment Group",
+      "Matthew J. Page",
+      "Joanne E. McKenzie"
+    ],
+    "motivation": "Scholarly significance with 63,571,596 works.",
+    "keywords": [
+      "engineering"
+    ],
+    "influence_score": 0.3692,
+    "created_at": "2026-04-23T18:37:47.474844",
+    "updated_at": "2026-04-23T20:09:59.134517"
+  },
+  "C192562407": {
+    "id": "C192562407",
+    "title": "Materials science",
+    "description": "interdisciplinary field which deals with the discovery and design of new materials; primarily concerned with the physical and chemical properties of solids",
+    "stage": "philosophy",
+    "start_year": 1800,
+    "end_year": 1850,
+    "category": "Materials science",
+    "laureates": [
+      "M. Shoji",
+      "LHD Experiment Group",
+      "Kostya S. Novoselov",
+      "A. K. Ge\u01d0m"
+    ],
+    "motivation": "Scholarly significance with 60,662,669 works.",
+    "keywords": [
+      "materials science"
+    ],
+    "influence_score": 0.3524,
+    "created_at": "2026-04-23T18:37:48.484630",
+    "updated_at": "2026-04-23T18:37:48.484630"
+  },
+  "C18762648": {
+    "id": "C18762648",
+    "title": "Work (physics)",
+    "description": "energy transferred to an object via the application of force on it through a displacement",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Isaac Newton",
+      "Albert Einstein",
+      "Richard Feynman"
+    ],
+    "motivation": "Scholarly significance with 57,305,308 works.",
+    "keywords": [
+      "work (physics)"
+    ],
+    "influence_score": 0.3329,
+    "created_at": "2026-04-23T18:37:48.484630",
+    "updated_at": "2026-04-23T18:37:48.484630"
+  },
+  "C185592680": {
+    "id": "C185592680",
+    "title": "Chemistry",
+    "description": "branch of physical science concerned with the composition, structure and properties of matter",
+    "stage": "philosophy",
+    "start_year": 1800,
+    "end_year": 1850,
+    "category": "Chemistry",
+    "laureates": [
+      "Antoine Lavoisier",
+      "Marie Curie",
+      "Linus Pauling"
+    ],
+    "motivation": "Scholarly significance with 53,810,730 works.",
+    "keywords": [
+      "chemistry"
+    ],
+    "influence_score": 0.3126,
+    "created_at": "2026-04-23T18:37:48.484630",
+    "updated_at": "2026-04-23T18:37:48.484630"
+  },
+  "C2779343474": {
+    "id": "C2779343474",
+    "title": "Context (archaeology)",
+    "description": "glossary for archaeological terms",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Olaf Ronneberger",
+      "Philipp Fischer",
+      "Christian Szegedy",
+      "Wei Liu"
+    ],
+    "motivation": "Scholarly significance with 53,625,956 works.",
+    "keywords": [
+      "context (archaeology)"
+    ],
+    "influence_score": 0.3115,
+    "created_at": "2026-04-23T18:37:49.375725",
+    "updated_at": "2026-04-23T18:37:49.375725"
+  },
+  "C138885662": {
+    "id": "C138885662",
+    "title": "Philosophy",
+    "description": "intellectual and/or logical study of general and fundamental problems",
+    "stage": "philosophy",
+    "start_year": 1800,
+    "end_year": 1850,
+    "category": "Philosophy",
+    "laureates": [
+      "John P. Perdew",
+      "Kieron Burke",
+      "Virginia Braun",
+      "Victoria Clarke"
+    ],
+    "motivation": "Scholarly significance with 49,460,491 works.",
+    "keywords": [
+      "philosophy"
+    ],
+    "influence_score": 0.2873,
+    "created_at": "2026-04-23T18:37:50.478664",
+    "updated_at": "2026-04-23T18:37:50.478664"
+  },
+  "C205649164": {
+    "id": "C205649164",
+    "title": "Geography",
+    "description": "science that studies the terrestrial surface, the societies that inhabit it and the territories, landscapes, places or regions that form it when interacting with each other",
+    "stage": "philosophy",
+    "start_year": 1800,
+    "end_year": 1850,
+    "category": "Geography",
+    "laureates": [
+      "John P. Perdew",
+      "Kieron Burke",
+      "Virginia Braun",
+      "Victoria Clarke"
+    ],
+    "motivation": "Scholarly significance with 45,909,086 works.",
+    "keywords": [
+      "geography"
+    ],
+    "influence_score": 0.2667,
+    "created_at": "2026-04-23T18:37:51.148980",
+    "updated_at": "2026-04-23T18:37:51.148980"
+  },
+  "C33923547": {
+    "id": "C33923547",
+    "title": "Mathematics",
+    "description": "science of abstract objects and structures",
+    "stage": "philosophy",
+    "start_year": 1800,
+    "end_year": 1850,
+    "category": "Mathematics",
+    "laureates": [
+      "Euclid",
+      "Carl Friedrich Gauss",
+      "Henri Poincar\u00e9"
+    ],
+    "motivation": "Scholarly significance with 44,052,265 works.",
+    "keywords": [
+      "mathematics"
+    ],
+    "influence_score": 0.2559,
+    "created_at": "2026-04-23T18:37:51.157127",
+    "updated_at": "2026-04-23T18:37:51.157127"
+  },
+  "C116834253": {
+    "id": "C116834253",
+    "title": "Identification (biology)",
+    "description": "process of assigning a pre-existing taxon name to an individual organism",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Charles Darwin",
+      "Gregor Mendel",
+      "Francis Crick"
+    ],
+    "motivation": "Scholarly significance with 43,144,354 works.",
+    "keywords": [
+      "identification (biology)"
+    ],
+    "influence_score": 0.2506,
+    "created_at": "2026-04-23T18:37:51.159458",
+    "updated_at": "2026-04-23T18:37:51.159458"
+  },
+  "C177264268": {
+    "id": "C177264268",
+    "title": "Set (abstract data type)",
+    "description": "abstract data type in computer science",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Kaiming He",
+      "Xiangyu Zhang",
+      "Cohen, Jacob"
+    ],
+    "motivation": "Scholarly significance with 40,879,966 works.",
+    "keywords": [
+      "set (abstract data type)"
+    ],
+    "influence_score": 0.2374,
+    "created_at": "2026-04-23T18:37:52.008775",
+    "updated_at": "2026-04-23T18:37:52.008775"
+  },
+  "C15744967": {
+    "id": "C15744967",
+    "title": "Psychology",
+    "description": "scientific study of the way the human mind works and how it influences behaviour, or the influence of a particular person's character on their behaviour",
+    "stage": "philosophy",
+    "start_year": 1800,
+    "end_year": 1850,
+    "category": "Psychology",
+    "laureates": [
+      "Sigmund Freud",
+      "William James",
+      "Ivan Pavlov"
+    ],
+    "motivation": "Scholarly significance with 38,100,129 works.",
+    "keywords": [
+      "psychology"
+    ],
+    "influence_score": 0.2213,
+    "created_at": "2026-04-23T18:37:52.008775",
+    "updated_at": "2026-04-23T18:37:52.008775"
+  },
+  "C15708023": {
+    "id": "C15708023",
+    "title": "Humanities",
+    "description": "academic disciplines that study human culture",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Robert K. Yin",
+      "David Moher",
+      "Alessandro Liberati"
+    ],
+    "motivation": "Scholarly significance with 37,826,105 works.",
+    "keywords": [
+      "humanities"
+    ],
+    "influence_score": 0.2197,
+    "created_at": "2026-04-23T18:37:52.690752",
+    "updated_at": "2026-04-23T18:37:52.690752"
+  },
+  "C142362112": {
+    "id": "C142362112",
+    "title": "Art",
+    "description": "expressive work intended to be appreciated for its beauty or emotional power; or the process of creating such a work",
+    "stage": "philosophy",
+    "start_year": 1800,
+    "end_year": 1850,
+    "category": "Art",
+    "laureates": [
+      "Alan Turing",
+      "John McCarthy",
+      "Marvin Minsky"
+    ],
+    "motivation": "Scholarly significance with 37,650,956 works.",
+    "keywords": [
+      "art"
+    ],
+    "influence_score": 0.2187,
+    "created_at": "2026-04-23T18:37:52.690752",
+    "updated_at": "2026-04-23T18:37:52.690752"
+  },
+  "C144133560": {
+    "id": "C144133560",
+    "title": "Business",
+    "description": "organization involved in commercial, industrial, or professional activity",
+    "stage": "philosophy",
+    "start_year": 1800,
+    "end_year": 1850,
+    "category": "Business",
+    "laureates": [
+      "Icek Ajzen",
+      "Michael C. Jensen",
+      "William H. Meckling"
+    ],
+    "motivation": "Scholarly significance with 36,506,433 works.",
+    "keywords": [
+      "business"
+    ],
+    "influence_score": 0.212,
+    "created_at": "2026-04-23T18:37:53.595685",
+    "updated_at": "2026-04-23T18:37:53.595685"
+  },
+  "C98045186": {
+    "id": "C98045186",
+    "title": "Process (computing)",
+    "description": "particular execution of a computer program",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Paul A. Harris",
+      "Robert Taylor",
+      "Anselm L. Strauss",
+      "Juliet Corbin"
+    ],
+    "motivation": "Scholarly significance with 35,645,522 works.",
+    "keywords": [
+      "process (computing)"
+    ],
+    "influence_score": 0.207,
+    "created_at": "2026-04-23T18:37:54.427816",
+    "updated_at": "2026-04-23T18:37:54.427816"
+  },
+  "C154945302": {
+    "id": "C154945302",
+    "title": "Artificial intelligence",
+    "description": "field of computer science and engineering practices for intelligence demonstrated by machines and intelligent agents",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Alan Turing",
+      "John McCarthy",
+      "Marvin Minsky"
+    ],
+    "motivation": "Scholarly significance with 35,460,969 works.",
+    "keywords": [
+      "artificial intelligence"
+    ],
+    "influence_score": 0.206,
+    "created_at": "2026-04-23T18:37:54.433596",
+    "updated_at": "2026-04-23T18:37:54.433596"
+  },
+  "C144024400": {
+    "id": "C144024400",
+    "title": "Sociology",
+    "description": "scientific study of human society and its origins, development, organizations, and institutions",
+    "stage": "philosophy",
+    "start_year": 1800,
+    "end_year": 1850,
+    "category": "Sociology",
+    "laureates": [
+      "Virginia Braun",
+      "Victoria Clarke",
+      "Hyuna Sung",
+      "Jacques Ferlay"
+    ],
+    "motivation": "Scholarly significance with 33,450,427 works.",
+    "keywords": [
+      "sociology"
+    ],
+    "influence_score": 0.1943,
+    "created_at": "2026-04-23T18:37:55.286253",
+    "updated_at": "2026-04-23T18:37:55.286253"
+  },
+  "C61797465": {
+    "id": "C61797465",
+    "title": "Term (time)",
+    "description": "period of duration, time or occurrence, in relation to an event",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Sepp Hochreiter",
+      "J\u00fcrgen Schmidhuber",
+      "Ronald H. Coase"
+    ],
+    "motivation": "Scholarly significance with 31,038,890 works.",
+    "keywords": [
+      "term (time)"
+    ],
+    "influence_score": 0.1803,
+    "created_at": "2026-04-23T18:37:56.583684",
+    "updated_at": "2026-04-23T18:37:56.583684"
+  },
+  "C127313418": {
+    "id": "C127313418",
+    "title": "Geology",
+    "description": "study of the composition, structure, physical properties, and history of Earth's components, and the processes by which they are shaped",
+    "stage": "philosophy",
+    "start_year": 1800,
+    "end_year": 1850,
+    "category": "Geology",
+    "laureates": [
+      "M. Shoji",
+      "LHD Experiment Group",
+      "Tsung-Yi Lin",
+      "Michael Maire"
+    ],
+    "motivation": "Scholarly significance with 30,420,598 works.",
+    "keywords": [
+      "geology"
+    ],
+    "influence_score": 0.1767,
+    "created_at": "2026-04-23T18:37:57.779428",
+    "updated_at": "2026-04-23T18:37:57.779428"
+  },
+  "C95457728": {
+    "id": "C95457728",
+    "title": "History",
+    "description": "past events and their tracks or records, studied by various branches of human sciences of history",
+    "stage": "philosophy",
+    "start_year": 1800,
+    "end_year": 1850,
+    "category": "History",
+    "laureates": [
+      "John E. Ware",
+      "Cathy D. Sherbourne",
+      "Edward L. Deci",
+      "Richard M. Ryan"
+    ],
+    "motivation": "Scholarly significance with 30,096,723 works.",
+    "keywords": [
+      "history"
+    ],
+    "influence_score": 0.1748,
+    "created_at": "2026-04-23T18:37:58.463168",
+    "updated_at": "2026-04-23T18:37:58.463168"
+  },
+  "C39432304": {
+    "id": "C39432304",
+    "title": "Environmental science",
+    "description": "interdisciplinary field that studies human interaction with the environment",
+    "stage": "philosophy",
+    "start_year": 1800,
+    "end_year": 1850,
+    "category": "Environmental science",
+    "laureates": [
+      "Water Environment Federation.",
+      "Water Pollution Control Federation.",
+      "Norman Myers",
+      "Russell A. Mittermeier"
+    ],
+    "motivation": "Scholarly significance with 29,918,890 works.",
+    "keywords": [
+      "environmental science"
+    ],
+    "influence_score": 0.1738,
+    "created_at": "2026-04-23T18:38:00.122092",
+    "updated_at": "2026-04-23T18:38:00.122092"
+  },
+  "C2776608160": {
+    "id": "C2776608160",
+    "title": "Natural (archaeology)",
+    "description": "Concept of Natural (archaeology)",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "John H. Holland",
+      "Edward L. Deci",
+      "Richard M. Ryan"
+    ],
+    "motivation": "Scholarly significance with 29,606,362 works.",
+    "keywords": [
+      "natural (archaeology)"
+    ],
+    "influence_score": 0.172,
+    "created_at": "2026-04-23T18:38:00.847713",
+    "updated_at": "2026-04-23T18:38:00.847713"
+  },
+  "C90673727": {
+    "id": "C90673727",
+    "title": "Product (mathematics)",
+    "description": "result of multiplying",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Euclid",
+      "Carl Friedrich Gauss",
+      "Henri Poincar\u00e9"
+    ],
+    "motivation": "Scholarly significance with 29,240,876 works.",
+    "keywords": [
+      "product (mathematics)"
+    ],
+    "influence_score": 0.1698,
+    "created_at": "2026-04-23T18:38:00.849376",
+    "updated_at": "2026-04-23T18:38:00.849376"
+  },
+  "C126322002": {
+    "id": "C126322002",
+    "title": "Internal medicine",
+    "description": "medical specialty dealing with the prevention, diagnosis, and treatment of adult diseases",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Hippocrates",
+      "Louis Pasteur",
+      "Alexander Fleming"
+    ],
+    "motivation": "Scholarly significance with 28,082,674 works.",
+    "keywords": [
+      "internal medicine"
+    ],
+    "influence_score": 0.1631,
+    "created_at": "2026-04-23T18:38:00.849376",
+    "updated_at": "2026-04-23T18:38:00.849376"
+  },
+  "C120665830": {
+    "id": "C120665830",
+    "title": "Optics",
+    "description": "branch of physics concerning light",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Ibn al-Haytham",
+      "Isaac Newton",
+      "Christiaan Huygens"
+    ],
+    "motivation": "Scholarly significance with 27,128,971 works.",
+    "keywords": [
+      "optics"
+    ],
+    "influence_score": 0.1576,
+    "created_at": "2026-04-23T18:38:00.857778",
+    "updated_at": "2026-04-23T18:38:00.857778"
+  },
+  "C9652623": {
+    "id": "C9652623",
+    "title": "Field (mathematics)",
+    "description": "algebraic structure with addition, multiplication and division",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Euclid",
+      "Carl Friedrich Gauss",
+      "Henri Poincar\u00e9"
+    ],
+    "motivation": "Scholarly significance with 27,026,607 works.",
+    "keywords": [
+      "field (mathematics)"
+    ],
+    "influence_score": 0.157,
+    "created_at": "2026-04-23T18:38:00.857778",
+    "updated_at": "2026-04-23T18:38:00.857778"
+  },
+  "C199539241": {
+    "id": "C199539241",
+    "title": "Law",
+    "description": "Concept of Law",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Matthew J. Page",
+      "Joanne E. McKenzie",
+      "David Moher",
+      "A. Liberati"
+    ],
+    "motivation": "Scholarly significance with 25,251,588 works.",
+    "keywords": [
+      "law"
+    ],
+    "influence_score": 0.1467,
+    "created_at": "2026-04-23T18:38:01.975087",
+    "updated_at": "2026-04-23T18:38:01.975087"
+  },
+  "C162324750": {
+    "id": "C162324750",
+    "title": "Economics",
+    "description": "social science that analyzes the production, distribution, and consumption of goods and services",
+    "stage": "philosophy",
+    "start_year": 1800,
+    "end_year": 1850,
+    "category": "Economics",
+    "laureates": [
+      "Adam Smith",
+      "John Maynard Keynes",
+      "Milton Friedman"
+    ],
+    "motivation": "Scholarly significance with 24,470,306 works.",
+    "keywords": [
+      "economics"
+    ],
+    "influence_score": 0.1421,
+    "created_at": "2026-04-23T18:38:01.982154",
+    "updated_at": "2026-04-23T18:38:01.982154"
+  },
+  "C81917197": {
+    "id": "C81917197",
+    "title": "Selection (genetic algorithm)",
+    "description": "stage of a genetic algorithm in which individual genomes are chosen from a population for later breeding (using the crossover operator)",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Robert Tibshirani",
+      "Kalyanmoy Deb",
+      "Amrit Pratap"
+    ],
+    "motivation": "Scholarly significance with 20,962,761 works.",
+    "keywords": [
+      "selection (genetic algorithm)"
+    ],
+    "influence_score": 0.1218,
+    "created_at": "2026-04-23T18:38:02.673977",
+    "updated_at": "2026-04-23T18:38:02.673977"
+  },
+  "C55493867": {
+    "id": "C55493867",
+    "title": "Biochemistry",
+    "description": "study of chemical processes in living organisms",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Antoine Lavoisier",
+      "Marie Curie",
+      "Linus Pauling"
+    ],
+    "motivation": "Scholarly significance with 17,942,529 works.",
+    "keywords": [
+      "biochemistry"
+    ],
+    "influence_score": 0.1042,
+    "created_at": "2026-04-23T18:38:02.673977",
+    "updated_at": "2026-04-23T18:38:02.673977"
+  },
+  "C62520636": {
+    "id": "C62520636",
+    "title": "Quantum mechanics",
+    "description": "fundamental theory in physics describing the properties of nature on an atomic scale",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Max Planck",
+      "Niels Bohr",
+      "Werner Heisenberg"
+    ],
+    "motivation": "Scholarly significance with 17,514,467 works.",
+    "keywords": [
+      "quantum mechanics"
+    ],
+    "influence_score": 0.1017,
+    "created_at": "2026-04-23T18:38:02.682639",
+    "updated_at": "2026-04-23T18:38:02.682639"
+  },
+  "C62649853": {
+    "id": "C62649853",
+    "title": "Remote sensing",
+    "description": "acquisition of information about an object or phenomenon without making physical contact with the object, especially the Earth",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Noel Gorelick",
+      "M. Hancher",
+      "Luc Anselin"
+    ],
+    "motivation": "Scholarly significance with 16,894,993 works.",
+    "keywords": [
+      "remote sensing"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:03.485402",
+    "updated_at": "2026-04-23T18:38:03.485402"
+  },
+  "C178790620": {
+    "id": "C178790620",
+    "title": "Organic chemistry",
+    "description": "subdiscipline within chemistry involving the scientific study of carbon-based compounds, hydrocarbons, and their derivatives",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Antoine Lavoisier",
+      "Marie Curie",
+      "Linus Pauling"
+    ],
+    "motivation": "Scholarly significance with 15,932,693 works.",
+    "keywords": [
+      "organic chemistry"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:03.490403",
+    "updated_at": "2026-04-23T18:38:03.490403"
+  },
+  "C2908647359": {
+    "id": "C2908647359",
+    "title": "Population",
+    "description": "ensemble of individuals of a species in an area, or their number",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Li\u2010tze Hu",
+      "Peter M. Bentler",
+      "Lenore Sawyer Radloff"
+    ],
+    "motivation": "Scholarly significance with 15,785,176 works.",
+    "keywords": [
+      "population"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:04.198079",
+    "updated_at": "2026-04-23T18:38:04.198079"
+  },
+  "C2778137410": {
+    "id": "C2778137410",
+    "title": "Government (linguistics)",
+    "description": "in linguistics, relationship between word and its dependents",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Paul A. Harris",
+      "Robert J. Taylor",
+      "Zunyou Wu",
+      "Jennifer M. McGoogan"
+    ],
+    "motivation": "Scholarly significance with 15,259,360 works.",
+    "keywords": [
+      "government (linguistics)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:05.165681",
+    "updated_at": "2026-04-23T18:38:05.165681"
+  },
+  "C54355233": {
+    "id": "C54355233",
+    "title": "Genetics",
+    "description": "study of genes, heredity, and variation in living organisms",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Gregor Mendel",
+      "James Watson",
+      "Francis Crick"
+    ],
+    "motivation": "Scholarly significance with 14,490,724 works.",
+    "keywords": [
+      "genetics"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:05.168883",
+    "updated_at": "2026-04-23T18:38:05.168883"
+  },
+  "C18903297": {
+    "id": "C18903297",
+    "title": "Ecology",
+    "description": "scientific study of the relationships between living organisms",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Julian P. T. Higgins",
+      "Simon G. Thompson",
+      "William H. Baltosser",
+      "Jerrold H. Zar"
+    ],
+    "motivation": "Scholarly significance with 14,364,137 works.",
+    "keywords": [
+      "ecology"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:05.982175",
+    "updated_at": "2026-04-23T18:38:05.982175"
+  },
+  "C12713177": {
+    "id": "C12713177",
+    "title": "Perspective (graphical)",
+    "description": "form of graphical projection where the projection lines converge to one or more points",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Wesley M. Cohen",
+      "Daniel A. Levinthal",
+      "Simon Haykin"
+    ],
+    "motivation": "Scholarly significance with 13,340,440 works.",
+    "keywords": [
+      "perspective (graphical)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:06.552158",
+    "updated_at": "2026-04-23T18:38:06.552158"
+  },
+  "C198531522": {
+    "id": "C198531522",
+    "title": "Sample (material)",
+    "description": "limited quantity of something which is intended to be similar to and represent a larger amount of that thing(s) (could be countable objects such as individual items available as units for sale, or a material not countable as individual items)",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Kenneth J. Livak",
+      "Thomas D. Schmittgen",
+      "Claes Fornell",
+      "David F. Larcker"
+    ],
+    "motivation": "Scholarly significance with 13,067,773 works.",
+    "keywords": [
+      "sample (material)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:07.209917",
+    "updated_at": "2026-04-23T18:38:07.209917"
+  },
+  "C163258240": {
+    "id": "C163258240",
+    "title": "Power (physics)",
+    "description": "rate at which energy is transferred, used, or transformed",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Isaac Newton",
+      "Albert Einstein",
+      "Richard Feynman"
+    ],
+    "motivation": "Scholarly significance with 13,032,779 works.",
+    "keywords": [
+      "power (physics)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:07.218112",
+    "updated_at": "2026-04-23T18:38:07.218112"
+  },
+  "C104317684": {
+    "id": "C104317684",
+    "title": "Gene",
+    "description": "basic physical and functional unit of heredity",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Gregor Mendel",
+      "James Watson",
+      "Francis Crick"
+    ],
+    "motivation": "Scholarly significance with 12,827,612 works.",
+    "keywords": [
+      "gene"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:07.218112",
+    "updated_at": "2026-04-23T18:38:07.218112"
+  },
+  "C166957645": {
+    "id": "C166957645",
+    "title": "Archaeology",
+    "description": "study of human past through material culture",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Tsung-Yi Lin",
+      "Michael Maire",
+      "Anselm L. Strauss",
+      "Juliet Corbin"
+    ],
+    "motivation": "Scholarly significance with 12,799,802 works.",
+    "keywords": [
+      "archaeology"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:08.473157",
+    "updated_at": "2026-04-23T18:38:08.473157"
+  },
+  "C41895202": {
+    "id": "C41895202",
+    "title": "Linguistics",
+    "description": "study of human language",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Matthew J. Page",
+      "Joanne E. McKenzie",
+      "Marshal F. Folstein",
+      "Susan E. Folstein"
+    ],
+    "motivation": "Scholarly significance with 12,221,204 works.",
+    "keywords": [
+      "linguistics"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:09.494191",
+    "updated_at": "2026-04-23T18:38:09.494191"
+  },
+  "C116915560": {
+    "id": "C116915560",
+    "title": "Nuclear engineering",
+    "description": "applied science",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "M. Shoji",
+      "LHD Experiment Group",
+      "Chia\u2010Jung Hsu"
+    ],
+    "motivation": "Scholarly significance with 12,045,147 works.",
+    "keywords": [
+      "nuclear engineering"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:10.567015",
+    "updated_at": "2026-04-23T18:38:10.567015"
+  },
+  "C105795698": {
+    "id": "C105795698",
+    "title": "Statistics",
+    "description": "study of the collection, organization, analysis, interpretation, and presentation of data",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Carl Friedrich Gauss",
+      "Ronald Fisher",
+      "Karl Pearson"
+    ],
+    "motivation": "Scholarly significance with 11,953,144 works.",
+    "keywords": [
+      "statistics"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:10.575110",
+    "updated_at": "2026-04-23T18:38:10.575110"
+  },
+  "C99498987": {
+    "id": "C99498987",
+    "title": "Noise (video)",
+    "description": "Television static",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "R. E. Kalman",
+      "Wei Liu",
+      "Dragomir Anguelov"
+    ],
+    "motivation": "Scholarly significance with 11,947,912 works.",
+    "keywords": [
+      "noise (video)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:11.381244",
+    "updated_at": "2026-04-23T18:38:11.381244"
+  },
+  "C82706917": {
+    "id": "C82706917",
+    "title": "Plasma",
+    "description": "state of matter consisting of ionized gas",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "M. Shoji",
+      "LHD Experiment Group",
+      "P. L. Bhatnagar",
+      "Eugene P. Gross"
+    ],
+    "motivation": "Scholarly significance with 11,932,865 works.",
+    "keywords": [
+      "plasma"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:13.388588",
+    "updated_at": "2026-04-23T18:38:13.388588"
+  },
+  "C142724271": {
+    "id": "C142724271",
+    "title": "Pathology",
+    "description": "study and diagnosis of disease",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Mark A. Bradford",
+      "Marion M. Bradford",
+      "Matthew J. Page",
+      "Joanne E. McKenzie"
+    ],
+    "motivation": "Scholarly significance with 11,872,045 works.",
+    "keywords": [
+      "pathology"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:14.471940",
+    "updated_at": "2026-04-23T18:38:14.471940"
+  },
+  "C159985019": {
+    "id": "C159985019",
+    "title": "Composite material",
+    "description": "material made from a combination of two or more unlike substances",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Kostya S. Novoselov",
+      "A. K. Ge\u01d0m",
+      "Julie Thompson",
+      "Desmond G. Higgins"
+    ],
+    "motivation": "Scholarly significance with 11,788,912 works.",
+    "keywords": [
+      "composite material"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:15.234946",
+    "updated_at": "2026-04-23T18:38:15.234946"
+  },
+  "C2777855551": {
+    "id": "C2777855551",
+    "title": "Subject (documents)",
+    "description": "in library science, a property of a document",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Everett M. Rogers",
+      "Arvind Singhal",
+      "Stephen Boyd",
+      "Lieven Vandenberghe"
+    ],
+    "motivation": "Scholarly significance with 11,632,700 works.",
+    "keywords": [
+      "subject (documents)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:15.846095",
+    "updated_at": "2026-04-23T18:38:15.846095"
+  },
+  "C25343380": {
+    "id": "C25343380",
+    "title": "Relation (database)",
+    "description": "concept in relational database theory",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Virginia Braun",
+      "Victoria Clarke",
+      "Reuben M. Baron",
+      "David A. Kenny"
+    ],
+    "motivation": "Scholarly significance with 11,413,791 works.",
+    "keywords": [
+      "relation (database)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:16.393285",
+    "updated_at": "2026-04-23T18:38:16.393285"
+  },
+  "C2780009758": {
+    "id": "C2780009758",
+    "title": "Measure (data warehouse)",
+    "description": "property of object in data warehouse",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Leo Breiman",
+      "Stephen F. Altschul",
+      "Warren Gish"
+    ],
+    "motivation": "Scholarly significance with 11,337,774 works.",
+    "keywords": [
+      "measure (data warehouse)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:17.215898",
+    "updated_at": "2026-04-23T18:38:17.215898"
+  },
+  "C26517878": {
+    "id": "C26517878",
+    "title": "Key (lock)",
+    "description": "mechanical or electronic fastening device",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Diederik P. Kingma",
+      "Jimmy Ba",
+      "Chen, Kuan-Lin",
+      "Schulman, Rebecca"
+    ],
+    "motivation": "Scholarly significance with 10,853,588 works.",
+    "keywords": [
+      "key (lock)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:18.016387",
+    "updated_at": "2026-04-23T18:38:18.016387"
+  },
+  "C199360897": {
+    "id": "C199360897",
+    "title": "Programming language",
+    "description": "language designed to communicate instructions to a machine",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "R Core Team",
+      "Kaiming He",
+      "Xiangyu Zhang"
+    ],
+    "motivation": "Scholarly significance with 10,808,768 works.",
+    "keywords": [
+      "programming language"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:18.654098",
+    "updated_at": "2026-04-23T18:38:18.654098"
+  },
+  "C136764020": {
+    "id": "C136764020",
+    "title": "World Wide Web",
+    "description": "system of interlinked hypertext documents accessed via the Internet",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Li\u2010tze Hu",
+      "Peter M. Bentler",
+      "David Moher",
+      "A. Liberati"
+    ],
+    "motivation": "Scholarly significance with 10,536,467 works.",
+    "keywords": [
+      "world wide web"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:19.412791",
+    "updated_at": "2026-04-23T18:38:19.412791"
+  },
+  "C141071460": {
+    "id": "C141071460",
+    "title": "Surgery",
+    "description": "medical specialty",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Julian P. T. Higgins",
+      "Doug Altman",
+      "Daniel Dindo",
+      "Nicolas Demartines"
+    ],
+    "motivation": "Scholarly significance with 10,513,473 works.",
+    "keywords": [
+      "surgery"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:20.429693",
+    "updated_at": "2026-04-23T18:38:20.429693"
+  },
+  "C2776401178": {
+    "id": "C2776401178",
+    "title": "Feature (linguistics)",
+    "description": "any characteristic used to classify a phoneme or word",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Gao Huang",
+      "Zhuang Liu",
+      "Corinna Cortes",
+      "Vladimir Vapnik"
+    ],
+    "motivation": "Scholarly significance with 10,472,909 works.",
+    "keywords": [
+      "feature (linguistics)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:21.029919",
+    "updated_at": "2026-04-23T18:38:21.029919"
+  },
+  "C124101348": {
+    "id": "C124101348",
+    "title": "Data mining",
+    "description": "process of discovering patterns in large data sets using computational methods at the intersection of statistics, database systems, or machine learning",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Virginia Braun",
+      "Victoria Clarke",
+      "Leo Breiman"
+    ],
+    "motivation": "Scholarly significance with 10,424,315 works.",
+    "keywords": [
+      "data mining"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:22.779490",
+    "updated_at": "2026-04-23T18:38:22.779490"
+  },
+  "C111472728": {
+    "id": "C111472728",
+    "title": "Epistemology",
+    "description": "Concept of Epistemology",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "John P. Perdew",
+      "Kieron Burke",
+      "Virginia Braun",
+      "Victoria Clarke"
+    ],
+    "motivation": "Scholarly significance with 10,361,150 works.",
+    "keywords": [
+      "epistemology"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:23.496218",
+    "updated_at": "2026-04-23T18:38:23.496218"
+  },
+  "C59822182": {
+    "id": "C59822182",
+    "title": "Botany",
+    "description": "science of plant life",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Toshio Murashige",
+      "Folke Skoog",
+      "Aravind Subramanian",
+      "Pablo Tamayo"
+    ],
+    "motivation": "Scholarly significance with 9,883,104 works.",
+    "keywords": [
+      "botany"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:24.436476",
+    "updated_at": "2026-04-23T18:38:24.436476"
+  },
+  "C182306322": {
+    "id": "C182306322",
+    "title": "Order (exchange)",
+    "description": "instruction from customers to brokers to buy or sell on a stock exchange",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Edward L. Kaplan",
+      "Paul Meier",
+      "Raphael Labaca-Castro"
+    ],
+    "motivation": "Scholarly significance with 9,829,681 works.",
+    "keywords": [
+      "order (exchange)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:25.378569",
+    "updated_at": "2026-04-23T18:38:25.378569"
+  },
+  "C198352243": {
+    "id": "C198352243",
+    "title": "Line (geometry)",
+    "description": "one-dimensional infinite geometric object",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Laurent Excoffier",
+      "Heidi E. L. Lischer",
+      "G.K. Williamson",
+      "W H Hall"
+    ],
+    "motivation": "Scholarly significance with 9,484,043 works.",
+    "keywords": [
+      "line (geometry)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:26.274241",
+    "updated_at": "2026-04-23T18:38:26.274241"
+  },
+  "C107826830": {
+    "id": "C107826830",
+    "title": "Environmental resource management",
+    "description": "management of human interaction with the environment",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Norman Myers",
+      "Russell A. Mittermeier",
+      "Intergovernmental Panel on Climate Change"
+    ],
+    "motivation": "Scholarly significance with 9,464,090 works.",
+    "keywords": [
+      "environmental resource management"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:28.511566",
+    "updated_at": "2026-04-23T18:38:28.511566"
+  },
+  "C2524010": {
+    "id": "C2524010",
+    "title": "Geometry",
+    "description": "branch of mathematics regarding geometric figures and properties of space",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "John P. Perdew",
+      "Kieron Burke",
+      "Georg Kresse",
+      "J. Furthm\u00fcller"
+    ],
+    "motivation": "Scholarly significance with 9,340,567 works.",
+    "keywords": [
+      "geometry"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:29.141454",
+    "updated_at": "2026-04-23T18:38:29.141454"
+  },
+  "C111919701": {
+    "id": "C111919701",
+    "title": "Operating system",
+    "description": "software that manages computer hardware resources",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Olaf Ronneberger",
+      "Philipp Fischer",
+      "Jakub\u016fv, Jan",
+      "Chvalovsk\u00fd, Karel"
+    ],
+    "motivation": "Scholarly significance with 9,165,550 works.",
+    "keywords": [
+      "operating system"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:30.186526",
+    "updated_at": "2026-04-23T18:38:30.186526"
+  },
+  "C161191863": {
+    "id": "C161191863",
+    "title": "Library science",
+    "description": "the application of practices, methods, technologies, tools of management, education, training, perspectives, and related areas, to the organized collection and the systematic classification of information in libraries",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Toshio Murashige",
+      "Folke Skoog",
+      "Michel Dubois",
+      "K. A. Gilles"
+    ],
+    "motivation": "Scholarly significance with 8,576,267 works.",
+    "keywords": [
+      "library science"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:31.436085",
+    "updated_at": "2026-04-23T18:38:31.436085"
+  },
+  "C2780263432": {
+    "id": "C2780263432",
+    "title": "Large Helical Device",
+    "description": "fusion reactor in Japan",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "T.E. Evans",
+      "M.E. Fenstermacher",
+      "A. Loarte",
+      "G. T. A. Huijsmans"
+    ],
+    "motivation": "Scholarly significance with 8,527,348 works.",
+    "keywords": [
+      "large helical device"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:32.711540",
+    "updated_at": "2026-04-23T18:38:32.711540"
+  },
+  "C11413529": {
+    "id": "C11413529",
+    "title": "Algorithm",
+    "description": "unambiguous specification of how to solve a class of problems",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Kaiming He",
+      "Xiangyu Zhang",
+      "Stephen F. Altschul",
+      "Warren Gish"
+    ],
+    "motivation": "Scholarly significance with 8,507,079 works.",
+    "keywords": [
+      "algorithm"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:33.485704",
+    "updated_at": "2026-04-23T18:38:33.485704"
+  },
+  "C134306372": {
+    "id": "C134306372",
+    "title": "Mathematical analysis",
+    "description": "branch of mathematics",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Leo Breiman",
+      "Georg Kresse",
+      "J. Furthm\u00fcller"
+    ],
+    "motivation": "Scholarly significance with 8,499,769 works.",
+    "keywords": [
+      "mathematical analysis"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:34.207230",
+    "updated_at": "2026-04-23T18:38:34.207230"
+  },
+  "C192209626": {
+    "id": "C192209626",
+    "title": "Focus (optics)",
+    "description": "point where parallel light rays or light rays originating from a point will converge",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Ibn al-Haytham",
+      "Isaac Newton",
+      "Christiaan Huygens"
+    ],
+    "motivation": "Scholarly significance with 8,468,817 works.",
+    "keywords": [
+      "focus (optics)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:34.215346",
+    "updated_at": "2026-04-23T18:38:34.215346"
+  },
+  "C204323151": {
+    "id": "C204323151",
+    "title": "Range (aeronautics)",
+    "description": "distance a vehicle can travel",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Stefan Grimme",
+      "Jens Antony",
+      "Steven J. Plimpton"
+    ],
+    "motivation": "Scholarly significance with 8,438,958 works.",
+    "keywords": [
+      "range (aeronautics)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:35.059880",
+    "updated_at": "2026-04-23T18:38:35.059880"
+  },
+  "C78519656": {
+    "id": "C78519656",
+    "title": "Mechanical engineering",
+    "description": "engineering discipline",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "David R. Matthews",
+      "J P Hosker",
+      "Wei Liu",
+      "Dragomir Anguelov"
+    ],
+    "motivation": "Scholarly significance with 8,205,955 works.",
+    "keywords": [
+      "mechanical engineering"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:35.968863",
+    "updated_at": "2026-04-23T18:38:35.968863"
+  },
+  "C94625758": {
+    "id": "C94625758",
+    "title": "Politics",
+    "description": "practice and theory of influencing other people, as in government",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Yann LeCun",
+      "Yoshua Bengio",
+      "Jeffrey Pennington",
+      "Richard Socher"
+    ],
+    "motivation": "Scholarly significance with 8,146,224 works.",
+    "keywords": [
+      "politics"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:36.654617",
+    "updated_at": "2026-04-23T18:38:36.654617"
+  },
+  "C77805123": {
+    "id": "C77805123",
+    "title": "Social psychology",
+    "description": "scientific study of social effects on people's thoughts, feelings, and behaviors",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Sigmund Freud",
+      "William James",
+      "Ivan Pavlov"
+    ],
+    "motivation": "Scholarly significance with 8,135,114 works.",
+    "keywords": [
+      "social psychology"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:36.660608",
+    "updated_at": "2026-04-23T18:38:36.660608"
+  },
+  "C100970517": {
+    "id": "C100970517",
+    "title": "Physical geography",
+    "description": "one of the two major subfields of geography",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Susan L. Solomon",
+      "Dahe Qin",
+      "Matthew C. Hansen",
+      "Peter Potapov"
+    ],
+    "motivation": "Scholarly significance with 8,108,099 works.",
+    "keywords": [
+      "physical geography"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:37.769020",
+    "updated_at": "2026-04-23T18:38:37.769020"
+  },
+  "C10138342": {
+    "id": "C10138342",
+    "title": "Finance",
+    "description": "academic discipline studying businesses, financing, investments and protection of economic value",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Stephen F. Altschul",
+      "Michael C. Jensen",
+      "William H. Meckling"
+    ],
+    "motivation": "Scholarly significance with 7,909,157 works.",
+    "keywords": [
+      "finance"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:38.835172",
+    "updated_at": "2026-04-23T18:38:38.835172"
+  },
+  "C151730666": {
+    "id": "C151730666",
+    "title": "Paleontology",
+    "description": "scientific study of the past of life on Earth through fossils",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Ulrich K. Laemmli",
+      "Olaf Ronneberger",
+      "Philipp Fischer"
+    ],
+    "motivation": "Scholarly significance with 7,883,184 works.",
+    "keywords": [
+      "paleontology"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:39.700928",
+    "updated_at": "2026-04-23T18:38:39.700928"
+  },
+  "C133074676": {
+    "id": "C133074676",
+    "title": "Fusible alloy",
+    "description": "metal alloy capable of being easily fused at relatively low temperature",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Andreas Greiner",
+      "Joachim H. Wendorff",
+      "John J. Lewandowski",
+      "A.L. Greer"
+    ],
+    "motivation": "Scholarly significance with 7,879,426 works.",
+    "keywords": [
+      "fusible alloy"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:41.100339",
+    "updated_at": "2026-04-23T18:38:41.100339"
+  },
+  "C145148216": {
+    "id": "C145148216",
+    "title": "Ion",
+    "description": "atom or molecule in which the total number of electrons is not equal to the total number of protons, giving the atom a net positive or negative electrical charge",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Axel D. Becke",
+      "R. D. Shannon",
+      "Roberta Re",
+      "Nicoletta Pellegrini"
+    ],
+    "motivation": "Scholarly significance with 7,784,936 works.",
+    "keywords": [
+      "ion"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:41.958692",
+    "updated_at": "2026-04-23T18:38:41.958692"
+  },
+  "C23123220": {
+    "id": "C23123220",
+    "title": "Information retrieval",
+    "description": "activity of obtaining information resources relevant to an information need from a collection of information resources",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "David Moher",
+      "A. Liberati",
+      "Heng Li",
+      "Bob Handsaker"
+    ],
+    "motivation": "Scholarly significance with 7,692,702 works.",
+    "keywords": [
+      "information retrieval"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:43.253464",
+    "updated_at": "2026-04-23T18:38:43.253464"
+  },
+  "C2778112365": {
+    "id": "C2778112365",
+    "title": "Sequence (biology)",
+    "description": "one-dimensional ordering of monomers, covalently linked within a biopolymer",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Charles Darwin",
+      "Gregor Mendel",
+      "Francis Crick"
+    ],
+    "motivation": "Scholarly significance with 7,399,221 works.",
+    "keywords": [
+      "sequence (biology)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:43.261660",
+    "updated_at": "2026-04-23T18:38:43.261660"
+  },
+  "C2779134260": {
+    "id": "C2779134260",
+    "title": "Disease",
+    "description": "abnormal condition negatively affecting organisms",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Freddie Bray",
+      "Jacques Ferlay",
+      "Marshal F. Folstein",
+      "Susan E. Folstein"
+    ],
+    "motivation": "Scholarly significance with 7,322,011 works.",
+    "keywords": [
+      "disease"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:44.417772",
+    "updated_at": "2026-04-23T18:38:44.417772"
+  },
+  "C119599485": {
+    "id": "C119599485",
+    "title": "Electrical engineering",
+    "description": "field of engineering that deals with electricity",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "George M. Sheldrick",
+      "Fred D. Davis",
+      "Holter, Ole Magnus",
+      "Ell, Basil"
+    ],
+    "motivation": "Scholarly significance with 7,290,433 works.",
+    "keywords": [
+      "electrical engineering"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:45.068072",
+    "updated_at": "2026-04-23T18:38:45.068072"
+  },
+  "C203014093": {
+    "id": "C203014093",
+    "title": "Immunology",
+    "description": "branch of medicine studying the immune system",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Haider Raza",
+      "Annie John",
+      "Andreas D. Hartkopf",
+      "Florin\u2010Andrei Taran"
+    ],
+    "motivation": "Scholarly significance with 7,216,170 works.",
+    "keywords": [
+      "immunology"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:46.199704",
+    "updated_at": "2026-04-23T18:38:46.199704"
+  },
+  "C1965285": {
+    "id": "C1965285",
+    "title": "Earth science",
+    "description": "fields of science dealing with planet Earth",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Shen\u2010Su Sun",
+      "W. F. McDonough",
+      "Noel Gorelick",
+      "M. Hancher"
+    ],
+    "motivation": "Scholarly significance with 7,212,368 works.",
+    "keywords": [
+      "earth science"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:46.978423",
+    "updated_at": "2026-04-23T18:38:46.978423"
+  },
+  "C527412718": {
+    "id": "C527412718",
+    "title": "Interpretation (philosophy)",
+    "description": "assignment of meanings to various concepts, symbols, or objects under consideration",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Hsiu-Fang Hsieh",
+      "Sarah E. Shannon",
+      "Rex B. Kline"
+    ],
+    "motivation": "Scholarly significance with 7,155,705 works.",
+    "keywords": [
+      "interpretation (philosophy)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:47.758821",
+    "updated_at": "2026-04-23T18:38:47.758821"
+  },
+  "C191897082": {
+    "id": "C191897082",
+    "title": "Metallurgy",
+    "description": "domain of materials science that studies the physical and chemical behavior of metals",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Kostya S. Novoselov",
+      "A. K. Ge\u01d0m",
+      "P CHOMZYNSKI"
+    ],
+    "motivation": "Scholarly significance with 7,061,489 works.",
+    "keywords": [
+      "metallurgy"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:48.550452",
+    "updated_at": "2026-04-23T18:38:48.550452"
+  },
+  "C24890656": {
+    "id": "C24890656",
+    "title": "Acoustics",
+    "description": "science that deals with the study of all mechanical waves in gases, liquids, and solids including vibration, sound, ultrasound and infrasound",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Mark A. Bradford",
+      "Marion M. Bradford",
+      "Herman J. C. Berendsen",
+      "Johan P. M. Postma"
+    ],
+    "motivation": "Scholarly significance with 7,033,498 works.",
+    "keywords": [
+      "acoustics"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:49.207972",
+    "updated_at": "2026-04-23T18:38:49.207972"
+  },
+  "C184779094": {
+    "id": "C184779094",
+    "title": "Atomic physics",
+    "description": "field of physics studying atoms",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Isaac Newton",
+      "Albert Einstein",
+      "Richard Feynman"
+    ],
+    "motivation": "Scholarly significance with 7,013,561 works.",
+    "keywords": [
+      "atomic physics"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:49.214663",
+    "updated_at": "2026-04-23T18:38:49.214663"
+  },
+  "C97355855": {
+    "id": "C97355855",
+    "title": "Thermodynamics",
+    "description": "branch of physics concerned with heat, work, temperature, and thermal or internal energy",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "James Watt",
+      "Rudolf Clausius",
+      "Lord Kelvin"
+    ],
+    "motivation": "Scholarly significance with 6,960,831 works.",
+    "keywords": [
+      "thermodynamics"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:49.222868",
+    "updated_at": "2026-04-23T18:38:49.222868"
+  },
+  "C28719098": {
+    "id": "C28719098",
+    "title": "Point (geometry)",
+    "description": "fundamental object of geometry: locus within which we can distinguish no other locus than itself",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Martin A. Fischler",
+      "Robert C. Bolles",
+      "Michael W. Browne",
+      "Robert Cudeck"
+    ],
+    "motivation": "Scholarly significance with 6,951,544 works.",
+    "keywords": [
+      "point (geometry)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:50.218317",
+    "updated_at": "2026-04-23T18:38:50.218317"
+  },
+  "C52119013": {
+    "id": "C52119013",
+    "title": "Art history",
+    "description": "academic study of objects of art in their historical development",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Morris Rosenberg",
+      "\u00c9tienne Wenger",
+      "Pierre Bourd\u0131eu"
+    ],
+    "motivation": "Scholarly significance with 6,926,363 works.",
+    "keywords": [
+      "art history"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:50.885678",
+    "updated_at": "2026-04-23T18:38:50.885678"
+  },
+  "C2779530757": {
+    "id": "C2779530757",
+    "title": "Quality (philosophy)",
+    "description": "characteristic trait that differentiates an entity",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Andrea C. Tricco",
+      "Erin Lillie",
+      "Yves Rosseel"
+    ],
+    "motivation": "Scholarly significance with 6,898,175 works.",
+    "keywords": [
+      "quality (philosophy)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:51.808773",
+    "updated_at": "2026-04-23T18:38:51.808773"
+  },
+  "C2778283623": {
+    "id": "C2778283623",
+    "title": "TSG101",
+    "description": "protein-coding gene in the species Homo sapiens",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Katarina Trajkovi\u0107",
+      "Chieh Hsu",
+      "David J. Katzmann",
+      "Markus Babst"
+    ],
+    "motivation": "Scholarly significance with 6,851,989 works.",
+    "keywords": [
+      "tsg101"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:52.632948",
+    "updated_at": "2026-04-23T18:38:52.632948"
+  },
+  "C144251240": {
+    "id": "C144251240",
+    "title": "Nucleofection",
+    "description": "Concept of Nucleofection",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Dolores Baksh",
+      "Raphael Yao",
+      "Mari Dezawa",
+      "Izumi Takahashi"
+    ],
+    "motivation": "Scholarly significance with 6,769,177 works.",
+    "keywords": [
+      "nucleofection"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:53.577084",
+    "updated_at": "2026-04-23T18:38:53.577084"
+  },
+  "C134018914": {
+    "id": "C134018914",
+    "title": "Endocrinology",
+    "description": "medical specialty",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Chaolin Huang",
+      "Yeming Wang",
+      "Haider Raza",
+      "Annie John"
+    ],
+    "motivation": "Scholarly significance with 6,734,705 works.",
+    "keywords": [
+      "endocrinology"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:54.782333",
+    "updated_at": "2026-04-23T18:38:54.782333"
+  },
+  "C76155785": {
+    "id": "C76155785",
+    "title": "Telecommunications",
+    "description": "electronic transmission of information between locations",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Peter E. Bl\u00f6chl",
+      "Claude E. Shannon",
+      "David Lowe"
+    ],
+    "motivation": "Scholarly significance with 6,671,184 works.",
+    "keywords": [
+      "telecommunications"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:55.598997",
+    "updated_at": "2026-04-23T18:38:55.598997"
+  },
+  "C2779627259": {
+    "id": "C2779627259",
+    "title": "Pretext",
+    "description": "excuse to do something or say something that is not accurate",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Ashish Jaiswal",
+      "Jacob Beck",
+      "RL Gregory"
+    ],
+    "motivation": "Scholarly significance with 6,651,821 works.",
+    "keywords": [
+      "pretext"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:56.323526",
+    "updated_at": "2026-04-23T18:38:56.323526"
+  },
+  "C2781291010": {
+    "id": "C2781291010",
+    "title": "Period (music)",
+    "description": "division in music",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Jeffrey Jensen Arnett",
+      "H.W. Nesbitt",
+      "Grant M. Young"
+    ],
+    "motivation": "Scholarly significance with 6,627,168 works.",
+    "keywords": [
+      "period (music)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:56.932625",
+    "updated_at": "2026-04-23T18:38:56.932625"
+  },
+  "C180938184": {
+    "id": "C180938184",
+    "title": "Liquation",
+    "description": "metallurgic method",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Edward Chlebus",
+      "Konrad Gruber",
+      "Yutaka S. Sato",
+      "Seung Hwan C. Park"
+    ],
+    "motivation": "Scholarly significance with 6,604,756 works.",
+    "keywords": [
+      "liquation"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:57.776212",
+    "updated_at": "2026-04-23T18:38:57.776212"
+  },
+  "C2777158700": {
+    "id": "C2777158700",
+    "title": "Hyporeflexia",
+    "description": "phenotype",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Debra A. Cockayne",
+      "Sara G. Hamilton",
+      "Matthew P. Longnecker",
+      "Walter J. Rogan"
+    ],
+    "motivation": "Scholarly significance with 6,520,077 works.",
+    "keywords": [
+      "hyporeflexia"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:58.776099",
+    "updated_at": "2026-04-23T18:38:58.776099"
+  },
+  "C2992336715": {
+    "id": "C2992336715",
+    "title": "Gestational period",
+    "description": "Wikimedia list article",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Graham J. Burton",
+      "Eric Jauniaux",
+      "Pablo A. Nepomnaschy",
+      "Kathleen B. Welch"
+    ],
+    "motivation": "Scholarly significance with 6,507,356 works.",
+    "keywords": [
+      "gestational period"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:38:59.587328",
+    "updated_at": "2026-04-23T18:38:59.587328"
+  },
+  "C39549134": {
+    "id": "C39549134",
+    "title": "Public relations",
+    "description": "broad term for the management of public communication of organizations",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "R. Edward Freeman",
+      "Rabi S. Bhagat",
+      "Geert Hofstede"
+    ],
+    "motivation": "Scholarly significance with 6,490,645 works.",
+    "keywords": [
+      "public relations"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:00.424523",
+    "updated_at": "2026-04-23T18:39:00.424523"
+  },
+  "C2781032047": {
+    "id": "C2781032047",
+    "title": "Articular cartilage damage",
+    "description": "disease involving the articular cartilage of joint",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Mart\u00edn Beck",
+      "Morteza Kalhor",
+      "S.S. Glasson",
+      "Tracey Blanchet"
+    ],
+    "motivation": "Scholarly significance with 6,445,284 works.",
+    "keywords": [
+      "articular cartilage damage"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:01.439283",
+    "updated_at": "2026-04-23T18:39:01.439283"
+  },
+  "C18743360": {
+    "id": "C18743360",
+    "title": "Diafiltration",
+    "description": "Concept of Diafiltration",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Joyce I. Boye",
+      "Salih Aksay",
+      "Jiuyang Lin",
+      "Wenyuan Ye"
+    ],
+    "motivation": "Scholarly significance with 6,430,148 works.",
+    "keywords": [
+      "diafiltration"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:02.459903",
+    "updated_at": "2026-04-23T18:39:02.459903"
+  },
+  "C2777054765": {
+    "id": "C2777054765",
+    "title": "Dysgeusia",
+    "description": "distortion of the sense of taste; also often associated with ageusia, which is the complete lack of taste, and hypogeusia, which is a decrease in taste sensitivity",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Aleksandar Sekuli\u0107",
+      "Michael R. Migden",
+      "Daniel A. Deems",
+      "Richard L. Doty"
+    ],
+    "motivation": "Scholarly significance with 6,426,196 works.",
+    "keywords": [
+      "dysgeusia"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:03.489537",
+    "updated_at": "2026-04-23T18:39:03.489537"
+  },
+  "C104545631": {
+    "id": "C104545631",
+    "title": "Demotion",
+    "description": "compulsory reduction in an employee's rank or job title",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "David M. Perlmutter",
+      "Paul Heymann",
+      "Georgia Koutrika"
+    ],
+    "motivation": "Scholarly significance with 6,347,316 works.",
+    "keywords": [
+      "demotion"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:04.156319",
+    "updated_at": "2026-04-23T18:39:04.156319"
+  },
+  "C145741570": {
+    "id": "C145741570",
+    "title": "Proteogenomics",
+    "description": "study of  protein expression in order to find the relationship between genomic sequences and  expressed proteins and predicted protein sequences",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Min\u2010Sik Kim",
+      "Sneha M. Pinto",
+      "Mathias Wilhelm",
+      "Judith Schlegl"
+    ],
+    "motivation": "Scholarly significance with 6,331,459 works.",
+    "keywords": [
+      "proteogenomics"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:05.674302",
+    "updated_at": "2026-04-23T18:39:05.674302"
+  },
+  "C58489278": {
+    "id": "C58489278",
+    "title": "Data set",
+    "description": "collection of data",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Robert J. Hijmans",
+      "Susan E. Cameron",
+      "Leo Breiman"
+    ],
+    "motivation": "Scholarly significance with 6,320,429 works.",
+    "keywords": [
+      "data set"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:06.723857",
+    "updated_at": "2026-04-23T18:39:06.723857"
+  },
+  "C169760540": {
+    "id": "C169760540",
+    "title": "Neuroscience",
+    "description": "scientific study of the central nervous system",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Santiago Ram\u00f3n y Cajal",
+      "Charles Sherrington"
+    ],
+    "motivation": "Scholarly significance with 6,304,616 works.",
+    "keywords": [
+      "neuroscience"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:06.730621",
+    "updated_at": "2026-04-23T18:39:06.730621"
+  },
+  "C118552586": {
+    "id": "C118552586",
+    "title": "Psychiatry",
+    "description": "branch of medicine devoted to the study, diagnosis, treatment, and prevention of mental disorders",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Annette Lolk",
+      "Janet B. W. Williams",
+      "Michael B. First"
+    ],
+    "motivation": "Scholarly significance with 6,291,804 works.",
+    "keywords": [
+      "psychiatry"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:07.580732",
+    "updated_at": "2026-04-23T18:39:07.580732"
+  },
+  "C43503373": {
+    "id": "C43503373",
+    "title": "Plasma diagnostics",
+    "description": "Concept of Plasma diagnostics",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Randall K. Smith",
+      "Nancy S. Brickhouse",
+      "I. Hutchinson"
+    ],
+    "motivation": "Scholarly significance with 6,291,723 works.",
+    "keywords": [
+      "plasma diagnostics"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:08.438429",
+    "updated_at": "2026-04-23T18:39:08.438429"
+  },
+  "C171250308": {
+    "id": "C171250308",
+    "title": "Nanotechnology",
+    "description": "field of applied science whose theme is the control of matter on atomic and (supra)molecular scale",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Kostya S. Novoselov",
+      "A. K. Ge\u01d0m",
+      "Sumio Iijima"
+    ],
+    "motivation": "Scholarly significance with 6,287,303 works.",
+    "keywords": [
+      "nanotechnology"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:09.291097",
+    "updated_at": "2026-04-23T18:39:09.291097"
+  },
+  "C95444343": {
+    "id": "C95444343",
+    "title": "Cell biology",
+    "description": "scientific discipline that studies cells",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Charles Darwin",
+      "Gregor Mendel",
+      "Francis Crick"
+    ],
+    "motivation": "Scholarly significance with 6,284,518 works.",
+    "keywords": [
+      "cell biology"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:09.299505",
+    "updated_at": "2026-04-23T18:39:09.299505"
+  },
+  "C2777935831": {
+    "id": "C2777935831",
+    "title": "Hemopericardium",
+    "description": "pericardial effusion that results from blood in the pericardial sac",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "S. Ostermayer",
+      "Mark Reisman",
+      "Grace S. Rozycki",
+      "Robert B. Ballard"
+    ],
+    "motivation": "Scholarly significance with 6,210,190 works.",
+    "keywords": [
+      "hemopericardium"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:10.271189",
+    "updated_at": "2026-04-23T18:39:10.271189"
+  },
+  "C135979968": {
+    "id": "C135979968",
+    "title": "Protein isoform",
+    "description": "forms of a protein produced from different genes, or from the same gene by alternative splicing",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "John C. Tran",
+      "Leonid Zamdborg",
+      "Wei Guo",
+      "Sebastian Sch\u00e4fer"
+    ],
+    "motivation": "Scholarly significance with 6,176,912 works.",
+    "keywords": [
+      "protein isoform"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:11.350321",
+    "updated_at": "2026-04-23T18:39:11.350321"
+  },
+  "C2776781215": {
+    "id": "C2776781215",
+    "title": "Triacetin",
+    "description": "chemical compound",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Kristiina Oksman",
+      "Mikael Skrifvars",
+      "Dora E. L\u00f3pez",
+      "James G. Goodwin"
+    ],
+    "motivation": "Scholarly significance with 6,127,067 works.",
+    "keywords": [
+      "triacetin"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:12.388559",
+    "updated_at": "2026-04-23T18:39:12.388559"
+  },
+  "C2909186138": {
+    "id": "C2909186138",
+    "title": "Hyperlactatemia",
+    "description": "acquired metabolic condition that has material basis in low pH in body tissues and blood accompanied by the buildup of lactate especially D-lactate",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "L. Bruce Gladden",
+      "Tim C. Jansen",
+      "Jasper van Bommel"
+    ],
+    "motivation": "Scholarly significance with 6,115,425 works.",
+    "keywords": [
+      "hyperlactatemia"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:13.683814",
+    "updated_at": "2026-04-23T18:39:13.683814"
+  },
+  "C2777968768": {
+    "id": "C2777968768",
+    "title": "Emperipolesis",
+    "description": "Concept of Emperipolesis",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Juan Rosa\u00ed",
+      "Ronald F. Dorfman",
+      "Jo\u2010Ann W. Andriko",
+      "Alan L. Morrison"
+    ],
+    "motivation": "Scholarly significance with 6,091,992 works.",
+    "keywords": [
+      "emperipolesis"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:14.690236",
+    "updated_at": "2026-04-23T18:39:14.690236"
+  },
+  "C2777742743": {
+    "id": "C2777742743",
+    "title": "Durvalumab",
+    "description": "chemical compound",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Scott Antonia",
+      "Augusto Villegas",
+      "Daniel Wang",
+      "Joe\u2010Elie Salem"
+    ],
+    "motivation": "Scholarly significance with 6,091,080 works.",
+    "keywords": [
+      "durvalumab"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:16.104157",
+    "updated_at": "2026-04-23T18:39:16.104157"
+  },
+  "C2776356786": {
+    "id": "C2776356786",
+    "title": "Tubulopathy",
+    "description": "medical condition",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Detlef B\u00f6ckenhauer",
+      "Sally Feather",
+      "Alexandre Karras",
+      "Matthieu Lafaurie"
+    ],
+    "motivation": "Scholarly significance with 6,082,806 works.",
+    "keywords": [
+      "tubulopathy"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:17.212564",
+    "updated_at": "2026-04-23T18:39:17.212564"
+  },
+  "C168167062": {
+    "id": "C168167062",
+    "title": "Component (thermodynamics)",
+    "description": "Concept of Component (thermodynamics)",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "James Watt",
+      "Rudolf Clausius",
+      "Lord Kelvin"
+    ],
+    "motivation": "Scholarly significance with 6,055,365 works.",
+    "keywords": [
+      "component (thermodynamics)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:17.223337",
+    "updated_at": "2026-04-23T18:39:17.223337"
+  },
+  "C2779645999": {
+    "id": "C2779645999",
+    "title": "Frugality",
+    "description": "personality trait; avoidance of unnecessary expenditure",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Anna Bach-Faig",
+      "Elliot M Berry",
+      "Lewis R. Goldberg",
+      "Gerard Saucier"
+    ],
+    "motivation": "Scholarly significance with 6,054,762 works.",
+    "keywords": [
+      "frugality"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:18.162269",
+    "updated_at": "2026-04-23T18:39:18.162269"
+  },
+  "C2775917601": {
+    "id": "C2775917601",
+    "title": "Sclerodactyly",
+    "description": "medical condition",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Alfonse T. Masi",
+      "Y M\u00f6roi",
+      "Carol Peebles"
+    ],
+    "motivation": "Scholarly significance with 6,016,491 works.",
+    "keywords": [
+      "sclerodactyly"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:18.937687",
+    "updated_at": "2026-04-23T18:39:18.937687"
+  },
+  "C2780791683": {
+    "id": "C2780791683",
+    "title": "Action (physics)",
+    "description": "physical quantity of dimension energy u00d7 time",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Isaac Newton",
+      "Albert Einstein",
+      "Richard Feynman"
+    ],
+    "motivation": "Scholarly significance with 6,003,778 works.",
+    "keywords": [
+      "action (physics)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:18.949243",
+    "updated_at": "2026-04-23T18:39:18.949243"
+  },
+  "C27206212": {
+    "id": "C27206212",
+    "title": "Theology",
+    "description": "study of the nature of God and religious belief",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "John E. Ware",
+      "Cathy D. Sherbourne",
+      "John W. Meyer",
+      "Brian Rowan"
+    ],
+    "motivation": "Scholarly significance with 5,968,886 works.",
+    "keywords": [
+      "theology"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:19.662435",
+    "updated_at": "2026-04-23T18:39:19.662435"
+  },
+  "C58642233": {
+    "id": "C58642233",
+    "title": "Taxonomy (biology)",
+    "description": "academic discipline; science of finding, describing, defining and naming groups of biological organisms",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Charles Darwin",
+      "Gregor Mendel",
+      "Francis Crick"
+    ],
+    "motivation": "Scholarly significance with 5,943,609 works.",
+    "keywords": [
+      "taxonomy (biology)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:19.672681",
+    "updated_at": "2026-04-23T18:39:19.672681"
+  },
+  "C2778843634": {
+    "id": "C2778843634",
+    "title": "Ocrelizumab",
+    "description": "anti-CD20 monoclonal antibody under development for treatment of B cell leukemia and multiple sclerosis",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Stephen L. Hauser",
+      "Amit Bar\u2010Or",
+      "Xavier Montalb\u00e1n"
+    ],
+    "motivation": "Scholarly significance with 5,943,071 works.",
+    "keywords": [
+      "ocrelizumab"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:21.117414",
+    "updated_at": "2026-04-23T18:39:21.117414"
+  },
+  "C168834538": {
+    "id": "C168834538",
+    "title": "Beam (structure)",
+    "description": "Concept of Beam (structure)",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Bruce Ravel",
+      "M. Newville",
+      "Mansoor Sheik\u2010Bahae",
+      "A. A. Said"
+    ],
+    "motivation": "Scholarly significance with 5,899,918 works.",
+    "keywords": [
+      "beam (structure)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:22.305608",
+    "updated_at": "2026-04-23T18:39:22.305608"
+  },
+  "C2780904289": {
+    "id": "C2780904289",
+    "title": "Tantalum carbide",
+    "description": "chemical compound",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "S. \u0106wiok",
+      "J. Dudek",
+      "Han Lin",
+      "Youwei Wang"
+    ],
+    "motivation": "Scholarly significance with 5,893,226 works.",
+    "keywords": [
+      "tantalum carbide"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:23.678486",
+    "updated_at": "2026-04-23T18:39:23.678486"
+  },
+  "C99454951": {
+    "id": "C99454951",
+    "title": "Environmental health",
+    "description": "public health branch focused on environmental impacts on human health",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Lenore Sawyer Radloff",
+      "John E. Ware",
+      "Cathy D. Sherbourne"
+    ],
+    "motivation": "Scholarly significance with 5,888,266 works.",
+    "keywords": [
+      "environmental health"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:24.577944",
+    "updated_at": "2026-04-23T18:39:24.577944"
+  },
+  "C145420912": {
+    "id": "C145420912",
+    "title": "Mathematics education",
+    "description": "mathematics teaching, learning and scholarly research",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Euclid",
+      "Carl Friedrich Gauss",
+      "Henri Poincar\u00e9"
+    ],
+    "motivation": "Scholarly significance with 5,865,997 works.",
+    "keywords": [
+      "mathematics education"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:24.591979",
+    "updated_at": "2026-04-23T18:39:24.591979"
+  },
+  "C19417346": {
+    "id": "C19417346",
+    "title": "Pedagogy",
+    "description": "study of education",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Maurice Bloch",
+      "Jean Lave",
+      "\u00c9tienne Wenger"
+    ],
+    "motivation": "Scholarly significance with 5,775,086 works.",
+    "keywords": [
+      "pedagogy"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:25.708928",
+    "updated_at": "2026-04-23T18:39:25.708928"
+  },
+  "C46141821": {
+    "id": "C46141821",
+    "title": "Nuclear magnetic resonance",
+    "description": "spectroscopic technique relying on the energy difference between the quantum spin states of electrons when exposed to an external magnetic field",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "A. H. Castro Neto",
+      "F. Guinea",
+      "J. F. Moulder"
+    ],
+    "motivation": "Scholarly significance with 5,727,210 works.",
+    "keywords": [
+      "nuclear magnetic resonance"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:27.078502",
+    "updated_at": "2026-04-23T18:39:27.078502"
+  },
+  "C134121241": {
+    "id": "C134121241",
+    "title": "Yield (engineering)",
+    "description": "phenomenon of deformation due to structural stress",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "P CHOMZYNSKI",
+      "Piotr Chomczy\u0144ski",
+      "Nicoletta Sacchi"
+    ],
+    "motivation": "Scholarly significance with 5,673,184 works.",
+    "keywords": [
+      "yield (engineering)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:27.807989",
+    "updated_at": "2026-04-23T18:39:27.807989"
+  },
+  "C50522688": {
+    "id": "C50522688",
+    "title": "Economic growth",
+    "description": "Increase in production and consumption in an economy",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Diederik P. Kingma",
+      "Jimmy Ba",
+      "Chen, Kuan-Lin",
+      "Schulman, Rebecca"
+    ],
+    "motivation": "Scholarly significance with 5,629,621 works.",
+    "keywords": [
+      "economic growth"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:28.875748",
+    "updated_at": "2026-04-23T18:39:28.875748"
+  },
+  "C105702510": {
+    "id": "C105702510",
+    "title": "Anatomy",
+    "description": "study of the structure and parts of organisms",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Heiko Braak",
+      "Eva Braak",
+      "James A. Thomson",
+      "Joseph Itskovitz\u2010Eldor"
+    ],
+    "motivation": "Scholarly significance with 5,610,372 works.",
+    "keywords": [
+      "anatomy"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:30.023759",
+    "updated_at": "2026-04-23T18:39:30.023759"
+  },
+  "C45235069": {
+    "id": "C45235069",
+    "title": "Table (database)",
+    "description": "set of data elements in databases",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Da Wei Huang",
+      "Brad T. Sherman",
+      "Herv\u00e9 Abdi",
+      "Lynne J. Williams"
+    ],
+    "motivation": "Scholarly significance with 5,596,545 works.",
+    "keywords": [
+      "table (database)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:30.679035",
+    "updated_at": "2026-04-23T18:39:30.679035"
+  },
+  "C38652104": {
+    "id": "C38652104",
+    "title": "Computer security",
+    "description": "the protection of computer systems and networks from theft, damage, misuse or data leak",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Diederik P. Kingma",
+      "Jimmy Ba",
+      "Franz Faul",
+      "Edgar Erdfelder"
+    ],
+    "motivation": "Scholarly significance with 5,593,562 works.",
+    "keywords": [
+      "computer security"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:31.400907",
+    "updated_at": "2026-04-23T18:39:31.400907"
+  },
+  "C43617362": {
+    "id": "C43617362",
+    "title": "Chromatography",
+    "description": "set of laboratory techniques for the separation of mixtures",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "OliverH. Lowry",
+      "NiraJ. Rosebrough",
+      "Mark A. Bradford"
+    ],
+    "motivation": "Scholarly significance with 5,581,674 works.",
+    "keywords": [
+      "chromatography"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:32.118969",
+    "updated_at": "2026-04-23T18:39:32.118969"
+  },
+  "C153294291": {
+    "id": "C153294291",
+    "title": "Meteorology",
+    "description": "interdisciplinary scientific study of the atmosphere",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Holter, Ole Magnus",
+      "Ell, Basil",
+      "Hans Hersbach",
+      "Bill Bell"
+    ],
+    "motivation": "Scholarly significance with 5,483,053 works.",
+    "keywords": [
+      "meteorology"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:33.297670",
+    "updated_at": "2026-04-23T18:39:33.297670"
+  },
+  "C121608353": {
+    "id": "C121608353",
+    "title": "Cancer",
+    "description": "disease result from abnormal continuous division of the live cells",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Hyuna Sung",
+      "Jacques Ferlay",
+      "Freddie Bray"
+    ],
+    "motivation": "Scholarly significance with 5,451,224 works.",
+    "keywords": [
+      "cancer"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:34.233671",
+    "updated_at": "2026-04-23T18:39:34.233671"
+  },
+  "C31972630": {
+    "id": "C31972630",
+    "title": "Computer vision",
+    "description": "computerized information extraction from images",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Olaf Ronneberger",
+      "Philipp Fischer",
+      "Claude E. Shannon"
+    ],
+    "motivation": "Scholarly significance with 5,451,140 works.",
+    "keywords": [
+      "computer vision"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:34.954823",
+    "updated_at": "2026-04-23T18:39:34.954823"
+  },
+  "C2778128915": {
+    "id": "C2778128915",
+    "title": "Contractualism",
+    "description": "moral theory",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "\u0422. \u041c. Scanlon",
+      "R. Eric Reidenbach",
+      "Donald P. Robin"
+    ],
+    "motivation": "Scholarly significance with 5,438,568 works.",
+    "keywords": [
+      "contractualism"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:35.668045",
+    "updated_at": "2026-04-23T18:39:35.668045"
+  },
+  "C140779682": {
+    "id": "C140779682",
+    "title": "Sampling (signal processing)",
+    "description": "measurement of a signal at discrete time intervals",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Nitesh V. Chawla",
+      "Kevin W. Bowyer",
+      "J A Hanley",
+      "Barbara J. McNeil"
+    ],
+    "motivation": "Scholarly significance with 5,410,093 works.",
+    "keywords": [
+      "sampling (signal processing)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:36.516718",
+    "updated_at": "2026-04-23T18:39:36.516718"
+  },
+  "C165838908": {
+    "id": "C165838908",
+    "title": "Calibration",
+    "description": "comparison of measurement values delivered by a device under test with those of a calibration standard of known accuracy",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Zheng Zhang",
+      "Daniel N. Moriasi",
+      "J. G. Arnold"
+    ],
+    "motivation": "Scholarly significance with 5,405,916 works.",
+    "keywords": [
+      "calibration"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:38.070807",
+    "updated_at": "2026-04-23T18:39:38.070807"
+  },
+  "C2780154274": {
+    "id": "C2780154274",
+    "title": "Download",
+    "description": "receiving data to a local system from a remote system",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Felipe A. Sim\u00e3o",
+      "Robert M. Waterhouse",
+      "K. Burton"
+    ],
+    "motivation": "Scholarly significance with 5,401,555 works.",
+    "keywords": [
+      "download"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:39.358903",
+    "updated_at": "2026-04-23T18:39:39.358903"
+  },
+  "C2777212361": {
+    "id": "C2777212361",
+    "title": "Class (philosophy)",
+    "description": "philosophical term denoting a group of things derived from extensional or intensional definition",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Nitesh V. Chawla",
+      "Kevin W. Bowyer",
+      "Amos Tversky",
+      "Daniel Kahneman"
+    ],
+    "motivation": "Scholarly significance with 5,395,848 works.",
+    "keywords": [
+      "class (philosophy)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:40.275304",
+    "updated_at": "2026-04-23T18:39:40.275304"
+  },
+  "C2776714567": {
+    "id": "C2776714567",
+    "title": "Typhoid vaccine",
+    "description": "vaccines that prevent typhoid fever",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Ogden C. Bruton",
+      "R. B. Hornick",
+      "Sheldon E. Greisman"
+    ],
+    "motivation": "Scholarly significance with 5,362,058 works.",
+    "keywords": [
+      "typhoid vaccine"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:42.102024",
+    "updated_at": "2026-04-23T18:39:42.102024"
+  },
+  "C162853370": {
+    "id": "C162853370",
+    "title": "Marketing",
+    "description": "economic activity encouraging purchase or sale of products or services in a market",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Fred D. Davis",
+      "Jay B. Barney",
+      "Everett M. Rogers",
+      "Arvind Singhal"
+    ],
+    "motivation": "Scholarly significance with 5,345,531 works.",
+    "keywords": [
+      "marketing"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:43.933541",
+    "updated_at": "2026-04-23T18:39:43.933541"
+  },
+  "C49040817": {
+    "id": "C49040817",
+    "title": "Optoelectronics",
+    "description": "branch of electronics involving optics",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Kostya S. Novoselov",
+      "A. K. Ge\u01d0m",
+      "Akira Fujishima",
+      "Kenichi Honda"
+    ],
+    "motivation": "Scholarly significance with 5,230,722 works.",
+    "keywords": [
+      "optoelectronics"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:46.053261",
+    "updated_at": "2026-04-23T18:39:46.053261"
+  },
+  "C48103436": {
+    "id": "C48103436",
+    "title": "State (computer science)",
+    "description": "set of instantaneous values of all variables to which a system or computer program has access",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Alan Turing",
+      "John von Neumann",
+      "Claude Shannon"
+    ],
+    "motivation": "Scholarly significance with 5,226,616 works.",
+    "keywords": [
+      "state (computer science)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:46.065439",
+    "updated_at": "2026-04-23T18:39:46.065439"
+  },
+  "C29456083": {
+    "id": "C29456083",
+    "title": "Gynecology",
+    "description": "science of the treatment of diseases of the female sexual organs and reproductive tract",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Freddie Bray",
+      "Mathieu Laversanne",
+      "Writing Group for the Women's Health Initiative Investigators"
+    ],
+    "motivation": "Scholarly significance with 5,200,675 works.",
+    "keywords": [
+      "gynecology"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:47.234930",
+    "updated_at": "2026-04-23T18:39:47.234930"
+  },
+  "C2779304628": {
+    "id": "C2779304628",
+    "title": "Face (sociological concept)",
+    "description": "sociological concept associated with status",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Paul Viola",
+      "Michael Jones",
+      "Matthew Turk",
+      "Alex Pentland"
+    ],
+    "motivation": "Scholarly significance with 5,185,767 works.",
+    "keywords": [
+      "face (sociological concept)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:48.952092",
+    "updated_at": "2026-04-23T18:39:48.952092"
+  },
+  "C2986587452": {
+    "id": "C2986587452",
+    "title": "Statistical analysis",
+    "description": "process of deducing properties of an underlying probability distribution by analysis of data",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Keith E. Muller",
+      "Jacob Cohen",
+      "Franz Faul",
+      "Edgar Erdfelder"
+    ],
+    "motivation": "Scholarly significance with 5,144,708 works.",
+    "keywords": [
+      "statistical analysis"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:49.590408",
+    "updated_at": "2026-04-23T18:39:49.590408"
+  },
+  "C165064840": {
+    "id": "C165064840",
+    "title": "Matching (statistics)",
+    "description": "statistics method",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Carl Friedrich Gauss",
+      "Ronald Fisher",
+      "Karl Pearson"
+    ],
+    "motivation": "Scholarly significance with 5,116,489 works.",
+    "keywords": [
+      "matching (statistics)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:49.598390",
+    "updated_at": "2026-04-23T18:39:49.598390"
+  },
+  "C153349607": {
+    "id": "C153349607",
+    "title": "Visual arts",
+    "description": "art form which creates works that are primarily visual in nature",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Karen Simonyan",
+      "Andrew Zisserman",
+      "Johannes Schindelin",
+      "Ignacio Arganda\u2010Carreras"
+    ],
+    "motivation": "Scholarly significance with 5,082,798 works.",
+    "keywords": [
+      "visual arts"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:51.415501",
+    "updated_at": "2026-04-23T18:39:51.415501"
+  },
+  "C185544564": {
+    "id": "C185544564",
+    "title": "Nuclear physics",
+    "description": "field of physics that deals with the structure and behavior of atomic nuclei",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Isaac Newton",
+      "Albert Einstein",
+      "Richard Feynman"
+    ],
+    "motivation": "Scholarly significance with 5,034,417 works.",
+    "keywords": [
+      "nuclear physics"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:51.440621",
+    "updated_at": "2026-04-23T18:39:51.440621"
+  },
+  "C6557445": {
+    "id": "C6557445",
+    "title": "Agronomy",
+    "description": "science and technology of producing and using plants for food, fuel, fiber, and reclamation",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "P.J. Van Soest",
+      "James B. Robertson",
+      "Richard G. Allen",
+      "L. S. Pereira"
+    ],
+    "motivation": "Scholarly significance with 5,010,898 works.",
+    "keywords": [
+      "agronomy"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:54.655629",
+    "updated_at": "2026-04-23T18:39:54.655629"
+  },
+  "C148043351": {
+    "id": "C148043351",
+    "title": "Current (fluid)",
+    "description": "magnitude and direction of flow in a fluid",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "A. L. Hodgkin",
+      "A. F. Huxley",
+      "Owen P. Hamill",
+      "Alain Marty"
+    ],
+    "motivation": "Scholarly significance with 4,979,907 works.",
+    "keywords": [
+      "current (fluid)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:56.461146",
+    "updated_at": "2026-04-23T18:39:56.461146"
+  },
+  "C119857082": {
+    "id": "C119857082",
+    "title": "Machine learning",
+    "description": "scientific study of algorithms and statistical models that computer systems use to perform tasks without explicit instructions",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Geoffrey Hinton",
+      "Yann LeCun",
+      "Yoshua Bengio"
+    ],
+    "motivation": "Scholarly significance with 4,968,777 works.",
+    "keywords": [
+      "machine learning"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:56.472798",
+    "updated_at": "2026-04-23T18:39:56.472798"
+  },
+  "C149923435": {
+    "id": "C149923435",
+    "title": "Demography",
+    "description": "science that deals with populations and their structures statistically and theoretically",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Hyuna Sung",
+      "Jacques Ferlay",
+      "Li\u2010tze Hu",
+      "Peter M. Bentler"
+    ],
+    "motivation": "Scholarly significance with 4,934,996 works.",
+    "keywords": [
+      "demography"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:58.247361",
+    "updated_at": "2026-04-23T18:39:58.247361"
+  },
+  "C153911025": {
+    "id": "C153911025",
+    "title": "Molecular biology",
+    "description": "Concept of Molecular biology",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Charles Darwin",
+      "Gregor Mendel",
+      "Francis Crick"
+    ],
+    "motivation": "Scholarly significance with 4,880,648 works.",
+    "keywords": [
+      "molecular biology"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:58.255572",
+    "updated_at": "2026-04-23T18:39:58.255572"
+  },
+  "C90856448": {
+    "id": "C90856448",
+    "title": "Zoology",
+    "description": "study of the animal kingdom",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Zhang, Kui",
+      "Wang, Jun",
+      "Tim G. Benton",
+      "S.C. Stearne"
+    ],
+    "motivation": "Scholarly significance with 4,856,261 works.",
+    "keywords": [
+      "zoology"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:39:59.398825",
+    "updated_at": "2026-04-23T18:39:59.398825"
+  },
+  "C2775924081": {
+    "id": "C2775924081",
+    "title": "Control (management)",
+    "description": "function of management which helps to check errors in order to take corrective actions, minimize deviation from standards and ensure that the stated goals of the organization are achieved in a desired manner",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Yoav Benjamini",
+      "Yosef Hochberg",
+      "Icek Ajzen"
+    ],
+    "motivation": "Scholarly significance with 4,726,130 works.",
+    "keywords": [
+      "control (management)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:00.528155",
+    "updated_at": "2026-04-23T18:40:00.528155"
+  },
+  "C133462117": {
+    "id": "C133462117",
+    "title": "Data collection",
+    "description": "process of gathering and measuring information",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Allison Tong",
+      "Peter Sainsbury",
+      "Sarah Lewis"
+    ],
+    "motivation": "Scholarly significance with 4,725,815 works.",
+    "keywords": [
+      "data collection"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:02.570694",
+    "updated_at": "2026-04-23T18:40:02.570694"
+  },
+  "C2778355321": {
+    "id": "C2778355321",
+    "title": "Identity (music)",
+    "description": "Concept of Identity (music)",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "\u00c9tienne Wenger",
+      "Mary McIntosh",
+      "Judith Butler"
+    ],
+    "motivation": "Scholarly significance with 4,628,789 works.",
+    "keywords": [
+      "identity (music)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:03.235386",
+    "updated_at": "2026-04-23T18:40:03.235386"
+  },
+  "C147120987": {
+    "id": "C147120987",
+    "title": "Electron",
+    "description": "subatomic particle with negative electric charge",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Chengteh Lee",
+      "Weitao Yang",
+      "Kostya S. Novoselov",
+      "A. K. Ge\u01d0m"
+    ],
+    "motivation": "Scholarly significance with 4,627,506 works.",
+    "keywords": [
+      "electron"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:04.121814",
+    "updated_at": "2026-04-23T18:40:04.121814"
+  },
+  "C2779473830": {
+    "id": "C2779473830",
+    "title": "MEDLINE",
+    "description": "biomedical bibliographical database",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Matthew J. Page",
+      "Joanne E. McKenzie",
+      "David Moher",
+      "A. Liberati"
+    ],
+    "motivation": "Scholarly significance with 4,623,592 works.",
+    "keywords": [
+      "medline"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:05.980293",
+    "updated_at": "2026-04-23T18:40:05.980293"
+  },
+  "C31903555": {
+    "id": "C31903555",
+    "title": "Food science",
+    "description": "applied science devoted to the study of food",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "P.J. Van Soest",
+      "James B. Robertson",
+      "Wendy Brand-Williams",
+      "Marie\u2010Elisabeth Cuvelier"
+    ],
+    "motivation": "Scholarly significance with 4,619,143 works.",
+    "keywords": [
+      "food science"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:06.863353",
+    "updated_at": "2026-04-23T18:40:06.863353"
+  },
+  "C2778348673": {
+    "id": "C2778348673",
+    "title": "Production (economics)",
+    "description": "act of creating goods or services",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Adam Smith",
+      "John Maynard Keynes",
+      "Milton Friedman"
+    ],
+    "motivation": "Scholarly significance with 4,586,803 works.",
+    "keywords": [
+      "production (economics)"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:06.879972",
+    "updated_at": "2026-04-23T18:40:06.879972"
+  },
+  "C3116431": {
+    "id": "C3116431",
+    "title": "Public administration",
+    "description": "generic term for the administrations that perform tasks of the state, including bodies governed by public law",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Douglass C. North",
+      "Michael C. Munger",
+      "Bryan R. Haugen",
+      "Erik K. Alexander"
+    ],
+    "motivation": "Scholarly significance with 4,578,655 works.",
+    "keywords": [
+      "public administration"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:07.696480",
+    "updated_at": "2026-04-23T18:40:07.696480"
+  },
+  "C159110408": {
+    "id": "C159110408",
+    "title": "Nursing",
+    "description": "activity within the health care sector",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Paul A. Harris",
+      "Robert Taylor",
+      "Allison Tong",
+      "Peter Sainsbury"
+    ],
+    "motivation": "Scholarly significance with 4,546,016 works.",
+    "keywords": [
+      "nursing"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:08.488074",
+    "updated_at": "2026-04-23T18:40:08.488074"
+  },
+  "C202444582": {
+    "id": "C202444582",
+    "title": "Pure mathematics",
+    "description": "mathematics which studies entirely abstract concepts",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Euclid",
+      "Carl Friedrich Gauss",
+      "Henri Poincar\u00e9"
+    ],
+    "motivation": "Scholarly significance with 4,529,452 works.",
+    "keywords": [
+      "pure mathematics"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:08.504699",
+    "updated_at": "2026-04-23T18:40:08.504699"
+  },
+  "C77088390": {
+    "id": "C77088390",
+    "title": "Database",
+    "description": "organized collection of data in computing",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Stephen F. Altschul",
+      "Reuben M. Baron",
+      "David A. Kenny"
+    ],
+    "motivation": "Scholarly significance with 4,523,288 works.",
+    "keywords": [
+      "database"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:10.845644",
+    "updated_at": "2026-04-23T18:40:10.845644"
+  },
+  "C42360764": {
+    "id": "C42360764",
+    "title": "Chemical engineering",
+    "description": "branch of science that applies physical sciences and life sciences together with applied mathematics and economics to produce, transform, transport, and properly use chemicals, materials and energy",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Hadley Wickham",
+      "K. S. W. Sing",
+      "Hiroyasu Furukawa",
+      "Kyle E. Cordova"
+    ],
+    "motivation": "Scholarly significance with 4,522,299 works.",
+    "keywords": [
+      "chemical engineering"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:11.778581",
+    "updated_at": "2026-04-23T18:40:11.778581"
+  },
+  "C115260700": {
+    "id": "C115260700",
+    "title": "Magnetic field",
+    "description": "vector field that describes the magnetic influence of electric charges in relative motion",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "M. Zahid Hasan",
+      "C. L. Kane",
+      "J. Rodr\u0131\u0301guez-Carvajal"
+    ],
+    "motivation": "Scholarly significance with 4,500,363 works.",
+    "keywords": [
+      "magnetic field"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:12.637366",
+    "updated_at": "2026-04-23T18:40:12.637366"
+  },
+  "C144027150": {
+    "id": "C144027150",
+    "title": "Horticulture",
+    "description": "culture of plants, mainly for food, materials, comfort and beauty",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Steven J. Clough",
+      "Andrew F. Bent",
+      "Lynn S. Bates",
+      "R. P. Waldren"
+    ],
+    "motivation": "Scholarly significance with 4,482,908 works.",
+    "keywords": [
+      "horticulture"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:13.248633",
+    "updated_at": "2026-04-23T18:40:13.248633"
+  },
+  "C124952713": {
+    "id": "C124952713",
+    "title": "Literature",
+    "description": "polysemous term referring to a written art form, and the set of literary work",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "John W. Meyer",
+      "Brian Rowan",
+      "Garrett Hardin"
+    ],
+    "motivation": "Scholarly significance with 4,458,746 works.",
+    "keywords": [
+      "literature"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:14.069976",
+    "updated_at": "2026-04-23T18:40:14.069976"
+  },
+  "C126838900": {
+    "id": "C126838900",
+    "title": "Radiology",
+    "description": "specialty that uses medical imaging to diagnose and treat diseases seen within the body",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Matthew J. Page",
+      "Joanne E. McKenzie",
+      "Julie Thompson",
+      "Desmond G. Higgins"
+    ],
+    "motivation": "Scholarly significance with 4,450,833 works.",
+    "keywords": [
+      "radiology"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:16.169109",
+    "updated_at": "2026-04-23T18:40:16.169109"
+  },
+  "C187736073": {
+    "id": "C187736073",
+    "title": "Management",
+    "description": "administration of an organization, including activities to set the strategy of an organization and coordinate employees to accomplish its objectives",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Kaiming He",
+      "Xiangyu Zhang",
+      "Jakub\u016fv, Jan",
+      "Chvalovsk\u00fd, Karel"
+    ],
+    "motivation": "Scholarly significance with 4,442,485 works.",
+    "keywords": [
+      "management"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:17.003572",
+    "updated_at": "2026-04-23T18:40:17.003572"
+  },
+  "C509550671": {
+    "id": "C509550671",
+    "title": "Medical education",
+    "description": "education related to the practice of being a medical practitioner",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "David Moher",
+      "Alessandro Liberati",
+      "Allison Tong",
+      "Peter Sainsbury"
+    ],
+    "motivation": "Scholarly significance with 4,379,516 works.",
+    "keywords": [
+      "medical education"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:18.105157",
+    "updated_at": "2026-04-23T18:40:18.105157"
+  },
+  "C111368507": {
+    "id": "C111368507",
+    "title": "Oceanography",
+    "description": "branch of Earth science that studies the ocean",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Tsung-Yi Lin",
+      "Michael Maire",
+      "Hans Hersbach",
+      "Bill Bell"
+    ],
+    "motivation": "Scholarly significance with 4,366,600 works.",
+    "keywords": [
+      "oceanography"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:19.511251",
+    "updated_at": "2026-04-23T18:40:19.511251"
+  },
+  "C8010536": {
+    "id": "C8010536",
+    "title": "Crystallography",
+    "description": "study of crystals",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Georg Kresse",
+      "Daniel P. Joubert",
+      "J. Furthm\u00fcller"
+    ],
+    "motivation": "Scholarly significance with 4,347,850 works.",
+    "keywords": [
+      "crystallography"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:20.127771",
+    "updated_at": "2026-04-23T18:40:20.127771"
+  },
+  "C188198153": {
+    "id": "C188198153",
+    "title": "Limiting",
+    "description": "electroacustic device",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Peter C.B. Phillips",
+      "Pierre Perr\u00f3n",
+      "David Moher",
+      "Alessandro Liberati"
+    ],
+    "motivation": "Scholarly significance with 4,334,006 works.",
+    "keywords": [
+      "limiting"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:20.799727",
+    "updated_at": "2026-04-23T18:40:20.799727"
+  },
+  "C71640776": {
+    "id": "C71640776",
+    "title": "Taxon",
+    "description": "group of one or more organism(s), which a taxonomist adjudges to be a unit",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Qiong Wang",
+      "George M Garrity",
+      "Alexandros Stamatakis"
+    ],
+    "motivation": "Scholarly significance with 4,303,230 works.",
+    "keywords": [
+      "taxon"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:21.654807",
+    "updated_at": "2026-04-23T18:40:21.654807"
+  },
+  "C159047783": {
+    "id": "C159047783",
+    "title": "Virology",
+    "description": "study of viruses",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Na Zhu",
+      "Dingyu Zhang",
+      "Peng Zhou",
+      "Xing\u2010Lou Yang"
+    ],
+    "motivation": "Scholarly significance with 4,300,453 works.",
+    "keywords": [
+      "virology"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:23.074672",
+    "updated_at": "2026-04-23T18:40:23.074672"
+  },
+  "C142757262": {
+    "id": "C142757262",
+    "title": "Doppler effect",
+    "description": "frequency change of a wave for observer relative to its source",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Michael J. Rycroft",
+      "Steve R. Ommen",
+      "R A Nishimura"
+    ],
+    "motivation": "Scholarly significance with 4,289,271 works.",
+    "keywords": [
+      "doppler effect"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:24.902325",
+    "updated_at": "2026-04-23T18:40:24.902325"
+  },
+  "C114614502": {
+    "id": "C114614502",
+    "title": "Combinatorics",
+    "description": "branch of discrete mathematics",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Leo Breiman",
+      "Naruya Saitou",
+      "M Nei"
+    ],
+    "motivation": "Scholarly significance with 4,268,024 works.",
+    "keywords": [
+      "combinatorics"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:25.970737",
+    "updated_at": "2026-04-23T18:40:25.970737"
+  },
+  "C57879066": {
+    "id": "C57879066",
+    "title": "Mechanics",
+    "description": "science concerned with physical bodies subjected to forces or displacements",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Max Planck",
+      "Niels Bohr",
+      "Werner Heisenberg"
+    ],
+    "motivation": "Scholarly significance with 4,253,838 works.",
+    "keywords": [
+      "mechanics"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:25.987549",
+    "updated_at": "2026-04-23T18:40:25.987549"
+  },
+  "C164705383": {
+    "id": "C164705383",
+    "title": "Cardiology",
+    "description": "Concept of Cardiology",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Aram V. Chobanian",
+      "Russell Ross",
+      "Theresa A McDonagh",
+      "Marco Metra"
+    ],
+    "motivation": "Scholarly significance with 4,174,917 works.",
+    "keywords": [
+      "cardiology"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:26.809810",
+    "updated_at": "2026-04-23T18:40:26.809810"
+  },
+  "C70721500": {
+    "id": "C70721500",
+    "title": "Computational biology",
+    "description": "data-analytical and theoretical methods, mathematical modeling and computational simulation techniques to the study of biological, behavioral, and social systems",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Charles Darwin",
+      "Gregor Mendel",
+      "Francis Crick"
+    ],
+    "motivation": "Scholarly significance with 4,062,824 works.",
+    "keywords": [
+      "computational biology"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:26.822843",
+    "updated_at": "2026-04-23T18:40:26.822843"
+  },
+  "C520434653": {
+    "id": "C520434653",
+    "title": "Laser",
+    "description": "device which emits light via optical amplification",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Georg Kresse",
+      "J. H\u00e4fner",
+      "P. B. Johnson",
+      "R. W. Christy"
+    ],
+    "motivation": "Scholarly significance with 4,048,389 works.",
+    "keywords": [
+      "laser"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:27.651279",
+    "updated_at": "2026-04-23T18:40:27.651279"
+  },
+  "C98274493": {
+    "id": "C98274493",
+    "title": "Pharmacology",
+    "description": "study of the interactions that occur between a living organism and chemicals that affect normal or abnormal biochemical function",
+    "stage": "scientific_validation",
+    "start_year": 1850,
+    "end_year": 1950,
+    "category": "General Science",
+    "laureates": [
+      "Antoine Daina",
+      "Olivier Michielin",
+      "Salvador Moncada",
+      "Richard Palmer"
+    ],
+    "motivation": "Scholarly significance with 4,022,441 works.",
+    "keywords": [
+      "pharmacology"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:28.478880",
+    "updated_at": "2026-04-23T18:40:28.478880"
+  },
+  "C161790260": {
+    "id": "C161790260",
+    "title": "Catalysis",
+    "description": "chemical process which accelerates a chemical reaction",
+    "stage": "engineering_application",
+    "start_year": 1950,
+    "end_year": 2000,
+    "category": "General Science",
+    "laureates": [
+      "Yan Zhao",
+      "Donald G. Truhlar",
+      "H. Aebi"
+    ],
+    "motivation": "Scholarly significance with 4,018,030 works.",
+    "keywords": [
+      "catalysis"
+    ],
+    "influence_score": 0.1,
+    "created_at": "2026-04-23T18:40:29.384841",
+    "updated_at": "2026-04-23T18:40:29.384841"
+  },
+  "C51679486": {
+    "id": "C51679486",
+    "title": "DNA sequencing",
+    "description": "technique in molecular biology",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Notable Researchers"
+    ],
+    "motivation": "3,961,921 scholarly works",
+    "keywords": [
+      "dna sequencing"
+    ],
+    "influence_score": 0.023,
+    "created_at": "2026-04-23T20:55:45.345590",
+    "updated_at": "2026-04-23T20:55:45.345590"
+  },
+  "C103278499": {
+    "id": "C103278499",
+    "title": "Similarity (geometry)",
+    "description": "idea in geometry",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Notable Researchers"
+    ],
+    "motivation": "3,833,692 scholarly works",
+    "keywords": [
+      "similarity (geometry)"
+    ],
+    "influence_score": 0.0223,
+    "created_at": "2026-04-23T20:55:46.408838",
+    "updated_at": "2026-04-23T20:55:46.408838"
+  },
+  "C39527238": {
+    "id": "C39527238",
+    "title": "Cyclotron",
+    "description": "type of particle accelerator",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Notable Researchers"
+    ],
+    "motivation": "3,768,101 scholarly works",
+    "keywords": [
+      "cyclotron"
+    ],
+    "influence_score": 0.0219,
+    "created_at": "2026-04-23T20:55:47.398312",
+    "updated_at": "2026-04-23T20:55:47.398312"
+  },
+  "C61053724": {
+    "id": "C61053724",
+    "title": "Sequence analysis",
+    "description": "process of analysis of one or more known biological sequences",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Notable Researchers"
+    ],
+    "motivation": "3,679,508 scholarly works",
+    "keywords": [
+      "sequence analysis"
+    ],
+    "influence_score": 0.0214,
+    "created_at": "2026-04-23T20:55:48.827409",
+    "updated_at": "2026-04-23T20:55:48.827409"
+  },
+  "C84148353": {
+    "id": "C84148353",
+    "title": "Nucleic acid sequence",
+    "description": "succession of letters that indicate the order of nucleotides within a DNA (using GACT) or RNA (GACU) molecule",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Notable Researchers"
+    ],
+    "motivation": "3,583,695 scholarly works",
+    "keywords": [
+      "nucleic acid sequence"
+    ],
+    "influence_score": 0.0208,
+    "created_at": "2026-04-23T20:55:50.041138",
+    "updated_at": "2026-04-23T20:55:50.041138"
+  },
+  "C125485243": {
+    "id": "C125485243",
+    "title": "Electron density",
+    "description": "probability density of electrons being somewhere",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Notable Researchers"
+    ],
+    "motivation": "3,138,971 scholarly works",
+    "keywords": [
+      "electron density"
+    ],
+    "influence_score": 0.0182,
+    "created_at": "2026-04-23T20:55:50.882521",
+    "updated_at": "2026-04-23T20:55:50.882521"
+  },
+  "C2778925768": {
+    "id": "C2778925768",
+    "title": "Reflectometry",
+    "description": "uses the reflection of waves at surfaces and interfaces to detect or characterize objects",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Notable Researchers"
+    ],
+    "motivation": "2,623,957 scholarly works",
+    "keywords": [
+      "reflectometry"
+    ],
+    "influence_score": 0.0152,
+    "created_at": "2026-04-23T20:55:52.176740",
+    "updated_at": "2026-04-23T20:55:52.176740"
+  },
+  "C47446073": {
+    "id": "C47446073",
+    "title": "Control theory (sociology)",
+    "description": "A modern application of General Science: Control theory (sociology).",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Notable Researchers"
+    ],
+    "motivation": "2,567,459 scholarly works",
+    "keywords": [
+      "control theory (sociology)"
+    ],
+    "influence_score": 0.0149,
+    "created_at": "2026-04-23T20:55:53.123898",
+    "updated_at": "2026-04-23T20:55:53.123898"
+  },
+  "C22175881": {
+    "id": "C22175881",
+    "title": "Electron temperature",
+    "description": "A modern application of General Science: Electron temperature.",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Notable Researchers"
+    ],
+    "motivation": "2,382,394 scholarly works",
+    "keywords": [
+      "electron temperature"
+    ],
+    "influence_score": 0.0138,
+    "created_at": "2026-04-23T20:55:53.926514",
+    "updated_at": "2026-04-23T20:55:53.926514"
+  },
+  "C2986192222": {
+    "id": "C2986192222",
+    "title": "Charge exchange",
+    "description": "exchange of ions between two electrolytes or between an electrolyte solution and a complex",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Notable Researchers"
+    ],
+    "motivation": "2,321,722 scholarly works",
+    "keywords": [
+      "charge exchange"
+    ],
+    "influence_score": 0.0135,
+    "created_at": "2026-04-23T20:55:54.880307",
+    "updated_at": "2026-04-23T20:55:54.880307"
+  },
+  "C104267543": {
+    "id": "C104267543",
+    "title": "Signal processing",
+    "description": "models and analyzes data representations of physical events",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Notable Researchers"
+    ],
+    "motivation": "2,052,410 scholarly works",
+    "keywords": [
+      "signal processing"
+    ],
+    "influence_score": 0.0119,
+    "created_at": "2026-04-23T20:55:55.838177",
+    "updated_at": "2026-04-23T20:55:55.838177"
+  },
+  "C150194340": {
+    "id": "C150194340",
+    "title": "Gene expression",
+    "description": "conversion of a gene's sequence into a mature gene product or products",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Notable Researchers"
+    ],
+    "motivation": "1,972,818 scholarly works",
+    "keywords": [
+      "gene expression"
+    ],
+    "influence_score": 0.0115,
+    "created_at": "2026-04-23T20:55:56.800170",
+    "updated_at": "2026-04-23T20:55:56.800170"
+  },
+  "C2776359362": {
+    "id": "C2776359362",
+    "title": "Representation (politics)",
+    "description": "A modern application of General Science: Representation (politics).",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Notable Researchers"
+    ],
+    "motivation": "1,926,970 scholarly works",
+    "keywords": [
+      "representation (politics)"
+    ],
+    "influence_score": 0.0112,
+    "created_at": "2026-04-23T20:55:58.569420",
+    "updated_at": "2026-04-23T20:55:58.569420"
+  },
+  "C3018587665": {
+    "id": "C3018587665",
+    "title": "Qualitative analysis",
+    "description": "Wikimedia disambiguation page",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Notable Researchers"
+    ],
+    "motivation": "1,731,128 scholarly works",
+    "keywords": [
+      "qualitative analysis"
+    ],
+    "influence_score": 0.0101,
+    "created_at": "2026-04-23T20:55:59.680172",
+    "updated_at": "2026-04-23T20:55:59.680172"
+  },
+  "C106997767": {
+    "id": "C106997767",
+    "title": "Electromagnet",
+    "description": "type of magnet in which the magnetic field is produced by the flow of electric current",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Michael Faraday",
+      "James Clerk Maxwell",
+      "Heinrich Hertz"
+    ],
+    "motivation": "1,711,538 scholarly works",
+    "keywords": [
+      "electromagnet"
+    ],
+    "influence_score": 0.0099,
+    "created_at": "2026-04-23T20:56:01.438612",
+    "updated_at": "2026-04-23T20:56:01.438612"
+  },
+  "C2780167933": {
+    "id": "C2780167933",
+    "title": "Pulse (music)",
+    "description": "musical term",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Notable Researchers"
+    ],
+    "motivation": "1,683,960 scholarly works",
+    "keywords": [
+      "pulse (music)"
+    ],
+    "influence_score": 0.0098,
+    "created_at": "2026-04-23T20:56:02.560648",
+    "updated_at": "2026-04-23T20:56:02.560648"
+  },
+  "C198291218": {
+    "id": "C198291218",
+    "title": "Ionization",
+    "description": "process by which atoms or molecules acquire charge by gaining or losing electrons",
+    "stage": "modern_technology",
+    "start_year": 2000,
+    "end_year": 2025,
+    "category": "General Science",
+    "laureates": [
+      "Notable Researchers"
+    ],
+    "motivation": "1,657,393 scholarly works",
+    "keywords": [
+      "ionization"
+    ],
+    "influence_score": 0.0096,
+    "created_at": "2026-04-23T20:56:03.518602",
+    "updated_at": "2026-04-23T20:56:03.518602"
+  }
+}

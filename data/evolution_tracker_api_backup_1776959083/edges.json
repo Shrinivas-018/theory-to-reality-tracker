@@ -1,0 +1,1802 @@
+[
+  {
+    "source_id": "C15708023",
+    "target_id": "C154945302",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C154945302",
+    "target_id": "C126322002",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C126322002",
+    "target_id": "C120665830",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C120665830",
+    "target_id": "C199539241",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C199539241",
+    "target_id": "C55493867",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C55493867",
+    "target_id": "C62520636",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C62520636",
+    "target_id": "C62649853",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C62649853",
+    "target_id": "C178790620",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C178790620",
+    "target_id": "C54355233",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C54355233",
+    "target_id": "C18903297",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C18903297",
+    "target_id": "C166957645",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C166957645",
+    "target_id": "C41895202",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C41895202",
+    "target_id": "C116915560",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C116915560",
+    "target_id": "C105795698",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C105795698",
+    "target_id": "C142724271",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C142724271",
+    "target_id": "C159985019",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C159985019",
+    "target_id": "C199360897",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C199360897",
+    "target_id": "C136764020",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C136764020",
+    "target_id": "C141071460",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C141071460",
+    "target_id": "C124101348",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C124101348",
+    "target_id": "C111472728",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C111472728",
+    "target_id": "C59822182",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C59822182",
+    "target_id": "C107826830",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C107826830",
+    "target_id": "C2524010",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2524010",
+    "target_id": "C111919701",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C111919701",
+    "target_id": "C161191863",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C161191863",
+    "target_id": "C11413529",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C11413529",
+    "target_id": "C134306372",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C134306372",
+    "target_id": "C78519656",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C78519656",
+    "target_id": "C77805123",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C77805123",
+    "target_id": "C100970517",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C100970517",
+    "target_id": "C10138342",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C10138342",
+    "target_id": "C151730666",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C151730666",
+    "target_id": "C23123220",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C23123220",
+    "target_id": "C119599485",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C119599485",
+    "target_id": "C203014093",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C203014093",
+    "target_id": "C1965285",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C1965285",
+    "target_id": "C191897082",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C191897082",
+    "target_id": "C24890656",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C24890656",
+    "target_id": "C184779094",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C184779094",
+    "target_id": "C97355855",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C97355855",
+    "target_id": "C52119013",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C52119013",
+    "target_id": "C134018914",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C134018914",
+    "target_id": "C76155785",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C76155785",
+    "target_id": "C39549134",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C39549134",
+    "target_id": "C169760540",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C169760540",
+    "target_id": "C118552586",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C118552586",
+    "target_id": "C171250308",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C171250308",
+    "target_id": "C95444343",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C95444343",
+    "target_id": "C27206212",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C27206212",
+    "target_id": "C99454951",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C99454951",
+    "target_id": "C145420912",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C145420912",
+    "target_id": "C19417346",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C19417346",
+    "target_id": "C46141821",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C46141821",
+    "target_id": "C50522688",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C50522688",
+    "target_id": "C105702510",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C105702510",
+    "target_id": "C38652104",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C38652104",
+    "target_id": "C43617362",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C43617362",
+    "target_id": "C153294291",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C153294291",
+    "target_id": "C31972630",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C31972630",
+    "target_id": "C162853370",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C162853370",
+    "target_id": "C49040817",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C49040817",
+    "target_id": "C29456083",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C29456083",
+    "target_id": "C153349607",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C153349607",
+    "target_id": "C185544564",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C185544564",
+    "target_id": "C6557445",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C6557445",
+    "target_id": "C119857082",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C119857082",
+    "target_id": "C149923435",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C149923435",
+    "target_id": "C153911025",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C153911025",
+    "target_id": "C90856448",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C90856448",
+    "target_id": "C31903555",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C31903555",
+    "target_id": "C3116431",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C3116431",
+    "target_id": "C159110408",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C159110408",
+    "target_id": "C202444582",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C202444582",
+    "target_id": "C77088390",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C77088390",
+    "target_id": "C42360764",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C42360764",
+    "target_id": "C144027150",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C144027150",
+    "target_id": "C124952713",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C124952713",
+    "target_id": "C126838900",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C126838900",
+    "target_id": "C187736073",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C187736073",
+    "target_id": "C509550671",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C509550671",
+    "target_id": "C111368507",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C111368507",
+    "target_id": "C8010536",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C8010536",
+    "target_id": "C159047783",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C159047783",
+    "target_id": "C114614502",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C114614502",
+    "target_id": "C57879066",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C57879066",
+    "target_id": "C164705383",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C164705383",
+    "target_id": "C70721500",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C70721500",
+    "target_id": "C98274493",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C98274493",
+    "target_id": "C18762648",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C18762648",
+    "target_id": "C2779343474",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2779343474",
+    "target_id": "C116834253",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C116834253",
+    "target_id": "C177264268",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C177264268",
+    "target_id": "C98045186",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C98045186",
+    "target_id": "C61797465",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C61797465",
+    "target_id": "C2776608160",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2776608160",
+    "target_id": "C90673727",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C90673727",
+    "target_id": "C9652623",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C9652623",
+    "target_id": "C81917197",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C81917197",
+    "target_id": "C2908647359",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2908647359",
+    "target_id": "C2778137410",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2778137410",
+    "target_id": "C12713177",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C12713177",
+    "target_id": "C198531522",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C198531522",
+    "target_id": "C163258240",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C163258240",
+    "target_id": "C104317684",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C104317684",
+    "target_id": "C82706917",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C82706917",
+    "target_id": "C2777855551",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2777855551",
+    "target_id": "C25343380",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C25343380",
+    "target_id": "C2780009758",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2780009758",
+    "target_id": "C26517878",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C26517878",
+    "target_id": "C2776401178",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2776401178",
+    "target_id": "C182306322",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C182306322",
+    "target_id": "C198352243",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C198352243",
+    "target_id": "C192209626",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C192209626",
+    "target_id": "C204323151",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C204323151",
+    "target_id": "C94625758",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C94625758",
+    "target_id": "C133074676",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C133074676",
+    "target_id": "C145148216",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C145148216",
+    "target_id": "C2778112365",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2778112365",
+    "target_id": "C2779134260",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2779134260",
+    "target_id": "C527412718",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C527412718",
+    "target_id": "C28719098",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C28719098",
+    "target_id": "C2779530757",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2779530757",
+    "target_id": "C2781291010",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2781291010",
+    "target_id": "C58489278",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C58489278",
+    "target_id": "C2776781215",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2776781215",
+    "target_id": "C2909186138",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2909186138",
+    "target_id": "C168167062",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C168167062",
+    "target_id": "C2779645999",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2779645999",
+    "target_id": "C2780791683",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2780791683",
+    "target_id": "C58642233",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C58642233",
+    "target_id": "C168834538",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C168834538",
+    "target_id": "C134121241",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C134121241",
+    "target_id": "C45235069",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C45235069",
+    "target_id": "C121608353",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C121608353",
+    "target_id": "C2778128915",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2778128915",
+    "target_id": "C165838908",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C165838908",
+    "target_id": "C2780154274",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2780154274",
+    "target_id": "C2777212361",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2777212361",
+    "target_id": "C48103436",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C48103436",
+    "target_id": "C2779304628",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2779304628",
+    "target_id": "C2986587452",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2986587452",
+    "target_id": "C165064840",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C165064840",
+    "target_id": "C148043351",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C148043351",
+    "target_id": "C2775924081",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2775924081",
+    "target_id": "C133462117",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C133462117",
+    "target_id": "C2778355321",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2778355321",
+    "target_id": "C147120987",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C147120987",
+    "target_id": "C2779473830",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2779473830",
+    "target_id": "C2778348673",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2778348673",
+    "target_id": "C115260700",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C115260700",
+    "target_id": "C188198153",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C188198153",
+    "target_id": "C71640776",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C71640776",
+    "target_id": "C142757262",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C142757262",
+    "target_id": "C520434653",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C520434653",
+    "target_id": "C161790260",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C161790260",
+    "target_id": "C99498987",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C99498987",
+    "target_id": "C2780263432",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2780263432",
+    "target_id": "C2778283623",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2778283623",
+    "target_id": "C144251240",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C144251240",
+    "target_id": "C2779627259",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2779627259",
+    "target_id": "C180938184",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C180938184",
+    "target_id": "C2777158700",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2777158700",
+    "target_id": "C2992336715",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2992336715",
+    "target_id": "C2781032047",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2781032047",
+    "target_id": "C18743360",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C18743360",
+    "target_id": "C2777054765",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2777054765",
+    "target_id": "C104545631",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C104545631",
+    "target_id": "C145741570",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C145741570",
+    "target_id": "C43503373",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C43503373",
+    "target_id": "C2777935831",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2777935831",
+    "target_id": "C135979968",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C135979968",
+    "target_id": "C2777968768",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2777968768",
+    "target_id": "C2777742743",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2777742743",
+    "target_id": "C2776356786",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2776356786",
+    "target_id": "C2775917601",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2775917601",
+    "target_id": "C2778843634",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2778843634",
+    "target_id": "C2780904289",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C2780904289",
+    "target_id": "C140779682",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C140779682",
+    "target_id": "C2776714567",
+    "influence_type": "derived_from",
+    "influence_weight": 0.7,
+    "evidence": "Evolution of General Science",
+    "confidence_score": 0.8,
+    "created_at": "2026-04-23T18:40:29.394781"
+  },
+  {
+    "source_id": "C142362112",
+    "target_id": "C154945302",
+    "influence_type": "derived_from",
+    "influence_weight": 0.85,
+    "evidence": "Artificial intelligence is a direct sub-field of Art",
+    "confidence_score": 0.9,
+    "created_at": "2026-04-23T21:03:44.798610"
+  },
+  {
+    "source_id": "C71924100",
+    "target_id": "C126322002",
+    "influence_type": "derived_from",
+    "influence_weight": 0.85,
+    "evidence": "Internal medicine is a direct sub-field of Medicine",
+    "confidence_score": 0.9,
+    "created_at": "2026-04-23T21:03:46.719244"
+  },
+  {
+    "source_id": "C185592680",
+    "target_id": "C55493867",
+    "influence_type": "derived_from",
+    "influence_weight": 0.85,
+    "evidence": "Biochemistry is a direct sub-field of Chemistry",
+    "confidence_score": 0.9,
+    "created_at": "2026-04-23T21:03:51.504760"
+  },
+  {
+    "source_id": "C185592680",
+    "target_id": "C178790620",
+    "influence_type": "derived_from",
+    "influence_weight": 0.85,
+    "evidence": "Organic chemistry is a direct sub-field of Chemistry",
+    "confidence_score": 0.9,
+    "created_at": "2026-04-23T21:03:55.976393"
+  },
+  {
+    "source_id": "C127413603",
+    "target_id": "C116915560",
+    "influence_type": "derived_from",
+    "influence_weight": 0.85,
+    "evidence": "Nuclear engineering is a direct sub-field of Engineering",
+    "confidence_score": 0.9,
+    "created_at": "2026-04-23T21:04:04.132943"
+  },
+  {
+    "source_id": "C127413603",
+    "target_id": "C78519656",
+    "influence_type": "derived_from",
+    "influence_weight": 0.85,
+    "evidence": "Mechanical engineering is a direct sub-field of Engineering",
+    "confidence_score": 0.9,
+    "created_at": "2026-04-23T21:04:26.425704"
+  },
+  {
+    "source_id": "C15744967",
+    "target_id": "C77805123",
+    "influence_type": "derived_from",
+    "influence_weight": 0.85,
+    "evidence": "Social psychology is a direct sub-field of Psychology",
+    "confidence_score": 0.9,
+    "created_at": "2026-04-23T21:04:28.295405"
+  },
+  {
+    "source_id": "C205649164",
+    "target_id": "C100970517",
+    "influence_type": "derived_from",
+    "influence_weight": 0.85,
+    "evidence": "Physical geography is a direct sub-field of Geography",
+    "confidence_score": 0.9,
+    "created_at": "2026-04-23T21:04:29.743310"
+  },
+  {
+    "source_id": "C127413603",
+    "target_id": "C119599485",
+    "influence_type": "derived_from",
+    "influence_weight": 0.85,
+    "evidence": "Electrical engineering is a direct sub-field of Engineering",
+    "confidence_score": 0.9,
+    "created_at": "2026-04-23T21:04:36.949859"
+  },
+  {
+    "source_id": "C142362112",
+    "target_id": "C1965285",
+    "influence_type": "derived_from",
+    "influence_weight": 0.85,
+    "evidence": "Earth science is a direct sub-field of Art",
+    "confidence_score": 0.9,
+    "created_at": "2026-04-23T21:04:42.242866"
+  },
+  {
+    "source_id": "C121332964",
+    "target_id": "C184779094",
+    "influence_type": "derived_from",
+    "influence_weight": 0.85,
+    "evidence": "Atomic physics is a direct sub-field of Physics",
+    "confidence_score": 0.9,
+    "created_at": "2026-04-23T21:04:47.176145"
+  },
+  {
+    "source_id": "C142362112",
+    "target_id": "C52119013",
+    "influence_type": "derived_from",
+    "influence_weight": 0.85,
+    "evidence": "Art history is a direct sub-field of Art",
+    "confidence_score": 0.9,
+    "created_at": "2026-04-23T21:04:49.747762"
+  },
+  {
+    "source_id": "C86803240",
+    "target_id": "C95444343",
+    "influence_type": "derived_from",
+    "influence_weight": 0.85,
+    "evidence": "Cell biology is a direct sub-field of Biology",
+    "confidence_score": 0.9,
+    "created_at": "2026-04-23T21:04:55.978870"
+  },
+  {
+    "source_id": "C33923547",
+    "target_id": "C145420912",
+    "influence_type": "derived_from",
+    "influence_weight": 0.85,
+    "evidence": "Mathematics education is a direct sub-field of Mathematics",
+    "confidence_score": 0.9,
+    "created_at": "2026-04-23T21:04:59.821695"
+  },
+  {
+    "source_id": "C18903297",
+    "target_id": "C29456083",
+    "influence_type": "derived_from",
+    "influence_weight": 0.85,
+    "evidence": "Gynecology is a direct sub-field of Ecology",
+    "confidence_score": 0.9,
+    "created_at": "2026-04-23T21:05:09.849951"
+  },
+  {
+    "source_id": "C142362112",
+    "target_id": "C153349607",
+    "influence_type": "derived_from",
+    "influence_weight": 0.85,
+    "evidence": "Visual arts is a direct sub-field of Art",
+    "confidence_score": 0.9,
+    "created_at": "2026-04-23T21:05:12.576898"
+  },
+  {
+    "source_id": "C121332964",
+    "target_id": "C185544564",
+    "influence_type": "derived_from",
+    "influence_weight": 0.85,
+    "evidence": "Nuclear physics is a direct sub-field of Physics",
+    "confidence_score": 0.9,
+    "created_at": "2026-04-23T21:05:13.719971"
+  },
+  {
+    "source_id": "C86803240",
+    "target_id": "C153911025",
+    "influence_type": "derived_from",
+    "influence_weight": 0.85,
+    "evidence": "Molecular biology is a direct sub-field of Biology",
+    "confidence_score": 0.9,
+    "created_at": "2026-04-23T21:05:20.160655"
+  },
+  {
+    "source_id": "C33923547",
+    "target_id": "C202444582",
+    "influence_type": "derived_from",
+    "influence_weight": 0.85,
+    "evidence": "Pure mathematics is a direct sub-field of Mathematics",
+    "confidence_score": 0.9,
+    "created_at": "2026-04-23T21:05:25.514942"
+  },
+  {
+    "source_id": "C127413603",
+    "target_id": "C42360764",
+    "influence_type": "derived_from",
+    "influence_weight": 0.85,
+    "evidence": "Chemical engineering is a direct sub-field of Engineering",
+    "confidence_score": 0.9,
+    "created_at": "2026-04-23T21:05:27.683477"
+  }
+]

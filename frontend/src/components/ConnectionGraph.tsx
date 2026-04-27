@@ -39,9 +39,9 @@ export default function ConnectionGraph({ connections, isLoading }: Props) {
       };
     });
 
-    // Draw edges
-    ctx.strokeStyle = "hsl(215 20% 65% / 0.3)";
-    ctx.lineWidth = 0.8;
+    // Draw edges with vibrant evolutionary web colors
+    ctx.strokeStyle = "rgba(168, 85, 247, 0.4)"; // violet-500 with opacity
+    ctx.lineWidth = 1;
     edges.forEach(({ source, target }) => {
       const s = positions[source];
       const t = positions[target];
@@ -57,7 +57,7 @@ export default function ConnectionGraph({ connections, isLoading }: Props) {
       const { x, y } = positions[node.id];
       ctx.beginPath();
       ctx.arc(x, y, 4, 0, 2 * Math.PI);
-      ctx.fillStyle = "hsl(var(--primary))";
+      ctx.fillStyle = "#ec4899"; // pink-500
       ctx.fill();
     });
   }, [connections]);
@@ -84,7 +84,7 @@ export default function ConnectionGraph({ connections, isLoading }: Props) {
           ref={canvasRef}
           width={800}
           height={500}
-          className="w-full rounded border bg-muted/20"
+          className="w-full rounded border border-slate-800 bg-slate-950 shadow-inner"
         />
         <p className="text-xs text-muted-foreground mt-2">
           Showing first 80 nodes. Connections between laureates who share the same year and category.
