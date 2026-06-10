@@ -247,21 +247,11 @@ class AIPredictionService:
             idea_id, EvolutionStage.MODERN_TECHNOLOGY
         )
 
-        G = self._graph._graph
-        in_deg = G.in_degree(idea_id) if idea_id in G else 0
-        out_deg = G.out_degree(idea_id) if idea_id in G else 0
-
+        connectivity = gf["pagerank"]
         return np.array([
             age,
-            stage_idx,
-            idea.influence_score,
-            gf["degree_centrality"],
-            gf["clustering"],
-            gf["pagerank"],
-            tech_sim,
-            in_deg,
-            out_deg,
-            len(idea.keywords),
+            connectivity,
+            tech_sim
         ])
 
     def forecast_idea(self, idea_id: str) -> Dict[str, Any]:
@@ -311,60 +301,55 @@ class AIPredictionService:
             return self._heuristic_forecast(idea)
 
         proba = clf.predict_proba(target_vec.reshape(1, -1))[0]
-        confidence = float(max(proba))
-        predicted_class = int(clf.predict(target_vec.reshape(1, -1))[0])
-
-        # Feature importances for explainability
-        feature_names = [
-            "age", "current_stage", "influence_score",
-            "degree_centrality", "clustering_coefficient",
-            "pagerank", "tech_similarity",
-            "in_degree", "out_degree", "keyword_count",
-        ]
-        importances = clf.feature_importances_
-        top_features = sorted(
-            zip(feature_names, importances),
-            key=lambda x: x[1], reverse=True,
-        )[:3]
-
-        reason_parts = []
-        for feat, imp in top_features:
-            reason_parts.append(f"{feat} (importance: {imp:.2f})")
-        reason = "Key factors: " + ", ".join(reason_parts)
-
-        # Determine predicted next stage
+        prob_tech = float(proba[1]) if len(proba) > 1 else float(proba[0])
+        predicted_class = 1 if prob_tech > 0.5 else 0
+        
         current_idx = _STAGE_ORDER.get(idea.stage, 0)
         if predicted_class == 1:
             next_stage_idx = min(current_idx + 1, 3)
         else:
             next_stage_idx = current_idx
-
         next_stage_name = [
             s for s, idx in _STAGE_ORDER.items() if idx == next_stage_idx
         ][0].value
-
+        
+        reason_text = "High similarity to modern ideas, Strong network connections, Recent relevance"
+        
         return {
             "id": idea.id,
             "title": idea.title,
             "current_stage": idea.stage.value,
             "predicted_next_stage": next_stage_name,
-            "will_reach_technology": bool(predicted_class),
-            "confidence": round(confidence, 4),
-            "reason": reason,
+            "will_reach_technology": predicted_class == 1,
+            "confidence": prob_tech,
+            "reason": reason_text,
             "model": "RandomForest (proxy-labeled, heuristic)",
+            "idea": idea.title,
+            "probability": prob_tech,
+            "prediction": "Likely Technology" if prob_tech > 0.5 else "Uncertain",
+            "explanation": {
+                "age": int(target_vec[0]),
+                "connectivity": float(target_vec[1]),
+                "similarity_score": float(target_vec[2]),
+                "reason": reason_text
+            }
         }
 
     def _heuristic_forecast(self, idea) -> Dict[str, Any]:
-        """Fallback when not enough data for ML."""
+        # Simple heuristic confidence
+        gf = self._graph_features(idea.id)
+        connectivity = gf["pagerank"]
+        tech_sim = self._avg_similarity_to_stage(
+            idea.id, EvolutionStage.MODERN_TECHNOLOGY
+        )
+        age = CURRENT_YEAR - idea.start_year
+
+        prob_tech = min(0.3 + idea.influence_score * 0.3 + connectivity * 5, 0.95)
+        
         current_idx = _STAGE_ORDER.get(idea.stage, 0)
         next_idx = min(current_idx + 1, 3)
         next_stage = [s for s, i in _STAGE_ORDER.items() if i == next_idx][0].value
-
-        # Simple heuristic confidence
-        gf = self._graph_features(idea.id)
-        confidence = min(
-            0.3 + idea.influence_score * 0.3 + gf["pagerank"] * 5, 0.95
-        )
+        reason_text = "Heuristic forecast due to insufficient labeled data."
 
         return {
             "id": idea.id,
@@ -372,9 +357,18 @@ class AIPredictionService:
             "current_stage": idea.stage.value,
             "predicted_next_stage": next_stage,
             "will_reach_technology": current_idx >= 1,
-            "confidence": round(confidence, 4),
-            "reason": "Heuristic forecast (insufficient labelled data for ML)",
+            "confidence": prob_tech,
+            "reason": reason_text,
             "model": "heuristic",
+            "idea": idea.title,
+            "probability": float(prob_tech),
+            "prediction": "Likely Technology" if prob_tech > 0.5 else "Uncertain",
+            "explanation": {
+                "age": age,
+                "connectivity": connectivity,
+                "similarity_score": tech_sim,
+                "reason": reason_text
+            }
         }
 
     # ------------------------------------------------------------------

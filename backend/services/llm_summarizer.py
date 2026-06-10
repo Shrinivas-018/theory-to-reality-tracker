@@ -1,14 +1,13 @@
 """
-LLM-Powered Idea Summarizer using Google Gemini API.
+LLM-Powered Idea Summarizer using OpenAI API.
 
 Generates rich scholarly descriptions for ideas based on their
-title, category, stage, and keywords using the Gemini free tier.
+title, category, stage, and keywords using OpenAI GPT models.
 """
 
 import os
+import requests as http_requests
 from typing import Dict, Any, Optional
-
-from google import genai
 
 from backend.models import EvolutionStage
 from backend.services.data_store import DataStore
@@ -25,33 +24,49 @@ _STAGE_DESCRIPTIONS = {
 
 class LLMSummarizerService:
     """
-    Service that uses the Gemini API to generate rich, scholarly
+    Service that uses the OpenAI API to generate rich, scholarly
     descriptions for ideas based on their metadata.
 
-    Requires the GEMINI_API_KEY environment variable to be set.
-    Get a free key at https://aistudio.google.com/
+    Requires the OPENAI_API_KEY environment variable to be set.
     """
 
-    def __init__(self, store: DataStore, model: str = "gemini-2.5-flash"):
+    def __init__(self, store: DataStore, model: str = "gpt-3.5-turbo"):
         self._store = store
         self._model = model
-        self._client: Optional[genai.Client] = None
 
-    def _get_client(self) -> genai.Client:
-        """Lazy-initialize the Gemini client."""
-        if self._client is None:
-            api_key = os.environ.get("GEMINI_API_KEY")
-            if not api_key:
-                raise RuntimeError(
-                    "GEMINI_API_KEY environment variable is not set. "
-                    "Get a free key at https://aistudio.google.com/"
-                )
-            self._client = genai.Client(api_key=api_key)
-        return self._client
+    def _call_openai(self, prompt: str) -> str:
+        """Call OpenAI chat completions API and return the response text."""
+        api_key = os.environ.get("OPENAI_API_KEY")
+        if not api_key:
+            raise RuntimeError(
+                "OPENAI_API_KEY environment variable is not set."
+            )
+
+        response = http_requests.post(
+            "https://api.openai.com/v1/chat/completions",
+            headers={
+                "Authorization": f"Bearer {api_key}",
+                "Content-Type": "application/json",
+            },
+            json={
+                "model": self._model,
+                "messages": [{"role": "user", "content": prompt}],
+                "temperature": 0.7,
+                "max_tokens": 500,
+            },
+            timeout=30,
+        )
+
+        if response.status_code != 200:
+            raise RuntimeError(
+                f"OpenAI API error {response.status_code}: {response.text[:200]}"
+            )
+
+        return response.json()["choices"][0]["message"]["content"].strip()
 
     def _build_prompt(self, title: str, category: str, stage: EvolutionStage,
                       keywords: list, start_year: int) -> str:
-        """Build a structured prompt for Gemini."""
+        """Build a structured prompt for OpenAI."""
         stage_desc = _STAGE_DESCRIPTIONS.get(stage, "a concept in development")
         keywords_str = ", ".join(keywords) if keywords else "not specified"
 
@@ -89,7 +104,6 @@ Description:"""
         if idea is None:
             raise ValueError(f"Idea '{idea_id}' not found")
 
-        client = self._get_client()
         prompt = self._build_prompt(
             title=idea.title,
             category=idea.category,
@@ -99,13 +113,9 @@ Description:"""
         )
 
         try:
-            response = client.models.generate_content(
-                model=self._model,
-                contents=prompt,
-            )
-            generated_text = response.text.strip()
+            generated_text = self._call_openai(prompt)
         except Exception as exc:
-            raise RuntimeError(f"Gemini API error: {exc}") from exc
+            raise RuntimeError(f"OpenAI API error: {exc}") from exc
 
         # Update the idea's description in the store
         idea.description = generated_text
@@ -152,5 +162,5 @@ Description:"""
         }
 
     def is_configured(self) -> bool:
-        """Check if the Gemini API key is configured."""
-        return bool(os.environ.get("GEMINI_API_KEY"))
+        """Check if the OpenAI API key is configured."""
+        return bool(os.environ.get("OPENAI_API_KEY"))

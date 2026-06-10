@@ -1,32 +1,46 @@
-const BASE = "http://localhost:5000";
-
-export async function fetchLaureates({ search = "", category = "" } = {}) {
-  const params = new URLSearchParams();
-  if (search) params.set("name", search);
-  if (category) params.set("category", category);
-  const url = search
-    ? `${BASE}/search?${params}`
-    : `${BASE}/laureates${category ? `?${params}` : ""}`;
-  const res = await fetch(url);
-  if (!res.ok) throw new Error("Failed to fetch laureates");
-  return res.json();
-}
-
-export async function fetchCategories() {
-  const res = await fetch(`${BASE}/categories`);
-  if (!res.ok) throw new Error("Failed to fetch categories");
-  return res.json();
-}
-
-export async function fetchStats() {
-  const res = await fetch(`${BASE}/stats`);
-  if (!res.ok) throw new Error("Failed to fetch stats");
-  return res.json();
-}
-
-export async function fetchConnections() {
-  const res = await fetch(`${BASE}/connections`);
-  if (!res.ok) throw new Error("Failed to fetch connections");
-  const data = await res.json();
-  return data;
-}
+/**
+ * Premium API Fetcher with Auto-Authentication Injection
+ */
+export const authFetch = async (url: string, options: RequestInit = {}) => {
+  const token = localStorage.getItem("session_token");
+  
+  // Format headers
+  const headers: Record<string, string> = {
+    ...(options.headers as Record<string, string>),
+  };
+  
+  // Only inject JSON content type if body is present and not explicitly set
+  if (options.body && !headers["Content-Type"]) {
+    headers["Content-Type"] = "application/json";
+  }
+  
+  // Securely inject the active user's session token
+  if (token) {
+    headers["Authorization"] = `Bearer ${token}`;
+  }
+  
+  // If the URL is relative, point it to the local port (e.g. 5000) or keep it relative for deployment
+  let targetUrl = url;
+  if (url.startsWith("/api")) {
+    targetUrl = `http://localhost:5000${url}`;
+  }
+  
+  try {
+    const response = await fetch(targetUrl, {
+      ...options,
+      headers,
+    });
+    
+    // Auto-redirect to login on 401 Unauthorized
+    if (response.status === 401) {
+      localStorage.removeItem("session_token");
+      localStorage.removeItem("user");
+      window.location.href = "/login";
+    }
+    
+    return response;
+  } catch (error) {
+    console.error(`[API ERROR] Fetch failed for ${url}:`, error);
+    throw error;
+  }
+};
