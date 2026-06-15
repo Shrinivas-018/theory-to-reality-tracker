@@ -332,8 +332,9 @@ def authenticate_user():
     g.user_id = user["id"]
     g.context = get_user_context(user["id"])
     
-    # Ensure Yuga structures are loaded for this user
-    g.context.load_yuga_structures(mongo_service)
+    # NOTE: Yuga structures are loaded lazily only when Yuga endpoints are hit,
+    # NOT on every single request. This avoids loading 1000 ideas from MongoDB
+    # on every API call (auth, stats, chat, etc.).
 
 
 @app.route("/api/auth/register", methods=["POST"])
@@ -1103,27 +1104,23 @@ def chat_about_idea(idea_id: str):
             "influence_score": idea.influence_score,
         }
     else:
-        # Try MongoDB / Yugas ideas
+        # Try MongoDB / Yugas ideas — use targeted lookup instead of loading ALL ideas
         try:
             from flask import g
-            all_ideas = mongo_service.get_all_ideas(limit=500, user_id=g.user_id)
-            for mongo_idea in all_ideas:
-                if isinstance(mongo_idea, dict):
-                    mid = mongo_idea.get("_id", mongo_idea.get("id", ""))
-                    mname = mongo_idea.get("idea", mongo_idea.get("title", ""))
-                    if str(mid) == idea_id or mname == idea_id:
-                        idea_context = {
-                            "title": mongo_idea.get("idea", mongo_idea.get("title", idea_id)),
-                            "description": mongo_idea.get("description", ""),
-                            "category": mongo_idea.get("category", "General"),
-                            "stage": mongo_idea.get("current_stage", mongo_idea.get("stage", "unknown")),
-                            "start_year": mongo_idea.get("start_year", mongo_idea.get("origin_year", "unknown")),
-                            "end_year": mongo_idea.get("end_year"),
-                            "laureates": mongo_idea.get("laureates", mongo_idea.get("key_figures", [])),
-                            "keywords": mongo_idea.get("keywords", []),
-                            "influence_score": mongo_idea.get("influence_score", 0.5),
-                        }
-                        break
+            # First try exact name lookup (fast, single MongoDB query)
+            mongo_idea = mongo_service.get_idea_by_name(idea_id, user_id=g.user_id)
+            if mongo_idea and isinstance(mongo_idea, dict):
+                idea_context = {
+                    "title": mongo_idea.get("idea", mongo_idea.get("title", idea_id)),
+                    "description": mongo_idea.get("description", ""),
+                    "category": mongo_idea.get("category", "General"),
+                    "stage": mongo_idea.get("current_stage", mongo_idea.get("stage", "unknown")),
+                    "start_year": mongo_idea.get("start_year", mongo_idea.get("origin_year", "unknown")),
+                    "end_year": mongo_idea.get("end_year"),
+                    "laureates": mongo_idea.get("laureates", mongo_idea.get("key_figures", [])),
+                    "keywords": mongo_idea.get("keywords", []),
+                    "influence_score": mongo_idea.get("influence_score", 0.5),
+                }
         except Exception:
             pass
 
@@ -1567,6 +1564,12 @@ def _generate_fallback_predictions(category: str, count: int, recent_ideas: list
 # (Services already initialized above: mongo_service, yuga_generator, yuga_ds)
 
 
+def _ensure_yuga_structures():
+    """Lazily load Yuga data structures for the current user when a Yuga endpoint is hit."""
+    from flask import g
+    if hasattr(g, 'context') and g.context:
+        g.context.load_yuga_structures(mongo_service)
+
 @app.route("/api/yugas/generate", methods=["POST"])
 def generate_yuga_evolution():
     """Generate Yuga evolution for a single idea."""
@@ -1679,16 +1682,11 @@ def get_yuga_stats():
     """Get Yuga evolution statistics."""
     try:
         from flask import g
-        ideas = mongo_service.get_all_ideas(limit=1000, user_id=g.user_id)
-        
-        category_counts = {}
-        for idea in ideas:
-            cat = idea.get("category", "General")
-            category_counts[cat] = category_counts.get(cat, 0) + 1
-            
+        # Use MongoDB stats (count_documents) instead of loading ALL ideas
+        stats = mongo_service.get_stats(user_id=g.user_id)
         return ok_response({
-            "total_ideas": len(ideas),
-            "categories": category_counts,
+            "total_ideas": stats.get("total_ideas", 0),
+            "categories": stats.get("categories", {}),
         })
     except Exception as exc:
         return error_response(f"Failed to get Yuga stats: {str(exc)}", 500)
@@ -1731,8 +1729,8 @@ def search_yuga_ideas():
             if query.lower() in idea_text:
                 simple_matches.append(idea)
         
-        # If we have exact matches, return them
-        if len(simple_matches) >= 3:
+        # If we have enough exact matches, return them immediately (skip LLM)
+        if len(simple_matches) >= 1:
             mongo_service.log_search(g.user_id, query, "exact", len(simple_matches))
             return ok_response({
                 "ideas": simple_matches[:limit],
@@ -1884,6 +1882,7 @@ def query_yugas_by_time():
         return error_response("'start_year' and 'end_year' required")
     
     try:
+        _ensure_yuga_structures()
         start_year = int(data["start_year"])
         end_year = int(data["end_year"])
         
@@ -1919,6 +1918,7 @@ def query_yugas_by_complexity():
         return error_response("'min_score' and 'max_score' required")
     
     try:
+        _ensure_yuga_structures()
         min_score = int(data["min_score"])
         max_score = int(data["max_score"])
         yuga = data.get("yuga", "kali_yuga")
@@ -1947,6 +1947,7 @@ def get_evolution_chain(idea_name: str):
     Returns ancestors (what it evolved from) and descendants (what evolved from it)
     """
     try:
+        _ensure_yuga_structures()
         chain = yuga_ds.get_evolution_chain(idea_name)
         
         return ok_response({
@@ -1969,6 +1970,7 @@ def get_data_structures_stats():
     Shows why each data structure is used and their performance characteristics.
     """
     try:
+        _ensure_yuga_structures()
         stats = yuga_ds.get_statistics()
         
         return ok_response({
@@ -2031,20 +2033,31 @@ def get_yuga_images(idea_name: str):
         if idea and idea.get("images") and len(idea["images"]) > 0:
             return ok_response({"images": idea["images"], "source": "cached"})
         
+        # Run Wikipedia info and page images fetches IN PARALLEL
+        from concurrent.futures import ThreadPoolExecutor, as_completed
         image_urls = []
         
-        # 1. Get Wikipedia thumbnail (always the most relevant image)
-        wiki_info = yuga_generator.fetch_wikipedia_info(idea_name)
-        if wiki_info.get("image_url"):
-            image_urls.append(wiki_info["image_url"])
-        
-        # 2. Get more images from the Wikipedia page itself
-        page_images = yuga_generator.fetch_images_for_idea(idea_name)
-        for img in page_images:
-            if img not in image_urls:
-                image_urls.append(img)
-            if len(image_urls) >= 4:
-                break
+        with ThreadPoolExecutor(max_workers=2) as executor:
+            wiki_future = executor.submit(yuga_generator.fetch_wikipedia_info, idea_name)
+            images_future = executor.submit(yuga_generator.fetch_images_for_idea, idea_name)
+            
+            # Collect results
+            try:
+                wiki_info = wiki_future.result(timeout=10)
+                if wiki_info.get("image_url"):
+                    image_urls.append(wiki_info["image_url"])
+            except Exception:
+                pass
+            
+            try:
+                page_images = images_future.result(timeout=10)
+                for img in page_images:
+                    if img not in image_urls:
+                        image_urls.append(img)
+                    if len(image_urls) >= 4:
+                        break
+            except Exception:
+                pass
         
         # Cache in MongoDB
         if image_urls and mongo_service.is_connected() and idea:

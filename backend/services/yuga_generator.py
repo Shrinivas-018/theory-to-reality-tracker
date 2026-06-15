@@ -24,7 +24,7 @@ WIKI_HEADERS = {
 }
 
 # Hard cap on how long image fetching is allowed to take
-IMAGE_FETCH_TIMEOUT_SECS = 15
+IMAGE_FETCH_TIMEOUT_SECS = 8
 
 
 class YugaGeneratorService:
@@ -57,7 +57,7 @@ class YugaGeneratorService:
                 "https://en.wikipedia.org/api/rest_v1/page/summary/"
                 + topic.replace(" ", "_")
             )
-            r = requests.get(url, headers=WIKI_HEADERS, timeout=8)
+            r = requests.get(url, headers=WIKI_HEADERS, timeout=4)
             if r.status_code == 200:
                 data = r.json()
                 return {
@@ -88,7 +88,7 @@ class YugaGeneratorService:
             r = requests.get(base, headers=WIKI_HEADERS, params={
                 "action": "query", "list": "search",
                 "srsearch": idea_name, "srlimit": 3, "format": "json",
-            }, timeout=8)
+            }, timeout=4)
             
             page_titles = []
             if r.status_code == 200:
@@ -112,7 +112,7 @@ class YugaGeneratorService:
                     r2 = requests.get(base, headers=WIKI_HEADERS, params={
                         "action": "query", "titles": page_title,
                         "prop": "images", "imlimit": 20, "format": "json",
-                    }, timeout=8)
+                    }, timeout=4)
                     if r2.status_code == 200:
                         for page in r2.json().get("query", {}).get("pages", {}).values():
                             for img in page.get("images", []):
@@ -126,25 +126,36 @@ class YugaGeneratorService:
                 except Exception:
                     continue
 
-            # 3. Resolve file names → direct URLs
-            for img_title in image_titles:
-                if len(image_urls) >= 4:
-                    break
+            # 3. Resolve file names → direct URLs (IN PARALLEL for speed)
+            from concurrent.futures import ThreadPoolExecutor, as_completed
+            
+            def _resolve_image_url(img_title):
+                """Resolve a single image title to its direct URL."""
                 try:
                     r3 = requests.get(base, headers=WIKI_HEADERS, params={
                         "action": "query", "titles": img_title,
                         "prop": "imageinfo", "iiprop": "url|size", "format": "json",
-                    }, timeout=8)
+                    }, timeout=4)
                     if r3.status_code == 200:
                         for p in r3.json().get("query", {}).get("pages", {}).values():
                             for info in p.get("imageinfo", []):
                                 url = info.get("url", "")
                                 w = info.get("width", 0)
                                 h = info.get("height", 0)
-                                if url and w >= 200 and h >= 150 and url not in image_urls:
-                                    image_urls.append(url)
+                                if url and w >= 200 and h >= 150:
+                                    return url
                 except Exception:
-                    continue
+                    pass
+                return None
+            
+            with ThreadPoolExecutor(max_workers=4) as executor:
+                futures = {executor.submit(_resolve_image_url, t): t for t in image_titles[:8]}
+                for future in as_completed(futures):
+                    if len(image_urls) >= 4:
+                        break
+                    url = future.result()
+                    if url and url not in image_urls:
+                        image_urls.append(url)
 
             # 4. Fallback/Augmentation: Directly search Wikimedia Commons files if we need more images
             if len(image_urls) < 4:
@@ -158,7 +169,7 @@ class YugaGeneratorService:
                         "prop": "imageinfo",
                         "iiprop": "url|size",
                         "format": "json"
-                    }, timeout=8)
+                    }, timeout=4)
                     if cr.status_code == 200:
                         pages = cr.json().get("query", {}).get("pages", {}).values()
                         for p in pages:

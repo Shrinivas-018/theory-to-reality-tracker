@@ -153,11 +153,10 @@ const YugasEvolution = () => {
     }
   };
 
-  // Load ideas and stats on mount
+  // Load ideas and stats on mount (dashboard data loads lazily when needed)
   useEffect(() => {
     loadIdeas();
     loadStats();
-    loadDashboardData();
   }, []);
 
   // Update filtered ideas when ideas change

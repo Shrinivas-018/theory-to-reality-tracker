@@ -17,6 +17,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
+# Session cache: token -> {"user": user_dict, "expires": timestamp}
+_session_cache = {}
+_SESSION_CACHE_TTL = 60  # seconds
+
+
 class MongoDBService:
     """Service for MongoDB operations with Atlas support."""
     
@@ -42,6 +47,7 @@ class MongoDBService:
         self.db = None
         self.collection = None
         self._connected = False
+        self._indexes_created = False
         self._is_atlas = "mongodb+srv://" in connection_string
         
         # Try to import pymongo
@@ -106,8 +112,10 @@ class MongoDBService:
             self.search_history_collection = self.db["search_history"]
             self.chat_history_collection = self.db["chat_history"]
             
-            # Create indexes for better performance
-            self._create_indexes()
+            # Create indexes for better performance (only once)
+            if not self._indexes_created:
+                self._create_indexes()
+                self._indexes_created = True
             
             self._connected = True
             connection_type = "MongoDB Atlas" if self._is_atlas else "Local MongoDB"
@@ -616,24 +624,36 @@ class MongoDBService:
         return token
         
     def get_user_from_session(self, token: str) -> Optional[Dict]:
-        """Verify session token and retrieve corresponding user."""
+        """Verify session token and retrieve corresponding user.
+        Uses in-memory cache to avoid hitting MongoDB on every request."""
+        # Check cache first
+        cached = _session_cache.get(token)
+        if cached and time.time() < cached["expires"]:
+            return cached["user"]
+        
         self._ensure_connected()
         if not self._connected:
             return None
             
         session = self.sessions_collection.find_one({"token": token})
         if not session:
+            _session_cache.pop(token, None)
             return None
             
         # Double check expiration (TTL index handles this, but extra check is robust)
         if session.get("expires_at") and session["expires_at"] < datetime.now():
             self.sessions_collection.delete_one({"token": token})
+            _session_cache.pop(token, None)
             return None
             
-        return self.get_user_by_id(session["user_id"])
+        user = self.get_user_by_id(session["user_id"])
+        if user:
+            _session_cache[token] = {"user": user, "expires": time.time() + _SESSION_CACHE_TTL}
+        return user
         
     def delete_session(self, token: str) -> bool:
         """Revoke a session (logout)."""
+        _session_cache.pop(token, None)  # Clear from cache
         self._ensure_connected()
         if not self._connected:
             return True
