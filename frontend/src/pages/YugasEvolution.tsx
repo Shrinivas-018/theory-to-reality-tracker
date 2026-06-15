@@ -8,6 +8,8 @@ import {
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+// @ts-ignore
+import html2pdf from "html2pdf.js";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
@@ -395,6 +397,21 @@ const YugasEvolution = () => {
     } finally {
       setLoadingImages(false);
     }
+  };
+
+  const downloadPDFReport = () => {
+    if (!selectedIdea) return;
+    const element = document.getElementById("yugas-report-printable");
+    if (!element) return;
+    const opt = {
+      margin:       [10, 10, 10, 10],
+      filename:     `${selectedIdea.idea.replace(/\s+/g, '_')}_yugas_report.pdf`,
+      image:        { type: 'jpeg', quality: 0.98 },
+      html2canvas:  { scale: 2, useCORS: true, logging: false },
+      jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    };
+    // @ts-ignore
+    html2pdf().set(opt).from(element).save();
   };
 
   const yugaColors = {
@@ -973,9 +990,19 @@ const YugasEvolution = () => {
                     </span>
                   </div>
                 </div>
-                <Button variant="ghost" onClick={() => { setSelectedIdea(null); setIdeaImages([]); }}>
-                  ✕
-                </Button>
+                <div className="flex items-center gap-2">
+                  <Button 
+                    onClick={downloadPDFReport}
+                    variant="outline"
+                    className="gap-2 border-orange-200/50 hover:bg-orange-50 text-slate-700 hover:text-orange-600 rounded-xl"
+                  >
+                    <Download className="h-4 w-4" />
+                    Download PDF
+                  </Button>
+                  <Button variant="ghost" onClick={() => { setSelectedIdea(null); setIdeaImages([]); }}>
+                    ✕
+                  </Button>
+                </div>
               </div>
 
               {/* Idea Images */}
@@ -1142,6 +1169,171 @@ const YugasEvolution = () => {
                   ideaTitle={selectedIdea.idea}
                   ideaCategory="Yugas Evolution"
                 />
+              </div>
+
+              {/* Off-screen Printable Template for PDF Report */}
+              <div
+                id="yugas-report-printable"
+                className="p-8 bg-white font-sans text-slate-800"
+                style={{
+                  position: "absolute",
+                  left: "-9999px",
+                  top: "-9999px",
+                  width: "800px",
+                }}
+              >
+                {/* Report Cover / Header */}
+                <div className="border-b-4 border-amber-500 pb-6 mb-6">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold text-amber-600 uppercase tracking-widest">
+                      Cosmic Evolution Report
+                    </span>
+                    <span className="text-xs text-slate-400">
+                      Generated on {new Date().toLocaleDateString()}
+                    </span>
+                  </div>
+                  <h1 className="text-3xl font-extrabold text-slate-900 mt-2">
+                    {selectedIdea.idea}
+                  </h1>
+                  <p className="text-slate-600 mt-2 text-sm leading-relaxed">
+                    {selectedIdea.description}
+                  </p>
+                  <div className="flex items-center gap-4 mt-4 text-xs text-slate-500">
+                    <span><strong>Source:</strong> {selectedIdea.source}</span>
+                    <span><strong>Mapped on:</strong> {new Date(selectedIdea.timestamp).toLocaleDateString()}</span>
+                  </div>
+                </div>
+
+                {/* Images Section */}
+                {ideaImages.length > 0 && (
+                  <div className="mb-8">
+                    <h2 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">
+                      Historical Visual Reference
+                    </h2>
+                    <div className="grid grid-cols-2 gap-4">
+                      {ideaImages.slice(0, 4).map((url, idx) => (
+                        <div key={idx} className="h-40 overflow-hidden rounded-lg border border-slate-100 shadow-sm bg-slate-50">
+                          <img
+                            src={url}
+                            alt={`${selectedIdea.idea} reference ${idx + 1}`}
+                            className="w-full h-full object-cover"
+                            crossOrigin="anonymous"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Yuga Timeline Breakdown */}
+                <div className="space-y-8">
+                  {Object.entries(selectedIdea.evolution).map(([yuga, data]) => {
+                    const yugaTitle = yugaLabels[yuga as keyof typeof yugaLabels];
+                    const bannerColor = yuga === "satya_yuga" ? "bg-amber-50 border-amber-500 text-amber-800" :
+                                       yuga === "treta_yuga" ? "bg-blue-50 border-blue-500 text-blue-800" :
+                                       yuga === "dwapar_yuga" ? "bg-orange-50 border-orange-500 text-orange-800" :
+                                       "bg-purple-50 border-purple-500 text-purple-800";
+                    const badgeColor = yuga === "satya_yuga" ? "bg-amber-500 text-white" :
+                                      yuga === "treta_yuga" ? "bg-blue-500 text-white" :
+                                      yuga === "dwapar_yuga" ? "bg-orange-500 text-white" :
+                                      "bg-purple-500 text-white";
+                    
+                    return (
+                      <div key={yuga} className="html2pdf__page-break border border-slate-100 rounded-xl p-6 bg-white shadow-sm space-y-4">
+                        {/* Era header banner */}
+                        <div className={`p-4 rounded-lg border-l-4 ${bannerColor} flex items-center justify-between`}>
+                          <div>
+                            <h3 className="text-base font-bold">{yugaTitle}</h3>
+                            {data.time_period && (
+                              <p className="text-[10px] font-semibold opacity-90 mt-0.5">{data.time_period}</p>
+                            )}
+                          </div>
+                          <span className={`text-[9px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full ${badgeColor}`}>
+                            {yuga.replace("_", " ")}
+                          </span>
+                        </div>
+
+                        {/* Impact Quote */}
+                        {data.impact && (
+                          <div className="p-3 bg-slate-50/80 rounded-lg border-l-2 border-slate-300 italic text-[11px] text-slate-600">
+                            "{data.impact}"
+                          </div>
+                        )}
+
+                        {/* Description paragraphs */}
+                        <div className="space-y-3">
+                          <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Evolutionary Narrative</h4>
+                          {data.paragraphs && data.paragraphs.length > 0 ? (
+                            <div className="grid grid-cols-2 gap-3">
+                              {data.paragraphs.map((para: any, pIdx: number) => (
+                                para.text ? (
+                                  <div key={pIdx} className="p-3 bg-slate-50/50 rounded-lg border border-slate-100">
+                                    <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider block mb-1">
+                                      {para.label}
+                                    </span>
+                                    <p className="text-[11px] leading-relaxed text-slate-700">{para.text}</p>
+                                  </div>
+                                ) : null
+                              ))}
+                            </div>
+                          ) : (
+                            <p className="text-[11px] leading-relaxed text-slate-700 whitespace-pre-wrap">{data.description}</p>
+                          )}
+                        </div>
+
+                        {/* Metrics and Characteristics */}
+                        <div className="grid grid-cols-2 gap-4 pt-2">
+                          {/* Metrics */}
+                          {data.statistics_detailed?.metrics && data.statistics_detailed.metrics.length > 0 && (
+                            <div className="space-y-2">
+                              <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Era Metrics</h4>
+                              <div className="grid grid-cols-3 gap-2">
+                                {data.statistics_detailed.metrics.map((metric: any, mIdx: number) => (
+                                  <div key={mIdx} className="p-2 bg-slate-50 rounded-lg border border-slate-100 text-center">
+                                    <div className="text-base mb-0.5">{metric.icon}</div>
+                                    <div className="text-[8px] text-slate-400 font-medium truncate">{metric.label}</div>
+                                    <div className="text-[9px] font-bold text-slate-800 mt-0.5 truncate">{metric.value}</div>
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+
+                          {/* Characteristics */}
+                          {data.characteristics_list && data.characteristics_list.length > 0 && (
+                            <div className="space-y-2">
+                              <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Key Characteristics</h4>
+                              <div className="flex flex-wrap gap-1.5 pt-1">
+                                {data.characteristics_list.map((char: string, cIdx: number) => (
+                                  <span
+                                    key={cIdx}
+                                    className={`px-2 py-0.5 text-[9px] font-semibold rounded-full ${badgeColor}`}
+                                  >
+                                    {char}
+                                  </span>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+                        </div>
+
+                        {/* Key Insight */}
+                        {data.key_insight && (
+                          <div className="p-3 bg-amber-50/40 rounded-lg border-l-4 border-amber-500 text-[11px] text-slate-700">
+                            <span className="font-bold text-amber-800 block mb-0.5 uppercase tracking-wide text-[8px]">Key Insight</span>
+                            {data.key_insight}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+                
+                {/* Footer page */}
+                <div className="html2pdf__page-break text-center pt-8 border-t border-slate-100 text-slate-400 text-[9px] mt-8">
+                  <p className="font-semibold text-slate-500">Theory-to-Reality Cosmic Evolution Tracker</p>
+                  <p className="mt-0.5">Generated dynamically from indexed research metadata.</p>
+                </div>
               </div>
             </div>
           </motion.div>
