@@ -403,44 +403,65 @@ const YugasEvolution = () => {
     const element = document.getElementById("yugas-report-printable");
     if (!element) return;
 
-    // Save original styles
-    const origPosition = element.style.position;
-    const origLeft = element.style.left;
-    const origTop = element.style.top;
-    const origZIndex = element.style.zIndex;
-    const origOpacity = element.style.opacity;
+    // Clone the element to avoid mutating the original
+    const clone = element.cloneNode(true) as HTMLDivElement;
+    
+    // Style the clone so it is visible to html2canvas, laid out correctly on the body,
+    // but positioned off-screen / overlayed properly
+    clone.style.position = "fixed";
+    clone.style.left = "0";
+    clone.style.top = "0";
+    clone.style.width = "800px";
+    clone.style.zIndex = "99999";
+    clone.style.opacity = "1";
+    clone.style.backgroundColor = "#ffffff";
+    clone.style.visibility = "visible";
+    clone.style.display = "block";
 
-    // Temporarily make element visible for html2canvas (it can't render off-screen elements)
-    element.style.position = "fixed";
-    element.style.left = "0";
-    element.style.top = "0";
-    element.style.zIndex = "-9999";
-    element.style.opacity = "1";
+    document.body.appendChild(clone);
 
-    // Wait a tick for the browser to re-render the element on-screen
-    await new Promise(resolve => setTimeout(resolve, 300));
+    // Wait for all images in the clone to load (especially CORS wikipedia images)
+    const images = Array.from(clone.getElementsByTagName("img"));
+    const imageLoadPromises = images.map((img) => {
+      if (img.complete) return Promise.resolve();
+      return new Promise((resolve) => {
+        img.onload = resolve;
+        img.onerror = resolve;
+      });
+    });
+
+    // Wait a short moment to ensure styling is applied and images are loaded
+    await Promise.all([
+      ...imageLoadPromises,
+      new Promise((resolve) => setTimeout(resolve, 500))
+    ]);
 
     const opt = {
       margin:       [10, 10, 10, 10],
       filename:     `${selectedIdea.idea.replace(/\s+/g, '_')}_yugas_report.pdf`,
       image:        { type: 'jpeg', quality: 0.98 },
-      html2canvas:  { scale: 2, useCORS: true, logging: false, scrollY: 0, windowWidth: 800 },
+      html2canvas:  { 
+        scale: 2, 
+        useCORS: true, 
+        logging: true, // Enable logging temporarily to help debug if needed
+        scrollY: 0, 
+        windowWidth: 800,
+        backgroundColor: '#ffffff'
+      },
       jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
       pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }
     };
 
     try {
       // @ts-ignore
-      await html2pdf().set(opt).from(element).save();
+      await html2pdf().set(opt).from(clone).save();
     } catch (err) {
       console.error("PDF generation error:", err);
     } finally {
-      // Restore original off-screen styles
-      element.style.position = origPosition;
-      element.style.left = origLeft;
-      element.style.top = origTop;
-      element.style.zIndex = origZIndex;
-      element.style.opacity = origOpacity;
+      // Clean up the clone
+      if (clone.parentNode) {
+        clone.parentNode.removeChild(clone);
+      }
     }
   };
 
