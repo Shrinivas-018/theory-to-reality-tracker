@@ -399,19 +399,50 @@ const YugasEvolution = () => {
     }
   };
 
-  const downloadPDFReport = () => {
+  const downloadPDFReport = async () => {
     if (!selectedIdea) return;
     const element = document.getElementById("yugas-report-printable");
     if (!element) return;
+
+    // Save original styles
+    const origPosition = element.style.position;
+    const origLeft = element.style.left;
+    const origTop = element.style.top;
+    const origZIndex = element.style.zIndex;
+    const origOpacity = element.style.opacity;
+
+    // Temporarily make element visible for html2canvas (it can't render off-screen elements)
+    element.style.position = "fixed";
+    element.style.left = "0";
+    element.style.top = "0";
+    element.style.zIndex = "-9999";
+    element.style.opacity = "1";
+
+    // Wait a tick for the browser to re-render the element on-screen
+    await new Promise(resolve => setTimeout(resolve, 300));
+
     const opt = {
       margin:       [10, 10, 10, 10],
       filename:     `${selectedIdea.idea.replace(/\s+/g, '_')}_yugas_report.pdf`,
       image:        { type: 'jpeg', quality: 0.98 },
-      html2canvas:  { scale: 2, useCORS: true, logging: false },
-      jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+      html2canvas:  { scale: 2, useCORS: true, logging: false, scrollY: 0, windowWidth: 800 },
+      jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
+      pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }
     };
-    // @ts-ignore
-    html2pdf().set(opt).from(element).save();
+
+    try {
+      // @ts-ignore
+      await html2pdf().set(opt).from(element).save();
+    } catch (err) {
+      console.error("PDF generation error:", err);
+    } finally {
+      // Restore original off-screen styles
+      element.style.position = origPosition;
+      element.style.left = origLeft;
+      element.style.top = origTop;
+      element.style.zIndex = origZIndex;
+      element.style.opacity = origOpacity;
+    }
   };
 
   const yugaColors = {
@@ -1174,31 +1205,36 @@ const YugasEvolution = () => {
               {/* Off-screen Printable Template for PDF Report */}
               <div
                 id="yugas-report-printable"
-                className="p-8 bg-white font-sans text-slate-800"
                 style={{
                   position: "absolute",
                   left: "-9999px",
                   top: "-9999px",
                   width: "800px",
+                  padding: "32px",
+                  backgroundColor: "#ffffff",
+                  fontFamily: "'Segoe UI', 'Helvetica Neue', Arial, sans-serif",
+                  color: "#1e293b",
+                  fontSize: "13px",
+                  lineHeight: "1.6",
                 }}
               >
                 {/* Report Cover / Header */}
-                <div className="border-b-4 border-amber-500 pb-6 mb-6">
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold text-amber-600 uppercase tracking-widest">
+                <div style={{ borderBottom: "4px solid #f59e0b", paddingBottom: "24px", marginBottom: "24px" }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <span style={{ fontSize: "11px", fontWeight: 700, color: "#d97706", textTransform: "uppercase", letterSpacing: "2px" }}>
                       Cosmic Evolution Report
                     </span>
-                    <span className="text-xs text-slate-400">
+                    <span style={{ fontSize: "11px", color: "#94a3b8" }}>
                       Generated on {new Date().toLocaleDateString()}
                     </span>
                   </div>
-                  <h1 className="text-3xl font-extrabold text-slate-900 mt-2">
+                  <h1 style={{ fontSize: "28px", fontWeight: 800, color: "#0f172a", margin: "8px 0 0 0" }}>
                     {selectedIdea.idea}
                   </h1>
-                  <p className="text-slate-600 mt-2 text-sm leading-relaxed">
+                  <p style={{ color: "#475569", marginTop: "8px", fontSize: "13px", lineHeight: "1.7" }}>
                     {selectedIdea.description}
                   </p>
-                  <div className="flex items-center gap-4 mt-4 text-xs text-slate-500">
+                  <div style={{ display: "flex", gap: "16px", marginTop: "12px", fontSize: "11px", color: "#64748b" }}>
                     <span><strong>Source:</strong> {selectedIdea.source}</span>
                     <span><strong>Mapped on:</strong> {new Date(selectedIdea.timestamp).toLocaleDateString()}</span>
                   </div>
@@ -1206,17 +1242,17 @@ const YugasEvolution = () => {
 
                 {/* Images Section */}
                 {ideaImages.length > 0 && (
-                  <div className="mb-8">
-                    <h2 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">
+                  <div style={{ marginBottom: "32px" }}>
+                    <h2 style={{ fontSize: "11px", fontWeight: 700, color: "#94a3b8", textTransform: "uppercase", letterSpacing: "2px", marginBottom: "12px" }}>
                       Historical Visual Reference
                     </h2>
-                    <div className="grid grid-cols-2 gap-4">
+                    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px" }}>
                       {ideaImages.slice(0, 4).map((url, idx) => (
-                        <div key={idx} className="h-40 overflow-hidden rounded-lg border border-slate-100 shadow-sm bg-slate-50">
+                        <div key={idx} style={{ height: "160px", overflow: "hidden", borderRadius: "8px", border: "1px solid #e2e8f0", backgroundColor: "#f8fafc" }}>
                           <img
                             src={url}
                             alt={`${selectedIdea.idea} reference ${idx + 1}`}
-                            className="w-full h-full object-cover"
+                            style={{ width: "100%", height: "100%", objectFit: "cover" }}
                             crossOrigin="anonymous"
                           />
                         </div>
@@ -1226,73 +1262,72 @@ const YugasEvolution = () => {
                 )}
 
                 {/* Yuga Timeline Breakdown */}
-                <div className="space-y-8">
+                <div>
                   {Object.entries(selectedIdea.evolution).map(([yuga, data]) => {
                     const yugaTitle = yugaLabels[yuga as keyof typeof yugaLabels];
-                    const bannerColor = yuga === "satya_yuga" ? "bg-amber-50 border-amber-500 text-amber-800" :
-                                       yuga === "treta_yuga" ? "bg-blue-50 border-blue-500 text-blue-800" :
-                                       yuga === "dwapar_yuga" ? "bg-orange-50 border-orange-500 text-orange-800" :
-                                       "bg-purple-50 border-purple-500 text-purple-800";
-                    const badgeColor = yuga === "satya_yuga" ? "bg-amber-500 text-white" :
-                                      yuga === "treta_yuga" ? "bg-blue-500 text-white" :
-                                      yuga === "dwapar_yuga" ? "bg-orange-500 text-white" :
-                                      "bg-purple-500 text-white";
-                    
+                    const colors: Record<string, { bg: string; border: string; text: string; badge: string }> = {
+                      satya_yuga: { bg: "#fffbeb", border: "#f59e0b", text: "#92400e", badge: "#f59e0b" },
+                      treta_yuga: { bg: "#eff6ff", border: "#3b82f6", text: "#1e40af", badge: "#3b82f6" },
+                      dwapar_yuga: { bg: "#fff7ed", border: "#f97316", text: "#9a3412", badge: "#f97316" },
+                      kali_yuga: { bg: "#faf5ff", border: "#a855f7", text: "#6b21a8", badge: "#a855f7" },
+                    };
+                    const c = colors[yuga] || colors.kali_yuga;
+
                     return (
-                      <div key={yuga} className="html2pdf__page-break border border-slate-100 rounded-xl p-6 bg-white shadow-sm space-y-4">
+                      <div key={yuga} style={{ border: "1px solid #e2e8f0", borderRadius: "12px", padding: "24px", backgroundColor: "#ffffff", marginBottom: "24px", pageBreakInside: "avoid" }}>
                         {/* Era header banner */}
-                        <div className={`p-4 rounded-lg border-l-4 ${bannerColor} flex items-center justify-between`}>
+                        <div style={{ padding: "16px", borderRadius: "8px", borderLeft: `4px solid ${c.border}`, backgroundColor: c.bg, display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "16px" }}>
                           <div>
-                            <h3 className="text-base font-bold">{yugaTitle}</h3>
+                            <h3 style={{ fontSize: "16px", fontWeight: 700, color: c.text, margin: 0 }}>{yugaTitle}</h3>
                             {data.time_period && (
-                              <p className="text-[10px] font-semibold opacity-90 mt-0.5">{data.time_period}</p>
+                              <p style={{ fontSize: "11px", fontWeight: 600, color: c.text, opacity: 0.9, margin: "4px 0 0 0" }}>{data.time_period}</p>
                             )}
                           </div>
-                          <span className={`text-[9px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full ${badgeColor}`}>
+                          <span style={{ fontSize: "10px", textTransform: "uppercase", fontWeight: 700, letterSpacing: "1px", padding: "3px 10px", borderRadius: "12px", backgroundColor: c.badge, color: "#ffffff" }}>
                             {yuga.replace("_", " ")}
                           </span>
                         </div>
 
                         {/* Impact Quote */}
                         {data.impact && (
-                          <div className="p-3 bg-slate-50/80 rounded-lg border-l-2 border-slate-300 italic text-[11px] text-slate-600">
+                          <div style={{ padding: "12px", backgroundColor: "#f8fafc", borderRadius: "8px", borderLeft: "2px solid #cbd5e1", fontStyle: "italic", fontSize: "12px", color: "#475569", marginBottom: "16px" }}>
                             "{data.impact}"
                           </div>
                         )}
 
                         {/* Description paragraphs */}
-                        <div className="space-y-3">
-                          <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Evolutionary Narrative</h4>
+                        <div style={{ marginBottom: "16px" }}>
+                          <h4 style={{ fontSize: "11px", fontWeight: 700, color: "#94a3b8", textTransform: "uppercase", letterSpacing: "1.5px", marginBottom: "8px" }}>Evolutionary Narrative</h4>
                           {data.paragraphs && data.paragraphs.length > 0 ? (
-                            <div className="grid grid-cols-2 gap-3">
+                            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px" }}>
                               {data.paragraphs.map((para: any, pIdx: number) => (
                                 para.text ? (
-                                  <div key={pIdx} className="p-3 bg-slate-50/50 rounded-lg border border-slate-100">
-                                    <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider block mb-1">
+                                  <div key={pIdx} style={{ padding: "12px", backgroundColor: "#f8fafc", borderRadius: "8px", border: "1px solid #e2e8f0" }}>
+                                    <span style={{ fontSize: "10px", fontWeight: 700, color: "#64748b", textTransform: "uppercase", letterSpacing: "1px", display: "block", marginBottom: "4px" }}>
                                       {para.label}
                                     </span>
-                                    <p className="text-[11px] leading-relaxed text-slate-700">{para.text}</p>
+                                    <p style={{ fontSize: "12px", lineHeight: "1.6", color: "#334155", margin: 0 }}>{para.text}</p>
                                   </div>
                                 ) : null
                               ))}
                             </div>
                           ) : (
-                            <p className="text-[11px] leading-relaxed text-slate-700 whitespace-pre-wrap">{data.description}</p>
+                            <p style={{ fontSize: "12px", lineHeight: "1.7", color: "#334155", whiteSpace: "pre-wrap" }}>{data.description}</p>
                           )}
                         </div>
 
                         {/* Metrics and Characteristics */}
-                        <div className="grid grid-cols-2 gap-4 pt-2">
+                        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px" }}>
                           {/* Metrics */}
                           {data.statistics_detailed?.metrics && data.statistics_detailed.metrics.length > 0 && (
-                            <div className="space-y-2">
-                              <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Era Metrics</h4>
-                              <div className="grid grid-cols-3 gap-2">
+                            <div>
+                              <h4 style={{ fontSize: "11px", fontWeight: 700, color: "#94a3b8", textTransform: "uppercase", letterSpacing: "1.5px", marginBottom: "8px" }}>Era Metrics</h4>
+                              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "8px" }}>
                                 {data.statistics_detailed.metrics.map((metric: any, mIdx: number) => (
-                                  <div key={mIdx} className="p-2 bg-slate-50 rounded-lg border border-slate-100 text-center">
-                                    <div className="text-base mb-0.5">{metric.icon}</div>
-                                    <div className="text-[8px] text-slate-400 font-medium truncate">{metric.label}</div>
-                                    <div className="text-[9px] font-bold text-slate-800 mt-0.5 truncate">{metric.value}</div>
+                                  <div key={mIdx} style={{ padding: "8px", backgroundColor: "#f8fafc", borderRadius: "8px", border: "1px solid #e2e8f0", textAlign: "center" }}>
+                                    <div style={{ fontSize: "16px", marginBottom: "2px" }}>{metric.icon}</div>
+                                    <div style={{ fontSize: "9px", color: "#94a3b8", fontWeight: 500 }}>{metric.label}</div>
+                                    <div style={{ fontSize: "10px", fontWeight: 700, color: "#1e293b", marginTop: "2px" }}>{metric.value}</div>
                                   </div>
                                 ))}
                               </div>
@@ -1301,13 +1336,13 @@ const YugasEvolution = () => {
 
                           {/* Characteristics */}
                           {data.characteristics_list && data.characteristics_list.length > 0 && (
-                            <div className="space-y-2">
-                              <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Key Characteristics</h4>
-                              <div className="flex flex-wrap gap-1.5 pt-1">
+                            <div>
+                              <h4 style={{ fontSize: "11px", fontWeight: 700, color: "#94a3b8", textTransform: "uppercase", letterSpacing: "1.5px", marginBottom: "8px" }}>Key Characteristics</h4>
+                              <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
                                 {data.characteristics_list.map((char: string, cIdx: number) => (
                                   <span
                                     key={cIdx}
-                                    className={`px-2 py-0.5 text-[9px] font-semibold rounded-full ${badgeColor}`}
+                                    style={{ padding: "3px 10px", fontSize: "10px", fontWeight: 600, borderRadius: "12px", backgroundColor: c.badge, color: "#ffffff" }}
                                   >
                                     {char}
                                   </span>
@@ -1319,8 +1354,8 @@ const YugasEvolution = () => {
 
                         {/* Key Insight */}
                         {data.key_insight && (
-                          <div className="p-3 bg-amber-50/40 rounded-lg border-l-4 border-amber-500 text-[11px] text-slate-700">
-                            <span className="font-bold text-amber-800 block mb-0.5 uppercase tracking-wide text-[8px]">Key Insight</span>
+                          <div style={{ padding: "12px", backgroundColor: "#fffbeb", borderRadius: "8px", borderLeft: "4px solid #f59e0b", fontSize: "12px", color: "#334155", marginTop: "16px" }}>
+                            <span style={{ fontWeight: 700, color: "#92400e", display: "block", marginBottom: "4px", textTransform: "uppercase", letterSpacing: "1px", fontSize: "9px" }}>Key Insight</span>
                             {data.key_insight}
                           </div>
                         )}
@@ -1329,10 +1364,10 @@ const YugasEvolution = () => {
                   })}
                 </div>
                 
-                {/* Footer page */}
-                <div className="html2pdf__page-break text-center pt-8 border-t border-slate-100 text-slate-400 text-[9px] mt-8">
-                  <p className="font-semibold text-slate-500">Theory-to-Reality Cosmic Evolution Tracker</p>
-                  <p className="mt-0.5">Generated dynamically from indexed research metadata.</p>
+                {/* Footer */}
+                <div style={{ textAlign: "center", paddingTop: "32px", borderTop: "1px solid #e2e8f0", color: "#94a3b8", fontSize: "10px", marginTop: "32px" }}>
+                  <p style={{ fontWeight: 600, color: "#64748b", margin: 0 }}>Theory-to-Reality Cosmic Evolution Tracker</p>
+                  <p style={{ margin: "4px 0 0 0" }}>Generated dynamically from indexed research metadata.</p>
                 </div>
               </div>
             </div>

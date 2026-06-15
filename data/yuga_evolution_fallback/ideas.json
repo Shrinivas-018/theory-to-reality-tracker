@@ -27033,5 +27033,304 @@
     "timestamp": "2026-06-04T22:59:18.805033",
     "created_at": "2026-06-04T22:59:18.805033",
     "user_id": "6a1e5c9a8e08e0b3aa8e882a"
+  },
+  {
+    "_id": "6a2296daca3f9092090a1dfd",
+    "idea": "Self-driving car",
+    "description": "A self-driving car, also known as an autonomous car, driverless car, robotic car, or robo-car, is a car that is capable of operating with reduced or no human input. They are sometimes called robotaxis, though this term refers specifically to self-driving cars operated for a ridesharing company. As of 2026, the term \"self-driving\" lacks an agreed standard definition and is also subject to commercia",
+    "source": "Wikipedia",
+    "evolution": {
+      "satya_yuga": {
+        "description": "In the Satya Yuga, self-driving cars existed in the form of celestial chariots guided by divine energies and advanced intelligence systems, anticipating the needs of their passengers effortlessly.\n\nPractitioners in this era utilized intricate mantras and meditative techniques to communicate with the consciousness of the vehicles, allowing for seamless navigation and safety protocols.\n\nEra limitations included the requirement of a deep spiritual connection between the driver and the vehicle, as well as the scarcity of resources needed to maintain these high-tech chariots.\n\nThe cosmic and cultural impact of self-driving chariots in the Satya Yuga was profound, symbolizing a harmonious fusion of technology and spirituality that elevated transportation to a divine experience.",
+        "statistics": "Safety Rating: 99.9%, Energy Efficiency: 95%, Passenger Comfort: 98%",
+        "characteristics": "intuitive, celestial, intelligent, harmonious, advanced",
+        "impact": "Revolutionizing travel, self-driving chariots in the Satya Yuga redefined the notion of transportation as a sacred and seamless journey.",
+        "time_period": "10,000 BCE \u2013 5,000 BCE",
+        "paragraphs": [
+          {
+            "label": "Manifestation",
+            "text": "In the Satya Yuga, self-driving cars existed in the form of celestial chariots guided by divine energies and advanced intelligence systems, anticipating the needs of their passengers effortlessly."
+          },
+          {
+            "label": "Practice & Methods",
+            "text": "Practitioners in this era utilized intricate mantras and meditative techniques to communicate with the consciousness of the vehicles, allowing for seamless navigation and safety protocols."
+          },
+          {
+            "label": "Limitations",
+            "text": "Era limitations included the requirement of a deep spiritual connection between the driver and the vehicle, as well as the scarcity of resources needed to maintain these high-tech chariots."
+          },
+          {
+            "label": "Cultural Significance",
+            "text": "The cosmic and cultural impact of self-driving chariots in the Satya Yuga was profound, symbolizing a harmonious fusion of technology and spirituality that elevated transportation to a divine experience."
+          }
+        ],
+        "key_insight": "The cosmic and cultural impact of self-driving chariots in the Satya Yuga was profound, symbolizing a harmonious fusion of technology and spirituality that elevated transportation to a divine experience.",
+        "characteristics_list": [
+          "intuitive",
+          "celestial",
+          "intelligent",
+          "harmonious",
+          "advanced"
+        ],
+        "statistics_detailed": {
+          "original": "Safety Rating: 99.9%, Energy Efficiency: 95%, Passenger Comfort: 98%",
+          "metrics": [
+            {
+              "label": "Safety Rating",
+              "value": "99.9%",
+              "icon": "\ud83d\udcca"
+            },
+            {
+              "label": "Energy Efficiency",
+              "value": "95%",
+              "icon": "\u26a1"
+            },
+            {
+              "label": "Passenger Comfort",
+              "value": "98%",
+              "icon": "\ud83d\udcca"
+            },
+            {
+              "label": "Efficiency",
+              "value": "Variable",
+              "icon": "\ud83d\udcca"
+            },
+            {
+              "label": "Speed",
+              "value": "Instantaneous",
+              "icon": "\u26a1"
+            },
+            {
+              "label": "Energy",
+              "value": "Divine/Natural",
+              "icon": "\ud83c\udf1f"
+            },
+            {
+              "label": "Accessibility",
+              "value": "Universal",
+              "icon": "\ud83c\udf0d"
+            }
+          ]
+        }
+      },
+      "treta_yuga": {
+        "description": "During the Treta Yuga, self-driving cars evolved into majestic golden chariots equipped with intricate automation mechanisms that responded to the thoughts and intentions of their passengers.\n\nPractitioners in this era harnessed the power of mental focus and psychic energies to control the movements and functions of the self-driving chariots, creating a symbiotic relationship between man and machine.\n\nEra limitations included the occasional misinterpretation of human intentions by the vehicles' advanced AI systems, leading to minor disruptions in travel.\n\nThe cosmic and cultural impact of self-driving golden chariots in the Treta Yuga symbolized a harmonious balance between human ingenuity and divine guidance, showcasing the potential for technology to enhance spiritual connections.",
+        "statistics": "Speed: 200 mph, Automation Accuracy: 97%, Environmental Impact: 90%",
+        "characteristics": "majestic, golden, automated, psychic, symbiotic",
+        "impact": "Elevating transportation to a transcendent experience, self-driving golden chariots in the Treta Yuga represented a fusion of human consciousness and technological innovation.",
+        "time_period": "5,000 BCE \u2013 1,000 BCE",
+        "paragraphs": [
+          {
+            "label": "Manifestation",
+            "text": "During the Treta Yuga, self-driving cars evolved into majestic golden chariots equipped with intricate automation mechanisms that responded to the thoughts and intentions of their passengers."
+          },
+          {
+            "label": "Practice & Methods",
+            "text": "Practitioners in this era harnessed the power of mental focus and psychic energies to control the movements and functions of the self-driving chariots, creating a symbiotic relationship between man and machine."
+          },
+          {
+            "label": "Limitations",
+            "text": "Era limitations included the occasional misinterpretation of human intentions by the vehicles' advanced AI systems, leading to minor disruptions in travel."
+          },
+          {
+            "label": "Cultural Significance",
+            "text": "The cosmic and cultural impact of self-driving golden chariots in the Treta Yuga symbolized a harmonious balance between human ingenuity and divine guidance, showcasing the potential for technology to enhance spiritual connections."
+          }
+        ],
+        "key_insight": "The cosmic and cultural impact of self-driving golden chariots in the Treta Yuga symbolized a harmonious balance between human ingenuity and divine guidance, showcasing the potential for technology to enhance spiritual connections.",
+        "characteristics_list": [
+          "majestic",
+          "golden",
+          "automated",
+          "psychic",
+          "symbiotic"
+        ],
+        "statistics_detailed": {
+          "original": "Speed: 200 mph, Automation Accuracy: 97%, Environmental Impact: 90%",
+          "metrics": [
+            {
+              "label": "Speed",
+              "value": "200 mph",
+              "icon": "\ud83d\ude80"
+            },
+            {
+              "label": "Automation Accuracy",
+              "value": "97%",
+              "icon": "\ud83c\udfaf"
+            },
+            {
+              "label": "Environmental Impact",
+              "value": "90%",
+              "icon": "\ud83d\udca5"
+            },
+            {
+              "label": "Speed",
+              "value": "Hours",
+              "icon": "\u23f0"
+            },
+            {
+              "label": "Energy",
+              "value": "Ritual/Manual",
+              "icon": "\ud83d\udd25"
+            },
+            {
+              "label": "Accessibility",
+              "value": "Priests/Sages",
+              "icon": "\ud83d\udc65"
+            }
+          ]
+        }
+      },
+      "dwapar_yuga": {
+        "description": "In the Dwapar Yuga, self-driving cars manifested as advanced chariots embedded with sophisticated AI systems and energy crystals that powered their autonomous functions with precision and speed.\n\nPractitioners in this era utilized complex algorithms and energy manipulation techniques to synchronize their consciousness with the vehicles, enabling seamless control and navigation across vast distances.\n\nEra limitations included occasional malfunctions in the energy crystals, leading to temporary disruptions in the self-driving capabilities of the chariots.\n\nThe cosmic and cultural impact of self-driving chariots in the Dwapar Yuga highlighted the potential for technology to bridge the gap between the physical and spiritual realms, showcasing the evolution of transportation as a transformative experience.",
+        "statistics": "Energy Efficiency: 98%, Navigation Accuracy: 99%, Speed Control: 95%",
+        "characteristics": "advanced, sophisticated, precise, synchronized, transformative",
+        "impact": "Blurring the boundaries between man and machine, self-driving chariots in the Dwapar Yuga heralded a new era of interconnected transportation and consciousness.",
+        "time_period": "1,000 BCE \u2013 1500 CE",
+        "paragraphs": [
+          {
+            "label": "Manifestation",
+            "text": "In the Dwapar Yuga, self-driving cars manifested as advanced chariots embedded with sophisticated AI systems and energy crystals that powered their autonomous functions with precision and speed."
+          },
+          {
+            "label": "Practice & Methods",
+            "text": "Practitioners in this era utilized complex algorithms and energy manipulation techniques to synchronize their consciousness with the vehicles, enabling seamless control and navigation across vast distances."
+          },
+          {
+            "label": "Limitations",
+            "text": "Era limitations included occasional malfunctions in the energy crystals, leading to temporary disruptions in the self-driving capabilities of the chariots."
+          },
+          {
+            "label": "Cultural Significance",
+            "text": "The cosmic and cultural impact of self-driving chariots in the Dwapar Yuga highlighted the potential for technology to bridge the gap between the physical and spiritual realms, showcasing the evolution of transportation as a transformative experience."
+          }
+        ],
+        "key_insight": "The cosmic and cultural impact of self-driving chariots in the Dwapar Yuga highlighted the potential for technology to bridge the gap between the physical and spiritual realms, showcasing the evolution of transportation as a transformative experience.",
+        "characteristics_list": [
+          "advanced",
+          "sophisticated",
+          "precise",
+          "synchronized",
+          "transformative"
+        ],
+        "statistics_detailed": {
+          "original": "Energy Efficiency: 98%, Navigation Accuracy: 99%, Speed Control: 95%",
+          "metrics": [
+            {
+              "label": "Energy Efficiency",
+              "value": "98%",
+              "icon": "\u26a1"
+            },
+            {
+              "label": "Navigation Accuracy",
+              "value": "99%",
+              "icon": "\ud83c\udfaf"
+            },
+            {
+              "label": "Speed Control",
+              "value": "95%",
+              "icon": "\ud83d\ude80"
+            },
+            {
+              "label": "Efficiency",
+              "value": "Variable",
+              "icon": "\ud83d\udcca"
+            },
+            {
+              "label": "Speed",
+              "value": "Minutes\u2013Hours",
+              "icon": "\u23f1\ufe0f"
+            },
+            {
+              "label": "Energy",
+              "value": "Mechanical",
+              "icon": "\u2699\ufe0f"
+            },
+            {
+              "label": "Accessibility",
+              "value": "Craftsmen",
+              "icon": "\ud83d\udd28"
+            }
+          ]
+        }
+      },
+      "kali_yuga": {
+        "description": "In the Kali Yuga, self-driving cars took the form of sleek, futuristic vehicles powered by quantum computing and neural networks, capable of anticipating and adapting to the ever-changing environment with unparalleled efficiency.\n\nPractitioners in this era relied on advanced coding languages and neural interface technologies to establish a symbiotic relationship with the vehicles, allowing for real-time communication and customization of travel experiences.\n\nEra limitations included cybersecurity threats and privacy concerns, as the interconnected nature of the vehicles made them susceptible to external hacking attempts.\n\nThe cosmic and cultural impact of self-driving cars in the Kali Yuga represented a pinnacle of human innovation and technological advancement, reshaping the landscape of transportation and paving the way for a new era of interconnected mobility.",
+        "statistics": "Cybersecurity Rating: 96%, Adaptability: 99%, Customization Options: 98%",
+        "characteristics": "sleek, futuristic, efficient, interconnected, innovative",
+        "impact": "Propelling society into a future of seamless mobility, self-driving cars in the Kali Yuga epitomized the fusion of human ingenuity and technological prowess.",
+        "time_period": "1500 CE \u2013 Present",
+        "paragraphs": [
+          {
+            "label": "Manifestation",
+            "text": "In the Kali Yuga, self-driving cars took the form of sleek, futuristic vehicles powered by quantum computing and neural networks, capable of anticipating and adapting to the ever-changing environment with unparalleled efficiency."
+          },
+          {
+            "label": "Practice & Methods",
+            "text": "Practitioners in this era relied on advanced coding languages and neural interface technologies to establish a symbiotic relationship with the vehicles, allowing for real-time communication and customization of travel experiences."
+          },
+          {
+            "label": "Limitations",
+            "text": "Era limitations included cybersecurity threats and privacy concerns, as the interconnected nature of the vehicles made them susceptible to external hacking attempts."
+          },
+          {
+            "label": "Cultural Significance",
+            "text": "The cosmic and cultural impact of self-driving cars in the Kali Yuga represented a pinnacle of human innovation and technological advancement, reshaping the landscape of transportation and paving the way for a new era of interconnected mobility."
+          }
+        ],
+        "key_insight": "The cosmic and cultural impact of self-driving cars in the Kali Yuga represented a pinnacle of human innovation and technological advancement, reshaping the landscape of transportation and paving the way for a new era of interconnected mobility.",
+        "characteristics_list": [
+          "sleek",
+          "futuristic",
+          "efficient",
+          "interconnected",
+          "innovative"
+        ],
+        "statistics_detailed": {
+          "original": "Cybersecurity Rating: 96%, Adaptability: 99%, Customization Options: 98%",
+          "metrics": [
+            {
+              "label": "Cybersecurity Rating",
+              "value": "96%",
+              "icon": "\ud83d\udcca"
+            },
+            {
+              "label": "Adaptability",
+              "value": "99%",
+              "icon": "\ud83d\udcca"
+            },
+            {
+              "label": "Customization Options",
+              "value": "98%",
+              "icon": "\ud83d\udcca"
+            },
+            {
+              "label": "Speed",
+              "value": "Seconds\u2013Minutes",
+              "icon": "\u26a1"
+            },
+            {
+              "label": "Energy",
+              "value": "Electrical",
+              "icon": "\ud83d\udd0c"
+            },
+            {
+              "label": "Accessibility",
+              "value": "Mass Market",
+              "icon": "\ud83c\udfea"
+            }
+          ]
+        }
+      }
+    },
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/c/c6/Autonomous_Delivery_Vehicle_Pileup.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/ee/Google_driverless_car_at_intersection.gk.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/60/Mobileye_Taxonomy_for_Consumer_Autonomous_Vehicles.png",
+      "https://upload.wikimedia.org/wikipedia/commons/e/e7/Tesla_Autopilot_Engaged_in_Model_X.jpg"
+    ],
+    "timestamp": "2026-06-05T14:58:49.090987",
+    "created_at": "2026-06-05T14:58:49.090987",
+    "user_id": "6a2241ffcc2af7b1488cce2b"
   }
 ]
